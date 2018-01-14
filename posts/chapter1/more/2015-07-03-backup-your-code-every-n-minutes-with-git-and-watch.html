@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="../../../css/bootstrap.4.0.0-beta3.min.css" />
+<link href="https://fonts.googleapis.com/css?family=Raleway:800|Merriweather|Roboto:900" rel="stylesheet">
+<link href="../../../css/ionicons.2.0.1.min.css" rel="stylesheet">
+<link href="../../../css/main.css" rel="stylesheet">
+<link href="../../../css/font.css" rel="stylesheet">
+<title>Zer0 Degree - Making backup for each line of code in your project every n minutes in case your code editor decides to revert some file back to its state x hours ago </title>
+
+  </head>
+  <body>
+
+    <div class="cover-image" style="height:400px;">
+    <img src="../../../img/backgrounds/willian-justen-de-vasconcellos-430007.jpg" style="margin-top:-45px" />
+
+    <div class="cover-image-text-wrapper">
+    <div class="cover-image-text">
+      <h1 id="zeroDegreeLogo">
+        <div>Zer0<br />Degree</div><div><sup id="degreeDot">o</sup><br />&nbsp;</div>
+      </h1>
+      <div id="zeroDegreeNameAndDescription" style="margin-left:20px">
+      <h2 id="zeroDegreeName">
+        The Website of <br /><a href>Archy Wilhes 魏何</a>
+        <a target="_blank" href="http://twitter.com/archywilhes"><i class="social-icon ion-social-twitter"></i></a>
+        <a target="_blank" href="http://github.com/archywilhes"><i class="social-icon ion-social-octocat"></i></a>
+        <a target="_blank" href="http://instagram.com/oharchy"><i class="social-icon ion-social-instagram"></i></a>
+        <a target="_blank" href="http://archy.sh"><i class="social-icon ion-erlenmeyer-flask"></i></a>
+      </h2>
+      <div id="zeroDegreeDescription">a comp sci fanatic in his early twenties doing start-up stuff<br />
+        (since the age of sixteen) instead of going to univ</div>
+      </div>
+    </div>
+    <h2 class="stayCool thickRaleway">
+      Stay cool.
+    </h2>
+    </div>
+  </div>
+  <div>
+    <h2 class="thickRaleway" id="menu">
+      <a class="menu-item menu-item-selected">Blog</a>
+      <a class="menu-item">Music for Work</a>
+      <a class="menu-item">Artwork Info</a>
+  </h2>
+  </div>
+  <article>
+    <section class="header">
+        Posted on 03 Jul 2015
+        
+    </section>
+    <section>
+        <p>I just reinstalled my OS X recently, which not only enabled me to re-experience the joy of owning a new Mac, but also fixed problems like waking up into a partially slumber stage with a black screen and a movable cursor that is practically useless. Since I was going to <a href="http://stackoverflow.com/questions/27381531/how-to-install-sublime-text-3-using-homebrew"><code>brew cask install</code></a> a brand new <a href="http://www.sublimetext.com/">Sublime Text Editor</a>, I decided to spend a bit more effort customizing it. After some googling and experimentation, these are my settings:</p>
+<p>{% highlight JSON %}</p>
+<p>{ “bold_folder_labels”: true, “caret_style”: “phase”, “color_scheme”: “Packages/Color Scheme - Default/Blackboard.tmTheme”, “draw_minimap_border”: true, “draw_white_space”: “all”, “ensure_newline_at_eof_on_save”: true, “fade_fold_buttons”: false, “find_selected_text”: true, “font_face”: “Source Code Pro Light”, “font_size”: 14.0, “highlight_line”: true, “ignored_packages”: [ ], “letter-spacing-length”: 20, “line_padding_bottom”: 1, “line_padding_top”: 1, “rulers”: [ 120 ], “shift_tab_unindent”: true, “spacegray_sidebar_font_normal”: true, “spacegray_sidebar_tree_xlarge”: true, “spacegray_tabs_auto_width”: true, “spacegray_tabs_font_normal”: true, “spacegray_tabs_large”: true, “tab_size”: 4, “theme”: “Spacegray.sublime-theme”, “translate_tabs_to_spaces”: true, “trim_trailing_white_space_on_save”: true, “vintage_start_in_command_mode”: true, “word_separators”: “./\()&quot;’-:,.;&lt;&gt;~!@#$%^&amp;*|+=<span></span>`~?_“,”word_wrap“: true } {% endhighlight %}</p>
+<p>(For the record Source Code Pro can be grabbed <a href="https://github.com/adobe-fonts/source-code-pro">here</a>; Spacegray <a href="https://github.com/kkga/spacegray">here</a>; and Blackboard <a href="https://github.com/cfletcher1856/Theme-Blackboard">here</a>)</p>
+<p class="text-center">
+<img src="../../../assets/img/sublime.png" alt="oh">
+</p>
+<p>This looked like a great environment to code in (I enabled <a href="http://www.sublimetext.com/docs/2/vintage.html">vintage mode</a> too so there are vim magic in it ;3 ) until I learnt that sometimes the text editor would revert some file back to its state x hours ago with no reason at all.</p>
+<p>It is a nightmare. (Imagine happily committing your code only to learn all that you’ve written &amp; tested no longer exist in the current dimensions in space-time.)</p>
+<p>I still don’t have a clue what is the cause. (I only have a few plug-ins installed. I don’t think the plug-ins have to do with it.) But it has happened quite a few times and I have had my losses. Until I figure out what’s causing the strange phenomenon and get it fixed, I need to start taking precaution.</p>
+<p>Here is a simple system that uses <a href="http://linux.die.net/man/1/watch"><code>watch</code></a> with the help of <code>git</code> to make backup of every single file in a directory every 90 seconds:</p>
+<blockquote>
+<p><code>watch</code> can execute a line of code periodically in the terminal. The nice thing is that you can watch the outputs as it does.</p>
+</blockquote>
+<p>Let’s say this is the directory containing projects you want to back up {% highlight bash %} /Users/a/<em>/</em> {% endhighlight %} 1) Make a directory to keep the back up files {% highlight bash %} mkdir /Users/a/<em>/timeMachine #or any directory of your choice {% endhighlight %} 2) Make it into a git repo. {% highlight bash %} cd /Users/a/</em>/timeMachine git init #this would create a .git folder in /Users/a/<em>/timeMachine #now /Users/a/</em>/timeMachine is a git repo {% endhighlight %} 3) Write a bash script that</p>
+<ol type="1">
+<li>Copy everything in the directory to the backup directory</li>
+<li>Remove all the <code>.git</code> folders from each project in the backup directory (The <code>.git</code> folder is what that determines a directory to be a git repo: removing it would turn git repo back to a normal directory. In order for <code>commit</code> to work, it is necessary to have every subdirectory as a non git repo. If not, the subdirectories containing <code>.git</code> will be treated as <a href="http://git-scm.com/docs/git-submodule">git submodules</a>.) <br> [Changes made in a git submodule can’t be committed as changes of the main git repo.]</li>
+<li>Git add &amp; commit everything in the backup directory</li>
+</ol>
+<p>and save it as <code>script.sh</code>.(You can save it at anywhere you want)</p>
+<p>Here is my <code>script.sh</code>.</p>
+<p>{% highlight bash %} cd /Users/a/_ #replace this with the directory you want to back up cp -rf _/* timeMachine #replace this with the directory to back up to rm -rf timeMachine/*/.git #remove all .git folders in each project cd timeMachine git add . #add any changes git commit -am “<code>date +%F-%T</code>” #commit to store the changes {% endhighlight %}</p>
+<ol start="4" type="1">
+<li>Simply run this script periodically using <code>watch</code> (You can install it with <a href="http://brew.sh/">brew</a> if you don’t have it).</li>
+</ol>
+<p>{% highlight bash %} brew install watch #brew is a package manager for OSX. http://brew.sh/ watch -n 90 ‘bash script.sh’ {% endhighlight %}</p>
+<p>That’s it. Now every 90 seconds, the changes you made in your project (e.g. <code>/Users/a/_/0a-.github.com</code>) would be recorded in the backup directory. You can view changes of the file using <a href="http://git-scm.com/docs/git-log"><code>git log</code></a>:</p>
+<p>{% highlight bash %} cd /Users/a/_/timeMachine/0a-.github.com git log -p myFile.js {% endhighlight %}</p>
+<p>or do it in <a href="https://mac.github.com/">a GUI Client</a>. (They would show up in the Unsynced tab because all we are doing is just <a href="http://git-scm.com/docs/git-commit">committing</a> and there is no <a href="http://git-scm.com/docs/git-push">pushing</a> involved.)</p>
+<p class="text-center">
+<img src="../../../assets/img/timeMachine.jpg" alt="such time much machine">
+</p>
+<p>The backup directory is going to take more and more disk space as time passes (as long as you remember to <code>watch -n 90 'bash script.sh'</code> before you start to code each time). When you want to clean everything up, simply remove everything (including the <code>.git</code> folder) and do a <code>git init</code> again.</p>
+<p>{% highlight bash %} cd /Users/a/_/timeMachine #replace it with your backup repo rm -rf * #this can be deadly if used unwisely git init {% endhighlight %}</p>
+<p>The great thing about using git is that only the changes of the files would be saved. So rather than having 10 backup copies of a project that are slightly different from one another, you’d only have one copy of it, and 9 indications of the different changes you made at different times.</p>
+    </section>
+</article>
+
+  <div class="cover-image" style="height:400px;">
+  <img src="../../../img/backgrounds/maarten-van-den-heuvel-346883.jpg" style="margin-top:-20px" />
+  <div class="whiteOverlay"></div>
+  <div class="cover-image-text-wrapper">
+  <div class="cover-image-text">
+    <h1 id="zeroDegreeLogo">
+      <div>Zer0<br />Degree</div><div><sup id="degreeDot">o</sup><br />&nbsp;</div>
+    </h1>
+    <div id="zeroDegreeNameAndDescription" style="margin-left:20px">
+    <h2 id="zeroDegreeName">
+      Handcarfted <small>single-handed by</small> <br /><a href>Archy Wilhes 魏何</a>
+      <a style="margin-left:7px" href="https://github.com/archywilhes/zer0.degree">
+          <small>vi3w_s0urce <i class="ion-beer"></i></small>
+      </a>
+    </h2>
+    <div id="zeroDegreeDescription">
+        Frontend consists of vanilla JS, CSS & HTML with <a href="https://v4-alpha.getbootstrap.com/">Bootstrap</a>  <br />
+         Backend written exclusively in Haskell using <a href="https://jaspervdj.be/hakyll/">Hakyll <i class="ion-heart"></a></i>
+    </div>
+    </div>
+  </div>
+  <h2 class="stayCool thickRaleway" style="color:rgba(0,0,0,0.9)">
+    <a href="mailto:archy@zer0.degree">Stay in touch?</a>
+  </h2>
+  </div>
+  </div>
+
+
+  </body>
+</html>
