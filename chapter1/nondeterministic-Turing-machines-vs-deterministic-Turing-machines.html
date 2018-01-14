@@ -1,0 +1,179 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+                <link rel="apple-touch-icon" sizes="57x57" href="../img/favicons/apple-icon-57x57.png">
+                <link rel="apple-touch-icon" sizes="60x60" href="../img/favicons/apple-icon-60x60.png">
+                <link rel="apple-touch-icon" sizes="72x72" href="../img/favicons/apple-icon-72x72.png">
+                <link rel="apple-touch-icon" sizes="76x76" href="../img/favicons/apple-icon-76x76.png">
+                <link rel="apple-touch-icon" sizes="114x114" href="../img/favicons/apple-icon-114x114.png">
+                <link rel="apple-touch-icon" sizes="120x120" href="../img/favicons/apple-icon-120x120.png">
+                <link rel="apple-touch-icon" sizes="144x144" href="../img/favicons/apple-icon-144x144.png">
+                <link rel="apple-touch-icon" sizes="152x152" href="../img/favicons/apple-icon-152x152.png">
+                <link rel="apple-touch-icon" sizes="180x180" href="../img/favicons/apple-icon-180x180.png">
+                <link rel="icon" type="image/png" sizes="192x192" href="../img/favicons/android-icon-192x192.png">
+                <link rel="icon" type="image/png" sizes="32x32" href="../img/favicons/favicon-32x32.png">
+                <link rel="icon" type="image/png" sizes="96x96" href="../img/favicons/favicon-96x96.png">
+                <link rel="icon" type="image/png" sizes="16x16" href="../img/favicons/favicon-16x16.png">
+                <link rel="manifest" href="../img/favicons/manifest.json">
+                <meta name="msapplication-TileColor" content="#ffffff">
+                <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+                <meta name="theme-color" content="#ffffff">
+<link rel="stylesheet" href="../css/bootstrap.4.0.0-beta3.min.css" />
+<link href="../css/ionicons.2.0.1.min.css" rel="stylesheet">
+<link href="../css/main.css" rel="stylesheet">
+<link href="../css/fonts.css" rel="stylesheet">
+
+<meta property="og:url" content="http://zer0.degree//chapter1/nondeterministic-Turing-machines-vs-deterministic-Turing-machines.html" />
+
+<meta property="og:type" content="article" />
+
+
+<meta property="og:title" content="NDTM vs DTM" />
+
+
+<meta property="og:image" content="http://zer0.degree/img/covers/Cataract 3, 1967, Bridget Riley.jpg" />
+
+<title> NDTM vs DTM - Zer0 Degree, The Website of Archy Wilhes 魏何</title>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?class=UA-112409544-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-112409544-1');
+</script>
+<script src="../js/main.js"></script>
+
+  </head>
+  <body><div id="body-wrapper"><div id="body">
+    <div class="cover-image">
+    <img class="hide-if-smaller-than-mobile-device-regular" src="../img/backgrounds/willian-justen-de-vasconcellos-430007.jpg" />
+    <img class="show-if-smaller-than-mobile-device-regular" src="../img/backgrounds/willian-justen-de-vasconcellos-430007-full.jpg" />
+    <div class="cover-image-text-wrapper">
+    <div class="cover-image-text">
+      <h1 class="zeroDegreeLogo centerFlex">
+        <div><a href="../">Zer0<br />Degree</a></div><div><sup class="degreeDot">o</sup><br />&nbsp;</div>
+      </h1>
+
+      <div class="zeroDegreeNameAndDescription hide-if-smaller-than-mobile-device-large-but-flex" style="margin-left:20px">
+      <h2 class="zeroDegreeName">
+        The Website of <br /><a href="../about.html">Archy Wilhes 魏何</a>
+        <a target="_blank" href="http://twitter.com/archywilhes"><i class="social-icon ion-social-twitter"></i></a>
+        <a target="_blank" href="http://github.com/archywilhes"><i class="social-icon ion-social-octocat"></i></a>
+        <a target="_blank" href="http://instagram.com/archywilhes"><i class="social-icon ion-social-instagram"></i></a>
+        <a target="_blank" href="http://archy.sh"><i class="social-icon ion-erlenmeyer-flask"></i></a>
+      </h2>
+      <div class="zeroDegreeDescription">a comp sci fanatic in his early twenties doing start-up stuff<br />
+        (on and off since the age of sixteen) instead of going to univ</div>
+      </div>
+    </div>
+    <h2 class="stayCool thickRaleway hide-if-smaller-than-mobile-device-large">
+      Stay cool.
+    </h2>
+    <h3 class="stayCool thickRaleway show-iff-mobile-device-large">
+      The Website of<br /> <a href="../about.html">Archy Wilhes 魏何</a>
+  </h3>
+  <h2 class="stayCool thickRaleway show-if-smaller-than-mobile-device-medium">
+    <a href="../about-zer0-degree.html">About</a>
+  </h2>
+    </div>
+  </div>
+
+  
+<div class="hide-if-bigger-than-mobile-device-regular">
+  <h2 class="thickRaleway menu">
+    <!-- <a href="/" class="menu-item">Back to Home Page</a> -->
+</h2>
+</div>
+<div class="container content">
+<article style>
+    <div class="coverPainting">
+        <img src="../img/covers/Cataract 3, 1967, Bridget Riley.jpg" />
+    </div>
+    <div class="everythingElse">
+        <div class="info">
+            <i class="ion-calendar"></i>
+            <span class="date">08 Nov 2015</span>
+            
+        </div>
+        <h2 class="title">
+            NDTM vs DTM
+        </h2>
+        <div class="text">
+            <p>From a set-theorical point of view, non-deterministic Turing machines (NDTM) and deterministic Turing machines (DTM) are pretty similar objects. Actually, all DTMs are NDTMs: all functions are relations, and the only difference between these two objects lies in that one is defined in terms of a function, while the other is defined in terms of a relation. To be more precise, a DTM is represented by some 3-tuple <span class="math inline">(<em>Σ</em>, <em>Q</em>, <em>f</em>)</span> where <span class="math inline"><em>f</em></span> is a function mapping from <span class="math inline"><em>Q</em> × <em>Σ</em><sup><em>k</em></sup></span> into <span class="math inline"><em>Q</em> × <em>Σ</em><sup><em>k</em> − 1</sup> × { − 1, 0, 1}<sup><em>k</em></sup></span> (for some <span class="math inline"><em>k</em> ≥ 2</span>), while a NDTM is represented by some 3-tuple <span class="math inline">(<em>Σ</em>, <em>Q</em>, <em>r</em>)</span> where <span class="math inline"><em>r</em></span> is a relation between <span class="math inline"><em>Q</em> × <em>Σ</em><sup><em>k</em></sup></span> and <span class="math inline"><em>Q</em> × <em>Σ</em><sup><em>k</em> − 1</sup> × { − 1, 0, 1}<sup><em>k</em></sup></span>.</p>
+<p>Consider the following variant of the P vs NP question: for every finite subset of any language decidable by a NDTM in a polynomial number of state transitions proportional to the size of the input, does there exist a DTM that too decides this subset of the language in a polynomial number of state transitions? Unlike the P vs NP question, this is asking about a finite subset of a language, rather than the language itself which has a cardinality of <span class="math inline">ℵ<sub>0</sub></span>, and is to be answered in the affirmative.</p>
+<p>For any finite subset of some language decidable by a polynomial-time NDTM, there always exists a polynomial-time DTM that decides on this subset of the language, where its set of states is the superset of the Cartesian product of this subset of the language and the set of states of the NDTM, and its transition function is a superset of the union of the transition functions of DTMs each deciding only a singleton subset of the subset (with its set of states <span class="math inline"><em>Q</em></span> changed to <span class="math inline">{(<em>S</em>, <em>q</em>) : <em>q</em> ∈ <em>Q</em>}</span> where <span class="math inline"><em>S</em></span> is the input string that encodes the element in the singleton), to be constructed based on how the NDTM would halt on the element. It decides the subset of the language by first reading the input string and, in a few state transitions, arriving at the corresponding initial state of the DTM that decides a singleton whose element is encoded in the input, or a rejecting state if none of the DTMs it is composed of accepts the input.</p>
+<p>The idea is that so long as it is about deciding a finite subset of a language, we can always derive a DTM from a NDTM theoretically.</p>
+<p>Now consider another variant of the question about the existence of a DTM whose set of states has a cardinality less than or equal to <span class="math inline">ℵ<sub>0</sub></span>, rather than a DTM with a finite set of states (as how it is defined in Turing’s model). Similar to how there always exists a DTM for deciding a finite subset of a language as demonstrated above, there always exists an infinite-states DTM (so long as the axioms of our set theory allow it) for deciding a language in polynomial time, for every language decidable by a polynomial-time NDTM. And similar to the corresponding finite-states DTM for a subset of the language, the construction of such infinite-states DTM relies on the “knowledge” about how the NDTM would decide each element in the language. Therefore, once again, there is no practical way for constructing such DTM if we do not have access to the NDTM at the first place.</p>
+<p>So here is a question: “<em>for every language decidable by such infinite-states DTM, does there exist a finite-states DTM that too decides it in polynomial-time?</em>” and that is one way of viewing the P vs NP question.</p>
+        </div>
+    </div>
+</article>
+</div>
+<div>
+  <h2 class="thickRaleway menu-bottom">
+    <a class="menu-item" href="../">Back to Home Page</a>
+</h2>
+</div>
+
+
+  <div class="cover-image">
+  <img class="hide-if-smaller-than-mobile-device-regular" src="../img/backgrounds/maarten-van-den-heuvel-346883.jpg" />
+  <img class="show-if-smaller-than-mobile-device-regular" src="../img/backgrounds/maarten-van-den-heuvel-346883-full.jpg" />
+
+  <div class="whiteOverlay"></div>
+  <div class="cover-image-text-wrapper">
+  <div class="cover-image-text">
+    <h1 class="zeroDegreeLogo centerFlex hide-if-smaller-than-mobile-device-regular-but-flex">
+        <div><a href="../">Zer0<br />Degree</a></div><div><sup class="degreeDot">o</sup><br />&nbsp;</div>
+    </h1>
+    <div class="show-if-smaller-than-mobile-device-regular">
+    <div class="centerFlex footer-info-block">
+        <div>
+        <h5 class="hide-if-smaller-than-mobile-device-small">
+            A Website of <a href="../about-zer0-degree.html">Archy Wilhes 魏何</a><br />
+            Handcrafted by <a href="../about-zer0-degree.html">Archy Wilhes 魏何</a>
+        </h5>
+        <h5 class="show-if-smaller-than-mobile-device-small">
+            A Website of<br />
+            <a href="../about-zer0-degree.html">Archy Wilhes 魏何</a><br />
+
+        </h5>
+        <h3>
+            <a target="_blank" href="http://twitter.com/archywilhes"><i class="social-icon ion-social-twitter"></i></a>
+            <a target="_blank" href="http://github.com/archywilhes"><i class="social-icon ion-social-octocat"></i></a>
+            <a target="_blank" href="http://instagram.com/archywilhes"><i class="social-icon ion-social-instagram"></i></a>
+            <a target="_blank" href="http://archy.sh"><i class="social-icon ion-erlenmeyer-flask"></i></a>
+        </h3>
+        </div>
+</div>
+</div>
+    <div class="zeroDegreeNameAndDescription hide-if-smaller-than-mobile-device-regular-but-flex" style="margin-left:20px">
+    <h3 class="zeroDegreeName">
+      Handcarfted by <a href="../about.html">Archy Wilhes 魏何</a><br />
+      <a style="margin-left:7px" href="https://github.com/archywilhes/zer0.degree">
+          <small>vi3w_s0urce <i class="ion-beer"></i></small>
+      </a>
+  </h3>
+    <div class="zeroDegreeDescription">
+        Frontend consists of vanilla JS, CSS & HTML with <a href="https://v4-alpha.getbootstrap.com/">Bootstrap</a>  <br />
+         Backend written exclusively in Haskell using <a href="https://jaspervdj.be/hakyll/">Hakyll <i class="ion-heart"></a></i>
+    </div>
+    </div>
+  </div>
+  <h3 class="stayCool thickRaleway" style="color:rgba(0,0,0,0.9)">
+        See you around.
+  </h3>
+  </div>
+  </div>
+
+
+</div></div>
+
+</body>
+
+</html>

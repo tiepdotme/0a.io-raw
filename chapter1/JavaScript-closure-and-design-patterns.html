@@ -1,0 +1,416 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+                <link rel="apple-touch-icon" sizes="57x57" href="../img/favicons/apple-icon-57x57.png">
+                <link rel="apple-touch-icon" sizes="60x60" href="../img/favicons/apple-icon-60x60.png">
+                <link rel="apple-touch-icon" sizes="72x72" href="../img/favicons/apple-icon-72x72.png">
+                <link rel="apple-touch-icon" sizes="76x76" href="../img/favicons/apple-icon-76x76.png">
+                <link rel="apple-touch-icon" sizes="114x114" href="../img/favicons/apple-icon-114x114.png">
+                <link rel="apple-touch-icon" sizes="120x120" href="../img/favicons/apple-icon-120x120.png">
+                <link rel="apple-touch-icon" sizes="144x144" href="../img/favicons/apple-icon-144x144.png">
+                <link rel="apple-touch-icon" sizes="152x152" href="../img/favicons/apple-icon-152x152.png">
+                <link rel="apple-touch-icon" sizes="180x180" href="../img/favicons/apple-icon-180x180.png">
+                <link rel="icon" type="image/png" sizes="192x192" href="../img/favicons/android-icon-192x192.png">
+                <link rel="icon" type="image/png" sizes="32x32" href="../img/favicons/favicon-32x32.png">
+                <link rel="icon" type="image/png" sizes="96x96" href="../img/favicons/favicon-96x96.png">
+                <link rel="icon" type="image/png" sizes="16x16" href="../img/favicons/favicon-16x16.png">
+                <link rel="manifest" href="../img/favicons/manifest.json">
+                <meta name="msapplication-TileColor" content="#ffffff">
+                <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+                <meta name="theme-color" content="#ffffff">
+<link rel="stylesheet" href="../css/bootstrap.4.0.0-beta3.min.css" />
+<link href="../css/ionicons.2.0.1.min.css" rel="stylesheet">
+<link href="../css/main.css" rel="stylesheet">
+<link href="../css/fonts.css" rel="stylesheet">
+
+<link href="../css/highlight.css" rel="stylesheet">
+
+<meta property="og:url" content="http://zer0.degree//chapter1/JavaScript-closure-and-design-patterns.html" />
+
+<meta property="og:type" content="article" />
+
+
+<meta property="og:title" content="JavaScript Closure and Design Patterns in 3 minutes" />
+
+
+<meta property="og:image" content="http://zer0.degree/img/covers/Church Street El, 1920, Charles Sheeler.jpg" />
+
+<title> JavaScript Closure and Design Patterns in 3 minutes - Zer0 Degree, The Website of Archy Wilhes 魏何</title>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?class=UA-112409544-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-112409544-1');
+</script>
+<script src="../js/main.js"></script>
+
+  </head>
+  <body><div id="body-wrapper"><div id="body">
+    <div class="cover-image">
+    <img class="hide-if-smaller-than-mobile-device-regular" src="../img/backgrounds/willian-justen-de-vasconcellos-430007.jpg" />
+    <img class="show-if-smaller-than-mobile-device-regular" src="../img/backgrounds/willian-justen-de-vasconcellos-430007-full.jpg" />
+    <div class="cover-image-text-wrapper">
+    <div class="cover-image-text">
+      <h1 class="zeroDegreeLogo centerFlex">
+        <div><a href="../">Zer0<br />Degree</a></div><div><sup class="degreeDot">o</sup><br />&nbsp;</div>
+      </h1>
+
+      <div class="zeroDegreeNameAndDescription hide-if-smaller-than-mobile-device-large-but-flex" style="margin-left:20px">
+      <h2 class="zeroDegreeName">
+        The Website of <br /><a href="../about.html">Archy Wilhes 魏何</a>
+        <a target="_blank" href="http://twitter.com/archywilhes"><i class="social-icon ion-social-twitter"></i></a>
+        <a target="_blank" href="http://github.com/archywilhes"><i class="social-icon ion-social-octocat"></i></a>
+        <a target="_blank" href="http://instagram.com/archywilhes"><i class="social-icon ion-social-instagram"></i></a>
+        <a target="_blank" href="http://archy.sh"><i class="social-icon ion-erlenmeyer-flask"></i></a>
+      </h2>
+      <div class="zeroDegreeDescription">a comp sci fanatic in his early twenties doing start-up stuff<br />
+        (on and off since the age of sixteen) instead of going to univ</div>
+      </div>
+    </div>
+    <h2 class="stayCool thickRaleway hide-if-smaller-than-mobile-device-large">
+      Stay cool.
+    </h2>
+    <h3 class="stayCool thickRaleway show-iff-mobile-device-large">
+      The Website of<br /> <a href="../about.html">Archy Wilhes 魏何</a>
+  </h3>
+  <h2 class="stayCool thickRaleway show-if-smaller-than-mobile-device-medium">
+    <a href="../about-zer0-degree.html">About</a>
+  </h2>
+    </div>
+  </div>
+
+  
+<div class="hide-if-bigger-than-mobile-device-regular">
+  <h2 class="thickRaleway menu">
+    <!-- <a href="/" class="menu-item">Back to Home Page</a> -->
+</h2>
+</div>
+<div class="container content">
+<article style>
+    <div class="coverPainting">
+        <img src="../img/covers/Church Street El, 1920, Charles Sheeler.jpg" />
+    </div>
+    <div class="everythingElse">
+        <div class="info">
+            <i class="ion-calendar"></i>
+            <span class="date">17 Sep 2014</span>
+            
+        </div>
+        <h2 class="title">
+            JavaScript Closure and Design Patterns in 3 minutes
+        </h2>
+        <div class="text">
+            <p>###1st Minute: What is a closure in Javascript?</p>
+<p>A <i>closure</i> is not really <a target="_blank" class="default_anchor" href="http://0ar.ch/">a</a> thing. It is just a term we use to describe what happens when we have a function that has access to outside variables other functions cannot access.</p>
+<blockquote>
+Outside variables are sometimes referred to as <a target="_blank" href="http://en.wikipedia.org/wiki/Non-local_variable">non-local variable.</a>
+</blockquote>
+<p>Here is a simple example of closure in JavaScipt.</p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode javascript"><code class="sourceCode javascript"><a class="sourceLine" id="cb1-1" data-line-number="1"><span class="kw">function</span> <span class="at">cat</span>()<span class="op">{</span></a>
+<a class="sourceLine" id="cb1-2" data-line-number="2"></a>
+<a class="sourceLine" id="cb1-3" data-line-number="3">    <span class="kw">var</span> nyan <span class="op">=</span> <span class="st">&quot;meow&quot;</span><span class="op">;</span></a>
+<a class="sourceLine" id="cb1-4" data-line-number="4"></a>
+<a class="sourceLine" id="cb1-5" data-line-number="5">    <span class="kw">function</span> <span class="at">speak</span>()<span class="op">{</span></a>
+<a class="sourceLine" id="cb1-6" data-line-number="6"></a>
+<a class="sourceLine" id="cb1-7" data-line-number="7">        <span class="at">alert</span>(nyan)<span class="op">;</span></a>
+<a class="sourceLine" id="cb1-8" data-line-number="8"></a>
+<a class="sourceLine" id="cb1-9" data-line-number="9">    <span class="op">}</span></a>
+<a class="sourceLine" id="cb1-10" data-line-number="10"></a>
+<a class="sourceLine" id="cb1-11" data-line-number="11">    <span class="at">speak</span>()<span class="op">;</span></a>
+<a class="sourceLine" id="cb1-12" data-line-number="12"></a>
+<a class="sourceLine" id="cb1-13" data-line-number="13"><span class="op">}</span></a></code></pre></div>
+<p>Now everytime you do <code>cat()</code>, a new variable, <code>nyan</code>, would be created. And <code>nyan</code> is only accessible by the <code>speak</code> function inside <code>cat</code>.</p>
+<div class="sourceCode" id="cb2"><pre class="sourceCode javascript"><code class="sourceCode javascript"><a class="sourceLine" id="cb2-1" data-line-number="1"><span class="at">cat</span>()<span class="op">;</span> <span class="co">//alerts &quot;meow&quot; because speak() is invoked</span></a>
+<a class="sourceLine" id="cb2-2" data-line-number="2"></a>
+<a class="sourceLine" id="cb2-3" data-line-number="3"><span class="at">alert</span>(nyan)<span class="op">;</span> <span class="co">//error: nyan is undefined</span></a></code></pre></div>
+<p>Here is another example of closure.</p>
+<div class="sourceCode" id="cb3"><pre class="sourceCode javascript"><code class="sourceCode javascript"><a class="sourceLine" id="cb3-1" data-line-number="1"><span class="kw">function</span> <span class="at">cat</span>()<span class="op">{</span></a>
+<a class="sourceLine" id="cb3-2" data-line-number="2"></a>
+<a class="sourceLine" id="cb3-3" data-line-number="3">    <span class="kw">var</span> nyan <span class="op">=</span> [<span class="st">&quot;meow&quot;</span><span class="op">,</span><span class="st">&quot;I am a cat&quot;</span>]<span class="op">;</span></a>
+<a class="sourceLine" id="cb3-4" data-line-number="4"></a>
+<a class="sourceLine" id="cb3-5" data-line-number="5">    <span class="kw">var</span> x <span class="op">=</span> <span class="dv">0</span><span class="op">;</span></a>
+<a class="sourceLine" id="cb3-6" data-line-number="6"></a>
+<a class="sourceLine" id="cb3-7" data-line-number="7">    <span class="kw">var</span> speak_and_change_x <span class="op">=</span>  <span class="kw">function</span>()<span class="op">{</span></a>
+<a class="sourceLine" id="cb3-8" data-line-number="8">        <span class="co">//alert either &quot;meow&quot; or &quot;I am a cat&quot;</span></a>
+<a class="sourceLine" id="cb3-9" data-line-number="9">        <span class="co">//based on x</span></a>
+<a class="sourceLine" id="cb3-10" data-line-number="10">        <span class="at">alert</span>(nyan[x])<span class="op">;</span></a>
+<a class="sourceLine" id="cb3-11" data-line-number="11"></a>
+<a class="sourceLine" id="cb3-12" data-line-number="12">        <span class="co">//change x</span></a>
+<a class="sourceLine" id="cb3-13" data-line-number="13">        x <span class="op">=</span> (x<span class="op">+</span><span class="dv">1</span><span class="op">===</span><span class="dv">2</span>)<span class="op">?</span> <span class="dv">0</span> : <span class="dv">1</span><span class="op">;</span></a>
+<a class="sourceLine" id="cb3-14" data-line-number="14">    <span class="op">};</span></a>
+<a class="sourceLine" id="cb3-15" data-line-number="15"></a>
+<a class="sourceLine" id="cb3-16" data-line-number="16">    <span class="cf">return</span> speak_and_change_x <span class="op">;</span></a>
+<a class="sourceLine" id="cb3-17" data-line-number="17"></a>
+<a class="sourceLine" id="cb3-18" data-line-number="18"><span class="op">}</span></a></code></pre></div>
+<p>Now when you invoke <code>cat</code>, 3 variables will be created: an array <code>nyan</code>, an integer <code>x</code>, and a function <code>speak_and_change_x</code>. Both <code>nyan</code> and <code>x</code> can only be accessed by function <code>speak_and_change_x</code> inside <code>cat</code>.</p>
+<div class="sourceCode" id="cb4"><pre class="sourceCode javascript"><code class="sourceCode javascript"><a class="sourceLine" id="cb4-1" data-line-number="1"><span class="at">cat</span>()<span class="op">;</span> <span class="co">//nothing will be alerted.</span></a>
+<a class="sourceLine" id="cb4-2" data-line-number="2"></a>
+<a class="sourceLine" id="cb4-3" data-line-number="3"><span class="at">cat</span>()()<span class="op">;</span> <span class="co">//alert &quot;meow&quot;;</span></a></code></pre></div>
+<p>Since you are just returning <code>speak_and_change_x</code>, rather than invoking it using <code>()</code>, nothing will be alerted when you write <code>cat()</code>. However, writing <code>cat()()</code> will <code>alert (“meow”)</code> because it is equivalent to invoking the function <code>cat</code> returns - and that is the same as <code>speak_and_change_x()</code>.</p>
+<p>Rather than writing <code>cat()()</code> to invoke the function, normally what we do is to store what <code>cat()</code> returns into a variable.</p>
+<div class="sourceCode" id="cb5"><pre class="sourceCode javascript"><code class="sourceCode javascript"><a class="sourceLine" id="cb5-1" data-line-number="1"><span class="kw">var</span> Archy <span class="op">=</span> <span class="at">cat</span>()<span class="op">;</span> <span class="co">//since cat() returns speak_and_change_x, Archy is now speak_and_change_x;</span></a>
+<a class="sourceLine" id="cb5-2" data-line-number="2"></a>
+<a class="sourceLine" id="cb5-3" data-line-number="3"><span class="co">//now invoking Archy() will be the same as invoking speak_and_change_x()</span></a>
+<a class="sourceLine" id="cb5-4" data-line-number="4"></a>
+<a class="sourceLine" id="cb5-5" data-line-number="5"><span class="at">Archy</span>()<span class="op">;</span> <span class="co">//alerts &quot;meow&quot;</span></a>
+<a class="sourceLine" id="cb5-6" data-line-number="6"></a>
+<a class="sourceLine" id="cb5-7" data-line-number="7"><span class="at">Archy</span>()<span class="op">;</span> <span class="co">//alerts &quot;I am a cat&quot;</span></a>
+<a class="sourceLine" id="cb5-8" data-line-number="8"></a>
+<a class="sourceLine" id="cb5-9" data-line-number="9"><span class="at">Archy</span>()<span class="op">;</span> <span class="co">//alerts &quot;meow&quot;</span></a>
+<a class="sourceLine" id="cb5-10" data-line-number="10"></a>
+<a class="sourceLine" id="cb5-11" data-line-number="11"><span class="at">Archy</span>()<span class="op">;</span> <span class="co">//alerts &quot;I am a cat&quot;</span></a></code></pre></div>
+<blockquote>
+<p>Note: when returning a function, you shouldn’t put <code>()</code> behind it. The moment you put <code>()</code> behind a function, you are invoking/invoking it.</p>
+<div class="sourceCode" id="cb6"><pre class="sourceCode javascript"><code class="sourceCode javascript"><a class="sourceLine" id="cb6-1" data-line-number="1"><span class="kw">var</span> a <span class="op">=</span> <span class="kw">function</span> ()<span class="op">{</span> <span class="cf">return</span> <span class="dv">6</span> <span class="op">};</span></a>
+<a class="sourceLine" id="cb6-2" data-line-number="2"> </a>
+<a class="sourceLine" id="cb6-3" data-line-number="3"><span class="kw">var</span> b <span class="op">=</span> <span class="at">a</span>()<span class="op">;</span> <span class="co">//b is 6.</span></a>
+<a class="sourceLine" id="cb6-4" data-line-number="4"> </a>
+<a class="sourceLine" id="cb6-5" data-line-number="5"><span class="at">alert</span>(b)<span class="op">;</span> <span class="co">//6 will be alerted;</span></a>
+<a class="sourceLine" id="cb6-6" data-line-number="6"> </a>
+<a class="sourceLine" id="cb6-7" data-line-number="7"><span class="at">alert</span>(<span class="at">b</span>())<span class="op">;</span> <span class="co">//error: b is not a function</span></a>
+<a class="sourceLine" id="cb6-8" data-line-number="8"> </a>
+<a class="sourceLine" id="cb6-9" data-line-number="9"><span class="kw">var</span> c <span class="op">=</span> a<span class="op">;</span> <span class="co">//c is a function</span></a>
+<a class="sourceLine" id="cb6-10" data-line-number="10"> </a>
+<a class="sourceLine" id="cb6-11" data-line-number="11"><span class="at">alert</span>(c)<span class="op">;</span> <span class="co">//the entire function will be alerted</span></a>
+<a class="sourceLine" id="cb6-12" data-line-number="12"> </a>
+<a class="sourceLine" id="cb6-13" data-line-number="13"><span class="at">alert</span>(<span class="at">c</span>())<span class="op">;</span> <span class="co">//alert 6.</span></a></code></pre></div>
+<p><a target="_blank" onclick="var c = function (){ return 6 }; alert(c)">Click here</a> if you are curious what invoking <code>alert(c)</code> will do in the code above.</p>
+</blockquote>
+<p class="text-center">
+● ● ●
+</p>
+<h3>
+Bonus: Ternary Operator
+</h3>
+<p>In the example above you can see that I am doing something like this:</p>
+<div class="sourceCode" id="cb7"><pre class="sourceCode javascript"><code class="sourceCode javascript"><a class="sourceLine" id="cb7-1" data-line-number="1">x <span class="op">=</span> (x<span class="op">+</span><span class="dv">1</span> <span class="op">===</span> <span class="dv">2</span>)<span class="op">?</span> <span class="dv">0</span> : <span class="dv">1</span><span class="op">;</span></a></code></pre></div>
+<p>This is a short way of writing</p>
+<div class="sourceCode" id="cb8"><pre class="sourceCode javascript"><code class="sourceCode javascript"><a class="sourceLine" id="cb8-1" data-line-number="1"><span class="cf">if</span>( x<span class="op">+</span><span class="dv">1</span> <span class="op">===</span> <span class="dv">2</span> )<span class="op">{</span></a>
+<a class="sourceLine" id="cb8-2" data-line-number="2">    x <span class="op">=</span> <span class="dv">0</span><span class="op">;</span></a>
+<a class="sourceLine" id="cb8-3" data-line-number="3"><span class="op">}</span><span class="cf">else</span><span class="op">{</span></a>
+<a class="sourceLine" id="cb8-4" data-line-number="4">    x <span class="op">=</span> <span class="dv">1</span><span class="op">;</span></a>
+<a class="sourceLine" id="cb8-5" data-line-number="5"><span class="op">}</span></a></code></pre></div>
+<p>The way it works can be visualized in this form:</p>
+<div class="sourceCode" id="cb9"><pre class="sourceCode javascript"><code class="sourceCode javascript"><a class="sourceLine" id="cb9-1" data-line-number="1">x <span class="op">=</span> (condition)<span class="op">?</span> <span class="cf">if</span> <span class="kw">true</span> : <span class="cf">if</span> <span class="kw">false</span><span class="op">;</span></a></code></pre></div>
+<h3>
+Bonus: Strict Comparison Operators (<code>===</code> and <code>!==</code>)
+</h3>
+<p>The <code>===</code> in the code above is known as a Strict Comparison Operator. It is slightly different from <code>==</code>. When we compare two variables like this: <code>a === b</code>, the JavaScript engine will first look at the variables’ <i>types</i>, and if they are not the same <i>type</i>, <code>false</code> will be returned immediately.</p>
+<div class="sourceCode" id="cb10"><pre class="sourceCode javascript"><code class="sourceCode javascript"><a class="sourceLine" id="cb10-1" data-line-number="1">(<span class="dv">0</span> <span class="op">===</span> <span class="kw">null</span>) <span class="co">//false;</span></a>
+<a class="sourceLine" id="cb10-2" data-line-number="2"></a>
+<a class="sourceLine" id="cb10-3" data-line-number="3">(<span class="dv">0</span> <span class="op">===</span> <span class="st">&quot;0&quot;</span>) <span class="co">//false;</span></a>
+<a class="sourceLine" id="cb10-4" data-line-number="4"></a>
+<a class="sourceLine" id="cb10-5" data-line-number="5">(<span class="dv">0</span> <span class="op">===</span> []) <span class="co">//false;</span></a>
+<a class="sourceLine" id="cb10-6" data-line-number="6"></a>
+<a class="sourceLine" id="cb10-7" data-line-number="7">(<span class="dv">0</span> <span class="op">===</span> <span class="dv">0</span>) <span class="co">//true;</span></a></code></pre></div>
+<p>If we compare two variables using <code>==</code>, a type conversion would happen before the comparison occurs.</p>
+<div class="sourceCode" id="cb11"><pre class="sourceCode javascript"><code class="sourceCode javascript"><a class="sourceLine" id="cb11-1" data-line-number="1">(<span class="dv">0</span> <span class="op">==</span> <span class="kw">null</span>) <span class="co">//true; because JS engine has converted null into integer 0</span></a>
+<a class="sourceLine" id="cb11-2" data-line-number="2"></a>
+<a class="sourceLine" id="cb11-3" data-line-number="3">(<span class="dv">0</span> <span class="op">==</span> <span class="st">&quot;0&quot;</span>) <span class="co">//true; because JS engine has converted the string &quot;0&quot; into integer 0</span></a>
+<a class="sourceLine" id="cb11-4" data-line-number="4"></a>
+<a class="sourceLine" id="cb11-5" data-line-number="5">(<span class="dv">0</span> <span class="op">==</span> []) <span class="co">//true; because JS engine has converted the empty array [] into integer 0</span></a>
+<a class="sourceLine" id="cb11-6" data-line-number="6"></a>
+<a class="sourceLine" id="cb11-7" data-line-number="7">(<span class="dv">0</span> <span class="op">==</span> <span class="dv">0</span>) <span class="co">//true;</span></a></code></pre></div>
+<p>Therefore, in terms of performance, <code>===</code> would be slightly faster. The other strict comparison operator is <code>!==</code>, which is simply the inverse of <code>===</code>.</p>
+<div class="sourceCode" id="cb12"><pre class="sourceCode javascript"><code class="sourceCode javascript"><a class="sourceLine" id="cb12-1" data-line-number="1">(<span class="dv">0</span> <span class="op">!==</span> <span class="dv">0</span>) <span class="co">//false;</span></a>
+<a class="sourceLine" id="cb12-2" data-line-number="2"></a>
+<a class="sourceLine" id="cb12-3" data-line-number="3">(<span class="dv">0</span> <span class="op">!==</span> <span class="kw">null</span>) <span class="co">//true;</span></a></code></pre></div>
+<p class="text-center">
+● ● ●
+</p>
+<h3>
+2st Minute: More on Closure in JavaScript
+</h3>
+<p>When you create a closure, instead of returning a function, you can return an object. Here is another example of closure.</p>
+<div class="sourceCode" id="cb13"><pre class="sourceCode javascript"><code class="sourceCode javascript"><a class="sourceLine" id="cb13-1" data-line-number="1"><span class="kw">var</span> Archy <span class="op">=</span> (<span class="kw">function</span>()<span class="op">{</span></a>
+<a class="sourceLine" id="cb13-2" data-line-number="2">    <span class="kw">var</span> nyan <span class="op">=</span> [<span class="st">&quot;meow&quot;</span><span class="op">,</span><span class="st">&quot;I am a cat&quot;</span>]<span class="op">;</span></a>
+<a class="sourceLine" id="cb13-3" data-line-number="3">    <span class="kw">var</span> x <span class="op">=</span> <span class="dv">0</span><span class="op">;</span></a>
+<a class="sourceLine" id="cb13-4" data-line-number="4">    <span class="kw">var</span> a <span class="op">=</span>  <span class="kw">function</span>()<span class="op">{</span></a>
+<a class="sourceLine" id="cb13-5" data-line-number="5">        <span class="at">alert</span>(nyan[x])<span class="op">;</span></a>
+<a class="sourceLine" id="cb13-6" data-line-number="6">    <span class="op">};</span></a>
+<a class="sourceLine" id="cb13-7" data-line-number="7">    <span class="kw">var</span> b <span class="op">=</span> <span class="kw">function</span>()<span class="op">{</span></a>
+<a class="sourceLine" id="cb13-8" data-line-number="8">        x <span class="op">=</span> (x<span class="op">+</span><span class="dv">1</span><span class="op">===</span><span class="dv">2</span>)<span class="op">?</span> <span class="dv">0</span> : <span class="dv">1</span><span class="op">;</span></a>
+<a class="sourceLine" id="cb13-9" data-line-number="9">    <span class="op">};</span></a>
+<a class="sourceLine" id="cb13-10" data-line-number="10">    <span class="cf">return</span> <span class="op">{</span></a>
+<a class="sourceLine" id="cb13-11" data-line-number="11">        <span class="dt">speak</span><span class="op">:</span> a<span class="op">,</span></a>
+<a class="sourceLine" id="cb13-12" data-line-number="12">        <span class="dt">transform</span><span class="op">:</span> b<span class="op">,</span></a>
+<a class="sourceLine" id="cb13-13" data-line-number="13">        <span class="dt">name</span><span class="op">:</span> <span class="st">&quot;Archy&quot;</span></a>
+<a class="sourceLine" id="cb13-14" data-line-number="14">    <span class="op">}</span></a>
+<a class="sourceLine" id="cb13-15" data-line-number="15"><span class="op">}</span>)()<span class="op">;</span></a></code></pre></div>
+<p>In the example above, by returning an object, you will be able to return 2 functions that can access <code>nyan</code> and <code>x</code>, which other functions has no access to.</p>
+<div class="sourceCode" id="cb14"><pre class="sourceCode javascript"><code class="sourceCode javascript"><a class="sourceLine" id="cb14-1" data-line-number="1"><span class="at">alert</span>(nyan[x])<span class="op">;</span> <span class="co">//nyan is undefined, x is undefined.</span></a>
+<a class="sourceLine" id="cb14-2" data-line-number="2"></a>
+<a class="sourceLine" id="cb14-3" data-line-number="3"><span class="va">Archy</span>.<span class="at">speak</span>() <span class="co">//alerts &quot;meow&quot;</span></a>
+<a class="sourceLine" id="cb14-4" data-line-number="4"></a>
+<a class="sourceLine" id="cb14-5" data-line-number="5"><span class="va">Archy</span>.<span class="at">speak</span>() <span class="co">//alerts &quot;meow&quot;</span></a>
+<a class="sourceLine" id="cb14-6" data-line-number="6"></a>
+<a class="sourceLine" id="cb14-7" data-line-number="7"><span class="va">Archy</span>.<span class="at">transform</span>() <span class="co">//this changes the value of x that Archy.speak() has access to.</span></a>
+<a class="sourceLine" id="cb14-8" data-line-number="8"></a>
+<a class="sourceLine" id="cb14-9" data-line-number="9"><span class="va">Archy</span>.<span class="at">speak</span>() <span class="co">//alerts &quot;I am a cat&quot;, because x has been changed to 1.</span></a>
+<a class="sourceLine" id="cb14-10" data-line-number="10"></a>
+<a class="sourceLine" id="cb14-11" data-line-number="11"><span class="at">alert</span>(<span class="va">Archy</span>.<span class="at">name</span>)<span class="op">;</span> <span class="co">//alerts &quot;Archy&quot;</span></a></code></pre></div>
+<p>Functions in the form <code>function(){…}</code> is known as anonymous function. One cool thing in JavaScript is that functions are actually not required to have names.</p>
+<p>By having a function like this <code>(function(){…})()</code> (enclosing it with brackets and putting another pair of brackets behind), we are basically invoking this anonymous function. The <code>()</code> behind can also be used to pass parameters into the function, just like what can be done using <code>()</code> behind a function name like this <code>alert(“nyan”)</code>.</p>
+<div class="sourceCode" id="cb15"><pre class="sourceCode javascript"><code class="sourceCode javascript"><a class="sourceLine" id="cb15-1" data-line-number="1">(<span class="kw">function</span>()<span class="op">{</span> <span class="at">alert</span>(<span class="st">&quot;x&quot;</span>) <span class="op">}</span>)()<span class="op">;</span> <span class="co">//alert &quot;x&quot;</span></a>
+<a class="sourceLine" id="cb15-2" data-line-number="2"></a>
+<a class="sourceLine" id="cb15-3" data-line-number="3">(<span class="kw">function</span>(a)<span class="op">{</span> <span class="at">alert</span>(a) <span class="op">}</span>)(<span class="st">&quot;x&quot;</span>)<span class="op">;</span> <span class="co">//alert &quot;x&quot;</span></a></code></pre></div>
+<p>One common practice in Java script is to pass commonly used variables into anonymous function as parameters for quicker access. By passing a variable into a function, you would be able to access it locally instead of globally when you are inside the function, and thus it would be relatively faster.</p>
+<div class="sourceCode" id="cb16"><pre class="sourceCode javascript"><code class="sourceCode javascript"><a class="sourceLine" id="cb16-1" data-line-number="1">(<span class="kw">function</span>()<span class="op">{</span> <span class="va">console</span>.<span class="at">log</span>(window)<span class="op">;</span> <span class="op">}</span>)()<span class="op">;</span> <span class="co">//accessing global variable.</span></a>
+<a class="sourceLine" id="cb16-2" data-line-number="2"></a>
+<a class="sourceLine" id="cb16-3" data-line-number="3">(<span class="kw">function</span>(window)<span class="op">{</span><span class="va">console</span>.<span class="at">log</span>(window)<span class="op">;</span> <span class="op">}</span>)(window)<span class="op">;</span> <span class="co">//accessing local variable.</span></a></code></pre></div>
+<blockquote>
+<p>When you surround <i>statements</i> (e.g. a function statement: <code>function hi(){}</code>) in brackets (i.e. you have <code>(function hi(){})</code>), you are turning them into <i>expressions</i> (in this case it’s known as <a target="_blank" href="http://en.wikipedia.org/wiki/Immediately-invoked_function_expression">immediately-invoked function expression (IIFE)</a>) and you can do all sort of things with expressions, similar to how you can do all sorts of things with variables.</p>
+<div class="sourceCode" id="cb17"><pre class="sourceCode javascript"><code class="sourceCode javascript"><a class="sourceLine" id="cb17-1" data-line-number="1"><span class="kw">var</span> d <span class="op">=</span> <span class="dv">1</span> <span class="op">&lt;</span> <span class="dv">0</span><span class="op">;</span> <span class="co">//d has a boolean value of false.</span></a>
+<a class="sourceLine" id="cb17-2" data-line-number="2"> </a>
+<a class="sourceLine" id="cb17-3" data-line-number="3"><span class="va">d</span>.<span class="at">toString</span>()<span class="op">;</span> <span class="co">//d has been converted into a string.</span></a>
+<a class="sourceLine" id="cb17-4" data-line-number="4"> </a>
+<a class="sourceLine" id="cb17-5" data-line-number="5"><span class="at">alert</span>(d)<span class="op">;</span> <span class="co">//alerts &quot;false&quot;</span></a>
+<a class="sourceLine" id="cb17-6" data-line-number="6"> </a>
+<a class="sourceLine" id="cb17-7" data-line-number="7"><span class="kw">var</span> a <span class="op">=</span> (<span class="dv">1</span> <span class="op">&lt;</span> <span class="dv">0</span>).<span class="at">toString</span>()<span class="op">;</span> <span class="co">//(1&lt; 0) is being interpreted as an expression.</span></a>
+<a class="sourceLine" id="cb17-8" data-line-number="8"> </a>
+<a class="sourceLine" id="cb17-9" data-line-number="9"><span class="at">alert</span>(a)<span class="op">;</span> <span class="co">//alerts &quot;false&quot;;</span></a>
+<a class="sourceLine" id="cb17-10" data-line-number="10"> </a>
+<a class="sourceLine" id="cb17-11" data-line-number="11">(<span class="kw">function</span> <span class="at">hi</span>()<span class="op">{</span><span class="at">alert</span>(a)<span class="op">}</span>).<span class="at">call</span>()<span class="op">;</span> <span class="co">//alerts &quot;false&quot;;</span></a>
+<a class="sourceLine" id="cb17-12" data-line-number="12"> </a>
+<a class="sourceLine" id="cb17-13" data-line-number="13">(<span class="kw">function</span> <span class="at">hi</span>()<span class="op">{</span><span class="at">alert</span>(a)<span class="op">}</span>)()<span class="op">;</span> <span class="co">//alerts &quot;false&quot;;</span></a>
+<a class="sourceLine" id="cb17-14" data-line-number="14"> </a>
+<a class="sourceLine" id="cb17-15" data-line-number="15"><span class="kw">function</span> <span class="at">hi</span>()<span class="op">{</span><span class="at">alert</span>(a)<span class="op">}</span>.<span class="at">call</span>()<span class="op">;</span> <span class="co">//syntax error</span></a>
+<a class="sourceLine" id="cb17-16" data-line-number="16"> </a>
+<a class="sourceLine" id="cb17-17" data-line-number="17"><span class="kw">function</span> <span class="at">hi</span>()<span class="op">{</span><span class="at">alert</span>(a)<span class="op">}</span>()<span class="op">;</span> <span class="co">//syntax error</span></a></code></pre></div>
+</blockquote>
+<h3>
+3rd Minute: Design patterns in JavaScript</a>
+</h3>
+<p>The example above where we create a closure and return an object is an example of a design pattern in JavaScript known as The Module Pattern.</p>
+<p>There are many design patterns in JavaScript. Different design patterns are just different ways of writing codes. The Module Pattern, for example, uses <a target="_blank" href="http://0ar.ch/0a-explains-javascript-closure-and-design-patterns">closure</a> to create the illusion of a class object (or a class instance), something that JavaScript doesn’t really provide (since JavaScript implements <a target="_blank" href="http://en.wikipedia.org/wiki/Prototype-based_programming">prototype-based OO</a>). Using The Module Pattern, one would be able to have <i>public</i> and <i>private</i> functions and variables in an object (as if it is an instance of a class in <a target="_blank" href="http://en.wikipedia.org/wiki/Class-based_programming">class-based OO</a>).</p>
+<blockquote>
+<p>In this case, <code>x</code> and <code>nyan</code> are private variables, while <code>name</code> is a public variable and <code>speak()</code> and <code>transform()</code> are public functions. In class-based OO language, when something is public, it simply means that it is globally accessible. When something is private, only the instance and class functions (In this case there isn’t a class function) are able to access it.</p>
+</blockquote>
+<p>Now let’s move on to The Singleton Pattern, another beginner design pattern that makes good use of closure. The Singleton Pattern is like an upgrade version of The Module Pattern. Besides creating an illusion of a class object, it creates an illusion of a class function that either constructs the object (an instance of the class) or returns an already constructed object.</p>
+<div class="sourceCode" id="cb18"><pre class="sourceCode javascript"><code class="sourceCode javascript"><a class="sourceLine" id="cb18-1" data-line-number="1"><span class="kw">var</span> Archy <span class="op">=</span> (<span class="kw">function</span>()<span class="op">{</span></a>
+<a class="sourceLine" id="cb18-2" data-line-number="2"></a>
+<a class="sourceLine" id="cb18-3" data-line-number="3">    <span class="kw">function</span> <span class="at">cat</span> (obj)<span class="op">{</span></a>
+<a class="sourceLine" id="cb18-4" data-line-number="4">        <span class="kw">var</span> nyan <span class="op">=</span> <span class="va">obj</span>.<span class="at">nyan</span><span class="op">,</span></a>
+<a class="sourceLine" id="cb18-5" data-line-number="5">        x <span class="op">=</span> <span class="va">obj</span>.<span class="at">x</span><span class="op">;</span></a>
+<a class="sourceLine" id="cb18-6" data-line-number="6">        <span class="kw">this</span>.<span class="at">speak</span> <span class="op">=</span> <span class="kw">function</span>()<span class="op">{</span></a>
+<a class="sourceLine" id="cb18-7" data-line-number="7">            <span class="at">alert</span>(nyan[x])<span class="op">;</span></a>
+<a class="sourceLine" id="cb18-8" data-line-number="8">        <span class="op">};</span></a>
+<a class="sourceLine" id="cb18-9" data-line-number="9">        <span class="kw">this</span>.<span class="at">transform</span> <span class="op">=</span> <span class="kw">function</span>()<span class="op">{</span></a>
+<a class="sourceLine" id="cb18-10" data-line-number="10">            x <span class="op">=</span> (x<span class="op">+</span><span class="dv">1</span><span class="op">===</span><span class="dv">2</span>)<span class="op">?</span> <span class="dv">0</span> : <span class="dv">1</span><span class="op">;</span></a>
+<a class="sourceLine" id="cb18-11" data-line-number="11">        <span class="op">};</span></a>
+<a class="sourceLine" id="cb18-12" data-line-number="12">    <span class="op">}</span></a>
+<a class="sourceLine" id="cb18-13" data-line-number="13"></a>
+<a class="sourceLine" id="cb18-14" data-line-number="14">    <span class="kw">var</span> instance<span class="op">;</span></a>
+<a class="sourceLine" id="cb18-15" data-line-number="15">    <span class="kw">var</span> _static <span class="op">=</span> <span class="op">{</span></a>
+<a class="sourceLine" id="cb18-16" data-line-number="16">        <span class="dt">name</span><span class="op">:</span> <span class="st">&quot;Archy&quot;</span><span class="op">,</span></a>
+<a class="sourceLine" id="cb18-17" data-line-number="17">        <span class="dt">get_cat</span><span class="op">:</span> <span class="kw">function</span>(obj)<span class="op">{</span></a>
+<a class="sourceLine" id="cb18-18" data-line-number="18">        <span class="cf">if</span>(instance <span class="op">===</span> <span class="kw">undefined</span>)<span class="op">{</span></a>
+<a class="sourceLine" id="cb18-19" data-line-number="19">            instance <span class="op">=</span> <span class="kw">new</span> <span class="at">cat</span>(obj)<span class="op">;</span></a>
+<a class="sourceLine" id="cb18-20" data-line-number="20">        <span class="op">}</span><span class="cf">else</span><span class="op">{</span></a>
+<a class="sourceLine" id="cb18-21" data-line-number="21">            <span class="va">console</span>.<span class="at">log</span>(<span class="st">&quot;instance already created. nyannannn.&quot;</span>)<span class="op">;</span></a>
+<a class="sourceLine" id="cb18-22" data-line-number="22">        <span class="op">}</span></a>
+<a class="sourceLine" id="cb18-23" data-line-number="23">        <span class="cf">return</span> instance<span class="op">;</span></a>
+<a class="sourceLine" id="cb18-24" data-line-number="24">        <span class="op">}</span></a>
+<a class="sourceLine" id="cb18-25" data-line-number="25">    <span class="op">}</span></a>
+<a class="sourceLine" id="cb18-26" data-line-number="26">    <span class="cf">return</span> _static<span class="op">;</span></a>
+<a class="sourceLine" id="cb18-27" data-line-number="27"><span class="op">}</span>)()<span class="op">;</span></a>
+<a class="sourceLine" id="cb18-28" data-line-number="28"></a>
+<a class="sourceLine" id="cb18-29" data-line-number="29"><span class="kw">var</span> nyancat <span class="op">=</span> <span class="va">Archy</span>.<span class="at">get_cat</span>(<span class="op">{</span><span class="dt">nyan</span><span class="op">:</span> [<span class="st">&quot;meow&quot;</span><span class="op">,</span><span class="st">&quot;I am a cat&quot;</span>]<span class="op">,</span> <span class="dt">x</span><span class="op">:</span> <span class="dv">0</span><span class="op">}</span>)<span class="op">;</span> <span class="co">//it creats an instance</span></a>
+<a class="sourceLine" id="cb18-30" data-line-number="30"><span class="va">nyancat</span>.<span class="at">speak</span>()<span class="op">;</span> <span class="co">//alerts &quot;meow&quot;;</span></a>
+<a class="sourceLine" id="cb18-31" data-line-number="31"><span class="va">nyancat</span>.<span class="at">transform</span>()<span class="op">;</span></a>
+<a class="sourceLine" id="cb18-32" data-line-number="32"><span class="va">nyancat</span>.<span class="at">speak</span>()<span class="op">;</span> <span class="co">//alerts &quot;I am a cat&quot;;</span></a>
+<a class="sourceLine" id="cb18-33" data-line-number="33"><span class="kw">var</span> mycat <span class="op">=</span> <span class="va">Archy</span>.<span class="at">get_cat</span>()<span class="op">;</span> <span class="co">//&quot;instance already created. nyannannn.&quot;</span></a>
+<a class="sourceLine" id="cb18-34" data-line-number="34"><span class="va">mycat</span>.<span class="at">speak</span>()<span class="op">;</span> <span class="co">//alerts &quot;I am a cat&quot;;</span></a></code></pre></div>
+<p>Basically, in the Singleton Pattern, we restrict instantiation of a class to a single object.</p>
+<p>(From the example above:)</p>
+<div class="sourceCode" id="cb19"><pre class="sourceCode javascript"><code class="sourceCode javascript"><a class="sourceLine" id="cb19-1" data-line-number="1"><span class="kw">var</span> instance<span class="op">;</span></a>
+<a class="sourceLine" id="cb19-2" data-line-number="2"><span class="kw">var</span> _static <span class="op">=</span> <span class="op">{</span></a>
+<a class="sourceLine" id="cb19-3" data-line-number="3">        <span class="dt">name</span><span class="op">:</span> <span class="st">&quot;Archy&quot;</span><span class="op">,</span></a>
+<a class="sourceLine" id="cb19-4" data-line-number="4">        <span class="dt">get_cat</span><span class="op">:</span> <span class="kw">function</span>(obj)<span class="op">{</span></a>
+<a class="sourceLine" id="cb19-5" data-line-number="5">        <span class="cf">if</span>(instance <span class="op">===</span> <span class="kw">undefined</span>)<span class="op">{</span></a>
+<a class="sourceLine" id="cb19-6" data-line-number="6">            instance <span class="op">=</span> <span class="kw">new</span> <span class="at">cat</span>(obj)<span class="op">;</span></a>
+<a class="sourceLine" id="cb19-7" data-line-number="7">        <span class="op">}</span><span class="cf">else</span><span class="op">{</span></a>
+<a class="sourceLine" id="cb19-8" data-line-number="8">            <span class="va">console</span>.<span class="at">log</span>(<span class="st">&quot;instance already created. nyannannn.&quot;</span>)<span class="op">;</span></a>
+<a class="sourceLine" id="cb19-9" data-line-number="9">        <span class="op">}</span></a>
+<a class="sourceLine" id="cb19-10" data-line-number="10">        <span class="cf">return</span> instance<span class="op">;</span></a>
+<a class="sourceLine" id="cb19-11" data-line-number="11">        <span class="op">}</span></a>
+<a class="sourceLine" id="cb19-12" data-line-number="12">    <span class="op">}</span></a></code></pre></div>
+<p>Here we can see that nothing will happen to the variable <code>instance</code>. And it would be returned if <code>instance</code> is not <code>undefined</code>.</p>
+<p>Conclusion: in The Singleton Pattern, the object/instance can only be accessed using the <code>Archy.get_cat()</code> function. So Archy is acting like the agent of the cat. There is no other way to get the cat unless you ask <a target="_blank" class="default_anchor" href="http://0ar.ch/">Archy</a>. And Archy would create the cat for you the first time you ask for the cat. After that Archy would just keep giving you the same old cat.</p>
+<p>Thrrp.</p>
+<blockquote>
+If you’d like to learn more about JavaScript’s design patterns, here is <a target="_blank" href="http://addyosmani.com/resources/essentialjsdesignpatterns/book/">a great book written by Addy Osmani</a>.
+</blockquote>
+        </div>
+    </div>
+</article>
+</div>
+<div>
+  <h2 class="thickRaleway menu-bottom">
+    <a class="menu-item" href="../">Back to Home Page</a>
+</h2>
+</div>
+
+
+  <div class="cover-image">
+  <img class="hide-if-smaller-than-mobile-device-regular" src="../img/backgrounds/maarten-van-den-heuvel-346883.jpg" />
+  <img class="show-if-smaller-than-mobile-device-regular" src="../img/backgrounds/maarten-van-den-heuvel-346883-full.jpg" />
+
+  <div class="whiteOverlay"></div>
+  <div class="cover-image-text-wrapper">
+  <div class="cover-image-text">
+    <h1 class="zeroDegreeLogo centerFlex hide-if-smaller-than-mobile-device-regular-but-flex">
+        <div><a href="../">Zer0<br />Degree</a></div><div><sup class="degreeDot">o</sup><br />&nbsp;</div>
+    </h1>
+    <div class="show-if-smaller-than-mobile-device-regular">
+    <div class="centerFlex footer-info-block">
+        <div>
+        <h5 class="hide-if-smaller-than-mobile-device-small">
+            A Website of <a href="../about-zer0-degree.html">Archy Wilhes 魏何</a><br />
+            Handcrafted by <a href="../about-zer0-degree.html">Archy Wilhes 魏何</a>
+        </h5>
+        <h5 class="show-if-smaller-than-mobile-device-small">
+            A Website of<br />
+            <a href="../about-zer0-degree.html">Archy Wilhes 魏何</a><br />
+
+        </h5>
+        <h3>
+            <a target="_blank" href="http://twitter.com/archywilhes"><i class="social-icon ion-social-twitter"></i></a>
+            <a target="_blank" href="http://github.com/archywilhes"><i class="social-icon ion-social-octocat"></i></a>
+            <a target="_blank" href="http://instagram.com/archywilhes"><i class="social-icon ion-social-instagram"></i></a>
+            <a target="_blank" href="http://archy.sh"><i class="social-icon ion-erlenmeyer-flask"></i></a>
+        </h3>
+        </div>
+</div>
+</div>
+    <div class="zeroDegreeNameAndDescription hide-if-smaller-than-mobile-device-regular-but-flex" style="margin-left:20px">
+    <h3 class="zeroDegreeName">
+      Handcarfted by <a href="../about.html">Archy Wilhes 魏何</a><br />
+      <a style="margin-left:7px" href="https://github.com/archywilhes/zer0.degree">
+          <small>vi3w_s0urce <i class="ion-beer"></i></small>
+      </a>
+  </h3>
+    <div class="zeroDegreeDescription">
+        Frontend consists of vanilla JS, CSS & HTML with <a href="https://v4-alpha.getbootstrap.com/">Bootstrap</a>  <br />
+         Backend written exclusively in Haskell using <a href="https://jaspervdj.be/hakyll/">Hakyll <i class="ion-heart"></a></i>
+    </div>
+    </div>
+  </div>
+  <h3 class="stayCool thickRaleway" style="color:rgba(0,0,0,0.9)">
+        See you around.
+  </h3>
+  </div>
+  </div>
+
+
+</div></div>
+
+</body>
+
+</html>

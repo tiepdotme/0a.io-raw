@@ -1,17 +1,42 @@
 <!doctype html>
 <html lang="en">
     <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <meta charset="utf-8">
         <meta http-equiv="x-ua-compatible" content="ie=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+                <link rel="apple-touch-icon" sizes="57x57" href="./img/favicons/apple-icon-57x57.png">
+                <link rel="apple-touch-icon" sizes="60x60" href="./img/favicons/apple-icon-60x60.png">
+                <link rel="apple-touch-icon" sizes="72x72" href="./img/favicons/apple-icon-72x72.png">
+                <link rel="apple-touch-icon" sizes="76x76" href="./img/favicons/apple-icon-76x76.png">
+                <link rel="apple-touch-icon" sizes="114x114" href="./img/favicons/apple-icon-114x114.png">
+                <link rel="apple-touch-icon" sizes="120x120" href="./img/favicons/apple-icon-120x120.png">
+                <link rel="apple-touch-icon" sizes="144x144" href="./img/favicons/apple-icon-144x144.png">
+                <link rel="apple-touch-icon" sizes="152x152" href="./img/favicons/apple-icon-152x152.png">
+                <link rel="apple-touch-icon" sizes="180x180" href="./img/favicons/apple-icon-180x180.png">
+                <link rel="icon" type="image/png" sizes="192x192" href="./img/favicons/android-icon-192x192.png">
+                <link rel="icon" type="image/png" sizes="32x32" href="./img/favicons/favicon-32x32.png">
+                <link rel="icon" type="image/png" sizes="96x96" href="./img/favicons/favicon-96x96.png">
+                <link rel="icon" type="image/png" sizes="16x16" href="./img/favicons/favicon-16x16.png">
+                <link rel="manifest" href="./img/favicons/manifest.json">
+                <meta name="msapplication-TileColor" content="#ffffff">
+                <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+                <meta name="theme-color" content="#ffffff">
 <link rel="stylesheet" href="./css/bootstrap.4.0.0-beta3.min.css" />
-<link href="https://fonts.googleapis.com/css?family=Raleway:800|Merriweather|Roboto:900" rel="stylesheet">
 <link href="./css/ionicons.2.0.1.min.css" rel="stylesheet">
 <link href="./css/main.css" rel="stylesheet">
-<link href="./css/font.css" rel="stylesheet">
-<title>Zer0 Degree - index </title>
+<link href="./css/fonts.css" rel="stylesheet">
+
+<meta property="og:url" content="http://zer0.degree//index.html" />
+
+
+<meta property="og:title" content="The Website of Archy Wilhes 魏何" />
+
+
+<meta property="og:image" content="http://zer0.degree/img/zer0_degree.png" />
+
+<title> Blog - Zer0 Degree, The Website of Archy Wilhes 魏何</title>
 <!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-112409544-1"></script>
+<script async src="https://www.googletagmanager.com/gtag/js?class=UA-112409544-1"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
@@ -19,65 +44,114 @@
 
   gtag('config', 'UA-112409544-1');
 </script>
-
+<script src="./js/main.js"></script>
 
   </head>
-  <body>
-
-    <div class="cover-image" style="height:400px;">
-    <img src="./img/backgrounds/willian-justen-de-vasconcellos-430007.jpg" style="margin-top:-45px" />
-
+  <body><div id="body-wrapper"><div id="body">
+    <div class="cover-image">
+    <img class="hide-if-smaller-than-mobile-device-regular" src="./img/backgrounds/willian-justen-de-vasconcellos-430007.jpg" />
+    <img class="show-if-smaller-than-mobile-device-regular" src="./img/backgrounds/willian-justen-de-vasconcellos-430007-full.jpg" />
     <div class="cover-image-text-wrapper">
     <div class="cover-image-text">
-      <h1 id="zeroDegreeLogo">
-        <div>Zer0<br />Degree</div><div><sup id="degreeDot">o</sup><br />&nbsp;</div>
+      <h1 class="zeroDegreeLogo centerFlex">
+        <div><a href="./">Zer0<br />Degree</a></div><div><sup class="degreeDot">o</sup><br />&nbsp;</div>
       </h1>
-      <div id="zeroDegreeNameAndDescription" style="margin-left:20px">
-      <h2 id="zeroDegreeName">
-        The Website of <br /><a href>Archy Wilhes 魏何</a>
+
+      <div class="zeroDegreeNameAndDescription hide-if-smaller-than-mobile-device-large-but-flex" style="margin-left:20px">
+      <h2 class="zeroDegreeName">
+        The Website of <br /><a href="./about.html">Archy Wilhes 魏何</a>
         <a target="_blank" href="http://twitter.com/archywilhes"><i class="social-icon ion-social-twitter"></i></a>
         <a target="_blank" href="http://github.com/archywilhes"><i class="social-icon ion-social-octocat"></i></a>
-        <a target="_blank" href="http://instagram.com/oharchy"><i class="social-icon ion-social-instagram"></i></a>
+        <a target="_blank" href="http://instagram.com/archywilhes"><i class="social-icon ion-social-instagram"></i></a>
         <a target="_blank" href="http://archy.sh"><i class="social-icon ion-erlenmeyer-flask"></i></a>
       </h2>
-      <div id="zeroDegreeDescription">a comp sci fanatic in his early twenties doing start-up stuff<br />
-        (since the age of sixteen) instead of going to univ</div>
+      <div class="zeroDegreeDescription">a comp sci fanatic in his early twenties doing start-up stuff<br />
+        (on and off since the age of sixteen) instead of going to univ</div>
       </div>
     </div>
-    <h2 class="stayCool thickRaleway">
+    <h2 class="stayCool thickRaleway hide-if-smaller-than-mobile-device-large">
       Stay cool.
     </h2>
+    <h3 class="stayCool thickRaleway show-iff-mobile-device-large">
+      The Website of<br /> <a href="./about.html">Archy Wilhes 魏何</a>
+  </h3>
+  <h2 class="stayCool thickRaleway show-if-smaller-than-mobile-device-medium">
+    <a href="./about-zer0-degree.html">About</a>
+  </h2>
     </div>
   </div>
-  <div>
-    <h2 class="thickRaleway" id="menu">
-      <a class="menu-item menu-item-selected">Blog</a>
-      <a class="menu-item">Music for Work</a>
-      <a class="menu-item">Artwork Info</a>
-  </h2>
-  </div>
-  <div id="content">
 
-<div class="sessionContainer" style="width: 1001px;">
+  <div class="hide-if-smaller-than-mobile-device-regular">
+  <h2 class="thickRaleway menu">
+    <a href="./" class="menu-item menu-item-selected">Blog</a>
+    <a href="./music-for-work.html" class="menu-item ">Music for Work</a>
+    <a href="./artwork-info.html" class="menu-item ">Artwork Info</a>
+</h2>
+</div>
+<div class="content">
+
+<div class="container">
+<div class="sessionContainer" style="max-width: 1001px;">
     <div class="sessionTitle centerFlex">
       <div>
         <div class="centerText">Chapter 2</div>
-      <div class="sessionTimeWindow">jan 2018 ~</div>
+      <div class="sessionSubtitle">jan 2018 ~ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div>
     </div>
     </div>
-    <div class="row">
+    <div class="hide-if-smaller-than-mobile-device-regular">
+<div class="row">
     <div class="third">
       
         <div class="ArchyItem">
-  <img class="ArchyItemImg" src="img/covers/Volumi (blue) 1964, Paolo Scheggi.jpg" />
+    
+  <a href="./chapter2/new-years-resolution.html">
+  
+     
+     <img class="ArchyItemImg" src="./img/covers/Untitled from 9x5 Konkret Portfolio, 1973, Ludwig Wilding.jpg" />
+     
+     
+  </a>
+    
   <div class="ArchyItemTitle">
-    The Day I Lost the Coolest Email and Domain in The World
+      
+    <a href="./chapter2/new-years-resolution.html">New Year's Resolution</a>
+    
   </div>
+  
+  
+  <div class="ArchyItemDate">
+    21 Jan 2018
+  </div>
+  
+  
+</div>
+
+      
+    </div>
+    <div class="third">
+      
+        <div class="ArchyItem">
+    
+  <a href="./chapter2/the-day-I-lost-the-coolest-email-and-domain.html">
+  
+     
+     <img class="ArchyItemImg" src="./img/covers/Volumi (blue), 1964, Paolo Scheggi.jpg" />
+     
+     
+  </a>
+    
+  <div class="ArchyItemTitle">
+      
+    <a href="./chapter2/the-day-I-lost-the-coolest-email-and-domain.html">The Day I Lost the Coolest Email and Domain in The World</a>
+    
+  </div>
+  
   
   <div class="ArchyItemDate">
     11 Jan 2018
   </div>
   
+  
 </div>
 
       
@@ -85,171 +159,222 @@
     <div class="third">
       
     </div>
-    <div class="third">
+</div>
+</div>
+<div class="show-if-smaller-than-mobile-device-regular">
+    
+      <div class="ArchyItem">
+    
+  <a href="./chapter2/new-years-resolution.html">
+  
+     
+     <img class="ArchyItemImg" src="./img/covers/Untitled from 9x5 Konkret Portfolio, 1973, Ludwig Wilding.jpg" />
+     
+     
+  </a>
+    
+  <div class="ArchyItemTitle">
       
-    </div>
+    <a href="./chapter2/new-years-resolution.html">New Year's Resolution</a>
+    
+  </div>
+  
+  
+  <div class="ArchyItemDate">
+    21 Jan 2018
+  </div>
+  
+  
+</div>
+
+    
+      <div class="ArchyItem">
+    
+  <a href="./chapter2/the-day-I-lost-the-coolest-email-and-domain.html">
+  
+     
+     <img class="ArchyItemImg" src="./img/covers/Volumi (blue), 1964, Paolo Scheggi.jpg" />
+     
+     
+  </a>
+    
+  <div class="ArchyItemTitle">
+      
+    <a href="./chapter2/the-day-I-lost-the-coolest-email-and-domain.html">The Day I Lost the Coolest Email and Domain in The World</a>
+    
+  </div>
+  
+  
+  <div class="ArchyItemDate">
+    11 Jan 2018
+  </div>
+  
+  
+</div>
+
+    
 </div>
 
 </div>
+</div>
 
 
-<div class="sessionContainer" style="width: 676px;">
+<div class="container">
+<div class="sessionContainer" style="max-width: 676px;">
     <div class="sessionTitle centerFlex">
       <div>
-        <div class="centerText">_</div>
-      <div class="sessionTimeWindow">dec 2015 ~ dec 2017</div>
+        <div class="centerText">Chapter 1.5</div>
+      <div class="sessionSubtitle">dec 2015 ~ dec 2017</div>
     </div>
     </div>
-    <p>I used to entertain myself with naïve thoughts about how <span class="pacificoText">Chapter 2</span> would begin. At one point I was pretty determined it’d begin with my enrolment into a grad school as I bypassed formal undergrad studies. Or more ambitiously, in the event that I design an <a href="http://www.cs.cmu.edu/~sandholm/cs15-892F13/algorithmic-game-theory.pdf">algorithmic-game-theoretical</a>-based trading bot to exploit the Chinese stock market. Or a more recent thought, in the event that I start an AI research lab with a middle-aged scientist from Italy I met while travelling in China in early 2016.</p>
-<p>None of the events’ve occurred, and I’ve ended up delaying <span class="pacificoText">Chapter 2</span> by taking a gamble with the scientist, and investing wholeheartedly in a romantic relationship with a beautiful girl I met in a Sino-Russian equinox party. The scientist, despite having a decent peer-reviewed publication record with 700+ citations, turned out to be a self-delusional hypocrite. And the girl, despite having one of the most beautiful smiles I’ve ever seen, turned out to be the main source of my self-hatred inducing a spiral of depressive behaviours in the next 20 months. Nonetheless they had both taught me a lot in many aspects of life I would otherwise reckon as a pure waste of time. And thanks to them I managed to gain a deeper insight into my own behaviour patterns and reactive tendencies towards various external and internal stimuli. But the truth remains that both the gamble and investment didn’t yield what I had expected. I can’t afford to lose any more time.</p>
-<p>The actual <span class="pacificoText">Chapter 2</span> begins with my resignation from the position of CEO with 0% vested share in a start-up I cofounded half a year ago with the scientist and a UK professor, after the previous start-up we worked in for more than a year failed miserably with €40k seed investment. I resigned because I failed to come into consensus with the professor in the decision to dismiss the scientist and repurchase his share, which was the only logical thing to do considering the scientist has done more harm than good and is highly inadequate as a start-up co-founder.</p>
-<p>I am glad I am on my own now. I would make it right this time.</p>
+    <div class="ArchyItem">
+<p>I used to entertain myself with naïve thoughts about how <span class="pacificoText">Chapter 2</span> would begin. At one point I was pretty determined it’d begin with my enrolment into a grad school as I bypassed formal undergrad studies. Or more ambitiously in the event that I design an <a href="http://www.cs.cmu.edu/~sandholm/cs15-892F13/algorithmic-game-theory.pdf">algorithmic-game-theory</a>-based trading bot to exploit the Chinese stock market. Or a more recent thought, in the event that I start an AI research lab with a middle-aged scientist from Italy I met while travelling in China in early 2016.</p>
+<p>None of the events’ve occurred, and I’ve ended up delaying <span class="pacificoText">Chapter 2</span> by taking a gamble with the scientist from Italy, and investing wholeheartedly in a romantic relationship with a really cute girl I met in a Sino-Russian equinox party. The scientist from Italy, despite having a decent peer-reviewed publication record with 700+ citations, turned out to be a self-delusional hypocrite. And the girl, despite having one of the most beautiful smiles I’ve ever seen, turned out to be the main source of my self-hatred inducing a spiral of depressive behaviours in the next 18 months before the entanglement came to a bitter end. Nonetheless they had both taught me a lot in many aspects of life I would otherwise reckon as a pure waste of time. And thanks to them I managed to gain a deeper insight into my own behaviour patterns and reactive tendencies. But the truth remains both the gamble and investment didn’t yield what I had expected. And I had let many days slip past without much accomplishment. I can’t afford to lose any more time.</p>
+<p>The actual <span class="pacificoText">Chapter 2</span> begins with my resignation from the position of CEO with 0% vested share in a start-up I co-founded four months ago with the scientist from Italy and a UK professor, after the previous start-up co-founded by the two (wherein I was employed as the lead architect and developer) failed miserably with €40k seed investment. After discovering that the scientist from Italy was highly inadequate to be a co-founder and experiencing it first-hand in proximity as a collaborator, I decided to dismiss him and repurchase his share. I couldn’t reach a consensus with the UK professor however. The professor agreed it was a logical thing to do but couldn’t get himself to force this friend of his who he had known for 10 years to walk way empty-handed. Being both the CEO and the only person constituting <a href="https://en.wikipedia.org/wiki/Bus_factor">the bus factor</a> and yet couldn’t get the company to take a logical step at its infancy to ensure its survival, I saw no points in staying.</p>
+<p>I will be conducting a lot more start-up experiments in <span class="pacificoText">Chapter 2</span>. And I will make things right this round. With the right people.</p>
 <div style="text-align:right">
 <small>January 1st, 2018 | Singapore</small>
 </div>
 </div>
 
+</div>
+</div>
 
-<div class="sessionContainer" style="width: 1001px;">
+
+<div class="container">
+<div class="sessionContainer" style="max-width: 1001px;">
     <div class="sessionTitle centerFlex">
       <div>
         <div class="centerText">Chapter 1</div>
-      <div class="sessionTimeWindow">sep 2014 ~ nov 2015</div>
+      <div class="sessionSubtitle">sep 2014 ~ nov 2015</div>
     </div>
     </div>
-    <div class="row">
+    <div class="hide-if-smaller-than-mobile-device-regular">
+<div class="row">
     <div class="third">
       
         <div class="ArchyItem">
-  <img class="ArchyItemImg" src="img/covers/Fraction _hash8295 2000, Larry Bell.jpg" />
+    
+  <a href="./chapter1/end-of-chapter-1.html">
+  
+     
+     <img class="ArchyItemImg" src="./img/covers/Fraction _hash8295, 2000, Larry Bell.jpg" />
+     
+     
+  </a>
+    
   <div class="ArchyItemTitle">
-    End of Chapter 1
+      
+    <a href="./chapter1/end-of-chapter-1.html">End of Chapter 1</a>
+    
   </div>
+  
   
   <div class="ArchyItemDate">
     28 Nov 2015
   </div>
   
+  
 </div>
 
       
         <div class="ArchyItem">
-  <img class="ArchyItemImg" src="img/covers/The Costume Party 1972, George Segal.jpg" />
+    
+  <a href="./chapter1/attending-univ-lecture-live-for-the-first-time.html">
+  
+     
+     <img class="ArchyItemImg" src="./img/covers/The Costume Party, 1972, George Segal.jpg" />
+     
+     
+  </a>
+    
   <div class="ArchyItemTitle">
-    Attending univ lecture live for the first time
+      
+    <a href="./chapter1/attending-univ-lecture-live-for-the-first-time.html">Attending univ lecture live for the first time</a>
+    
   </div>
+  
   
   <div class="ArchyItemDate">
     08 Sep 2015
   </div>
   
+  
 </div>
 
       
         <div class="ArchyItem">
-  <img class="ArchyItemImg" src="img/covers/The Horse Mug 1991, Mary Fedden.jpg" />
+    
+  <a href="./chapter1/giving-a-phony-some-great-search-results-when-her-name-is-googled.html">
+  
+     
+     <img class="ArchyItemImg" src="./img/covers/The Horse Mug, 1991, Mary Fedden.jpg" />
+     
+     
+  </a>
+    
   <div class="ArchyItemTitle">
-    Giving a phony some great search results when her name is Googled
+      
+    <a href="./chapter1/giving-a-phony-some-great-search-results-when-her-name-is-googled.html">Giving a phony some great search results when her name is Googled</a>
+    
   </div>
+  
   
   <div class="ArchyItemDate">
     14 Jun 2015
   </div>
   
+  
 </div>
 
       
         <div class="ArchyItem">
-  <img class="ArchyItemImg" src="img/covers/Untitled (Lettres) 1998, Moon Pil Shim.jpg" />
+    
+  <a href="./chapter1/set-theory-and-axiomatic-systems-explained.html">
+  
+     
+     <img class="ArchyItemImg" src="./img/covers/Untitled (Lettres), 1998, Moon Pil Shim.jpg" />
+     
+     
+  </a>
+    
   <div class="ArchyItemTitle">
-    Set Theory and Axiomatic Systems (with pics and gifs)
+      
+    <a href="./chapter1/set-theory-and-axiomatic-systems-explained.html">Set Theory and Axiomatic Systems explained with pics and gifs</a>
+    
   </div>
+  
   
   <div class="ArchyItemDate">
     19 Feb 2015
   </div>
   
-</div>
-
-      
-        <div class="ArchyItem">
-  <img class="ArchyItemImg" src="img/covers/Church Street El 1920, Charles Sheeler.jpg" />
-  <div class="ArchyItemTitle">
-    JavaScript Closure and Design Patterns in 3 minutes
-  </div>
-  
-  <div class="ArchyItemDate">
-    17 Sep 2014
-  </div>
-  
-</div>
-
-      
-    </div>
-    <div class="third">
-      
-        <div class="ArchyItem">
-  <img class="ArchyItemImg" src="img/covers/Cataract 3 1967, Bridget Riley.jpg" />
-  <div class="ArchyItemTitle">
-    NDTM vs DTM
-  </div>
-  
-  <div class="ArchyItemDate">
-    08 Nov 2015
-  </div>
   
 </div>
 
       
         <div class="ArchyItem">
-  <img class="ArchyItemImg" src="img/covers/Pont sylvestre (Rampe 25) 1970, Gherasim Luca.jpg" />
+    
+  <a href="./chapter1/and-by-you-i-mean-you-who-is-me.html">
+  
+     
+     <img class="ArchyItemImg" src="./img/covers/Not to Be Reproduced, 1937, Rene Magritte.jpg" />
+     
+     
+  </a>
+    
   <div class="ArchyItemTitle">
-    On the human information retrieval process, simplified
-  </div>
-  
-  <div class="ArchyItemDate">
-    25 Aug 2015
-  </div>
-  
-</div>
-
       
-        <div class="ArchyItem">
-  <img class="ArchyItemImg" src="img/covers/Every Brushstroke Has A Name 2005, Analia Saban.jpg" />
-  <div class="ArchyItemTitle">
-    Still trying to understand the true nature of <i>understanding</i>: the etymologies (summary)
+    <a href="./chapter1/and-by-you-i-mean-you-who-is-me.html">And by you I mean <i>you</i> who is me</a>
+    
   </div>
   
-  <div class="ArchyItemDate">
-    13 Jun 2015
-  </div>
-  
-</div>
-
-      
-        <div class="ArchyItem">
-  <img class="ArchyItemImg" src="img/covers/Untitled _, Radim Kacer.jpg" />
-  <div class="ArchyItemTitle">
-    On screwing up: I was still a loser in human interaction
-  </div>
-  
-  <div class="ArchyItemDate">
-    13 Dec 2014
-  </div>
-  
-</div>
-
-      
-        <div class="ArchyItem">
-  <img class="ArchyItemImg" src="img/covers/Not to Be Reproduced 1937, Rene Magritte.jpg" />
-  <div class="ArchyItemTitle">
-    And by you I mean <i>you</i> who is me
-  </div>
   
   <div class="ArchyItemDate">
     10 Sep 2014
   </div>
   
+  
 </div>
 
       
@@ -257,61 +382,224 @@
     <div class="third">
       
         <div class="ArchyItem">
-  <img class="ArchyItemImg" src="img/covers/L'Ora X Clock 1945, Bruno Munari.jpg" />
+    
+  <a href="./chapter1/nondeterministic-Turing-machines-vs-deterministic-Turing-machines.html">
+  
+     
+     <img class="ArchyItemImg" src="./img/covers/Cataract 3, 1967, Bridget Riley.jpg" />
+     
+     
+  </a>
+    
   <div class="ArchyItemTitle">
-    to \aleph 1 and beyond
+      
+    <a href="./chapter1/nondeterministic-Turing-machines-vs-deterministic-Turing-machines.html">NDTM vs DTM</a>
+    
   </div>
   
+  
   <div class="ArchyItemDate">
-    29 Sep 2015
+    08 Nov 2015
   </div>
+  
   
 </div>
 
       
         <div class="ArchyItem">
-  <img class="ArchyItemImg" src="img/covers/Untitled 1962, Larry Bell.jpg" />
+    
+  <a href="./chapter1/on-the-human-information-retrieval-process.html">
+  
+     
+     <img class="ArchyItemImg" src="./img/covers/Pont sylvestre (Rampe _perc25), 1970, Gherasim Luca.jpg" />
+     
+     
+  </a>
+    
   <div class="ArchyItemTitle">
-    The Boolean Satisfiability Problem [S<small>AT</small>] and S<small>AT</small> solvers in 5 mins* (or&nbsp;more)
+      
+    <a href="./chapter1/on-the-human-information-retrieval-process.html">On the human information retrieval process, simplified</a>
+    
   </div>
   
+  
   <div class="ArchyItemDate">
-    06 Aug 2015
+    25 Aug 2015
   </div>
+  
   
 </div>
 
       
         <div class="ArchyItem">
-  <img class="ArchyItemImg" src="img/covers/Capri Battery 1985, Joseph Beuys.jpg" />
+    
+  <a href="./chapter1/still-trying-to-understand-the-true-nature-of-understanding-etymologies.html">
+  
+     
+     <img class="ArchyItemImg" src="./img/covers/Every Brushstroke Has A Name, 2005, Analia Saban.jpg" />
+     
+     
+  </a>
+    
   <div class="ArchyItemTitle">
-    Jekyll 2 in 3 minutes - a quick tour for those who plan to make a customized Github Page
+      
+    <a href="./chapter1/still-trying-to-understand-the-true-nature-of-understanding-etymologies.html">Still trying to understand the true nature of <i>understanding</i>: the etymologies (summary)</a>
+    
   </div>
   
+  
   <div class="ArchyItemDate">
-    08 Jun 2015
+    13 Jun 2015
   </div>
+  
   
 </div>
 
       
         <div class="ArchyItem">
-  <img class="ArchyItemImg" src="img/covers/Moonlit Night 1914, Emil Nolde.jpg" />
+    
+  <a href="./chapter1/calculus-explained.html">
+  
+     
+     <img class="ArchyItemImg" src="./img/covers/Moonlit Night, 1914, Emil Nolde.jpg" />
+     
+     
+  </a>
+    
   <div class="ArchyItemTitle">
-    Calculus Explained
+      
+    <a href="./chapter1/calculus-explained.html">Calculus Explained with pics and gifs</a>
+    
   </div>
+  
   
   <div class="ArchyItemDate">
     27 Oct 2014
   </div>
   
+  
 </div>
 
       
         <div class="ArchyItem">
-  <img class="ArchyItemImg" src="img/covers/Alta Pink 1968, James Turrell.jpg" />
+    
+  <a href="./more-from-chapter1">
+  
+     
+     <img class="ArchyItemImg" src="./img/covers/Alta Pink, 1968, James Turrell.jpg" />
+     
+     
+  </a>
+    
   <div class="ArchyItemTitle">
-    More Posts From Chapter 1
+      
+    <a href="./more-from-chapter1">More Posts From Chapter 1</a>
+    
+  </div>
+  
+  
+  
+  
+</div>
+
+      
+    </div>
+    <div class="third">
+      
+        <div class="ArchyItem">
+    
+  <a href="./chapter1/to-aleph-1-and-beyond.html">
+  
+     
+     <img class="ArchyItemImg" src="./img/covers/L'Ora X Clock, 1945, Bruno Munari.jpg" />
+     
+     
+  </a>
+    
+  <div class="ArchyItemTitle">
+      
+    <a href="./chapter1/to-aleph-1-and-beyond.html">to \aleph 1 and beyond</a>
+    
+  </div>
+  
+  
+  <div class="ArchyItemDate">
+    29 Sep 2015
+  </div>
+  
+  
+</div>
+
+      
+        <div class="ArchyItem">
+    
+  <a href="./chapter1/boolean-satisfiability-problem-or-sat-in-5-minutes.html">
+  
+     
+     <img class="ArchyItemImg" src="./img/covers/Untitled, 1962, Larry Bell.jpg" />
+     
+     
+  </a>
+    
+  <div class="ArchyItemTitle">
+      
+    <a href="./chapter1/boolean-satisfiability-problem-or-sat-in-5-minutes.html">The Boolean Satisfiability Problem [S<small>AT</small>] and S<small>AT</small> solvers in 5 mins* (or&nbsp;more)</a>
+    
+  </div>
+  
+  
+  <div class="ArchyItemDate">
+    06 Aug 2015
+  </div>
+  
+  
+</div>
+
+      
+        <div class="ArchyItem">
+    
+  <a href="./chapter1/jekyll2-in-3min-for-your-github-pages.html">
+  
+     
+     <img class="ArchyItemImg" src="./img/covers/Capri Battery, 1985, Joseph Beuys.jpg" />
+     
+     
+  </a>
+    
+  <div class="ArchyItemTitle">
+      
+    <a href="./chapter1/jekyll2-in-3min-for-your-github-pages.html">Jekyll 2 in 3 minutes - a quick tour for those who plan to make a customized Github Page</a>
+    
+  </div>
+  
+  
+  <div class="ArchyItemDate">
+    08 Jun 2015
+  </div>
+  
+  
+</div>
+
+      
+        <div class="ArchyItem">
+    
+  <a href="./chapter1/JavaScript-closure-and-design-patterns.html">
+  
+     
+     <img class="ArchyItemImg" src="./img/covers/Church Street El, 1920, Charles Sheeler.jpg" />
+     
+     
+  </a>
+    
+  <div class="ArchyItemTitle">
+      
+    <a href="./chapter1/JavaScript-closure-and-design-patterns.html">JavaScript Closure and Design Patterns in 3 minutes</a>
+    
+  </div>
+  
+  
+  <div class="ArchyItemDate">
+    17 Sep 2014
   </div>
   
   
@@ -320,39 +608,419 @@
       
     </div>
 </div>
+</div>
+<div class="show-if-smaller-than-mobile-device-regular">
+    
+      <div class="ArchyItem">
+    
+  <a href="./chapter1/end-of-chapter-1.html">
+  
+     
+     <img class="ArchyItemImg" src="./img/covers/Fraction _hash8295, 2000, Larry Bell.jpg" />
+     
+     
+  </a>
+    
+  <div class="ArchyItemTitle">
+      
+    <a href="./chapter1/end-of-chapter-1.html">End of Chapter 1</a>
+    
+  </div>
+  
+  
+  <div class="ArchyItemDate">
+    28 Nov 2015
+  </div>
+  
+  
+</div>
 
+    
+      <div class="ArchyItem">
+    
+  <a href="./chapter1/nondeterministic-Turing-machines-vs-deterministic-Turing-machines.html">
+  
+     
+     <img class="ArchyItemImg" src="./img/covers/Cataract 3, 1967, Bridget Riley.jpg" />
+     
+     
+  </a>
+    
+  <div class="ArchyItemTitle">
+      
+    <a href="./chapter1/nondeterministic-Turing-machines-vs-deterministic-Turing-machines.html">NDTM vs DTM</a>
+    
+  </div>
+  
+  
+  <div class="ArchyItemDate">
+    08 Nov 2015
+  </div>
+  
+  
+</div>
+
+    
+      <div class="ArchyItem">
+    
+  <a href="./chapter1/to-aleph-1-and-beyond.html">
+  
+     
+     <img class="ArchyItemImg" src="./img/covers/L'Ora X Clock, 1945, Bruno Munari.jpg" />
+     
+     
+  </a>
+    
+  <div class="ArchyItemTitle">
+      
+    <a href="./chapter1/to-aleph-1-and-beyond.html">to \aleph 1 and beyond</a>
+    
+  </div>
+  
+  
+  <div class="ArchyItemDate">
+    29 Sep 2015
+  </div>
+  
+  
+</div>
+
+    
+      <div class="ArchyItem">
+    
+  <a href="./chapter1/attending-univ-lecture-live-for-the-first-time.html">
+  
+     
+     <img class="ArchyItemImg" src="./img/covers/The Costume Party, 1972, George Segal.jpg" />
+     
+     
+  </a>
+    
+  <div class="ArchyItemTitle">
+      
+    <a href="./chapter1/attending-univ-lecture-live-for-the-first-time.html">Attending univ lecture live for the first time</a>
+    
+  </div>
+  
+  
+  <div class="ArchyItemDate">
+    08 Sep 2015
+  </div>
+  
+  
+</div>
+
+    
+      <div class="ArchyItem">
+    
+  <a href="./chapter1/on-the-human-information-retrieval-process.html">
+  
+     
+     <img class="ArchyItemImg" src="./img/covers/Pont sylvestre (Rampe _perc25), 1970, Gherasim Luca.jpg" />
+     
+     
+  </a>
+    
+  <div class="ArchyItemTitle">
+      
+    <a href="./chapter1/on-the-human-information-retrieval-process.html">On the human information retrieval process, simplified</a>
+    
+  </div>
+  
+  
+  <div class="ArchyItemDate">
+    25 Aug 2015
+  </div>
+  
+  
+</div>
+
+    
+      <div class="ArchyItem">
+    
+  <a href="./chapter1/boolean-satisfiability-problem-or-sat-in-5-minutes.html">
+  
+     
+     <img class="ArchyItemImg" src="./img/covers/Untitled, 1962, Larry Bell.jpg" />
+     
+     
+  </a>
+    
+  <div class="ArchyItemTitle">
+      
+    <a href="./chapter1/boolean-satisfiability-problem-or-sat-in-5-minutes.html">The Boolean Satisfiability Problem [S<small>AT</small>] and S<small>AT</small> solvers in 5 mins* (or&nbsp;more)</a>
+    
+  </div>
+  
+  
+  <div class="ArchyItemDate">
+    06 Aug 2015
+  </div>
+  
+  
+</div>
+
+    
+      <div class="ArchyItem">
+    
+  <a href="./chapter1/giving-a-phony-some-great-search-results-when-her-name-is-googled.html">
+  
+     
+     <img class="ArchyItemImg" src="./img/covers/The Horse Mug, 1991, Mary Fedden.jpg" />
+     
+     
+  </a>
+    
+  <div class="ArchyItemTitle">
+      
+    <a href="./chapter1/giving-a-phony-some-great-search-results-when-her-name-is-googled.html">Giving a phony some great search results when her name is Googled</a>
+    
+  </div>
+  
+  
+  <div class="ArchyItemDate">
+    14 Jun 2015
+  </div>
+  
+  
+</div>
+
+    
+      <div class="ArchyItem">
+    
+  <a href="./chapter1/still-trying-to-understand-the-true-nature-of-understanding-etymologies.html">
+  
+     
+     <img class="ArchyItemImg" src="./img/covers/Every Brushstroke Has A Name, 2005, Analia Saban.jpg" />
+     
+     
+  </a>
+    
+  <div class="ArchyItemTitle">
+      
+    <a href="./chapter1/still-trying-to-understand-the-true-nature-of-understanding-etymologies.html">Still trying to understand the true nature of <i>understanding</i>: the etymologies (summary)</a>
+    
+  </div>
+  
+  
+  <div class="ArchyItemDate">
+    13 Jun 2015
+  </div>
+  
+  
+</div>
+
+    
+      <div class="ArchyItem">
+    
+  <a href="./chapter1/jekyll2-in-3min-for-your-github-pages.html">
+  
+     
+     <img class="ArchyItemImg" src="./img/covers/Capri Battery, 1985, Joseph Beuys.jpg" />
+     
+     
+  </a>
+    
+  <div class="ArchyItemTitle">
+      
+    <a href="./chapter1/jekyll2-in-3min-for-your-github-pages.html">Jekyll 2 in 3 minutes - a quick tour for those who plan to make a customized Github Page</a>
+    
+  </div>
+  
+  
+  <div class="ArchyItemDate">
+    08 Jun 2015
+  </div>
+  
+  
+</div>
+
+    
+      <div class="ArchyItem">
+    
+  <a href="./chapter1/set-theory-and-axiomatic-systems-explained.html">
+  
+     
+     <img class="ArchyItemImg" src="./img/covers/Untitled (Lettres), 1998, Moon Pil Shim.jpg" />
+     
+     
+  </a>
+    
+  <div class="ArchyItemTitle">
+      
+    <a href="./chapter1/set-theory-and-axiomatic-systems-explained.html">Set Theory and Axiomatic Systems explained with pics and gifs</a>
+    
+  </div>
+  
+  
+  <div class="ArchyItemDate">
+    19 Feb 2015
+  </div>
+  
+  
+</div>
+
+    
+      <div class="ArchyItem">
+    
+  <a href="./chapter1/calculus-explained.html">
+  
+     
+     <img class="ArchyItemImg" src="./img/covers/Moonlit Night, 1914, Emil Nolde.jpg" />
+     
+     
+  </a>
+    
+  <div class="ArchyItemTitle">
+      
+    <a href="./chapter1/calculus-explained.html">Calculus Explained with pics and gifs</a>
+    
+  </div>
+  
+  
+  <div class="ArchyItemDate">
+    27 Oct 2014
+  </div>
+  
+  
+</div>
+
+    
+      <div class="ArchyItem">
+    
+  <a href="./chapter1/JavaScript-closure-and-design-patterns.html">
+  
+     
+     <img class="ArchyItemImg" src="./img/covers/Church Street El, 1920, Charles Sheeler.jpg" />
+     
+     
+  </a>
+    
+  <div class="ArchyItemTitle">
+      
+    <a href="./chapter1/JavaScript-closure-and-design-patterns.html">JavaScript Closure and Design Patterns in 3 minutes</a>
+    
+  </div>
+  
+  
+  <div class="ArchyItemDate">
+    17 Sep 2014
+  </div>
+  
+  
+</div>
+
+    
+      <div class="ArchyItem">
+    
+  <a href="./chapter1/and-by-you-i-mean-you-who-is-me.html">
+  
+     
+     <img class="ArchyItemImg" src="./img/covers/Not to Be Reproduced, 1937, Rene Magritte.jpg" />
+     
+     
+  </a>
+    
+  <div class="ArchyItemTitle">
+      
+    <a href="./chapter1/and-by-you-i-mean-you-who-is-me.html">And by you I mean <i>you</i> who is me</a>
+    
+  </div>
+  
+  
+  <div class="ArchyItemDate">
+    10 Sep 2014
+  </div>
+  
+  
+</div>
+
+    
+      <div class="ArchyItem">
+    
+  <a href="./more-from-chapter1">
+  
+     
+     <img class="ArchyItemImg" src="./img/covers/Alta Pink, 1968, James Turrell.jpg" />
+     
+     
+  </a>
+    
+  <div class="ArchyItemTitle">
+      
+    <a href="./more-from-chapter1">More Posts From Chapter 1</a>
+    
+  </div>
+  
+  
+  
+  
+</div>
+
+    
+</div>
+
+</div>
 </div>
 
 
 </div>
 
-  <div class="cover-image" style="height:400px;">
-  <img src="./img/backgrounds/maarten-van-den-heuvel-346883.jpg" style="margin-top:-20px" />
+
+
+  <div class="cover-image">
+  <img class="hide-if-smaller-than-mobile-device-regular" src="./img/backgrounds/maarten-van-den-heuvel-346883.jpg" />
+  <img class="show-if-smaller-than-mobile-device-regular" src="./img/backgrounds/maarten-van-den-heuvel-346883-full.jpg" />
+
   <div class="whiteOverlay"></div>
   <div class="cover-image-text-wrapper">
   <div class="cover-image-text">
-    <h1 id="zeroDegreeLogo">
-      <div>Zer0<br />Degree</div><div><sup id="degreeDot">o</sup><br />&nbsp;</div>
+    <h1 class="zeroDegreeLogo centerFlex hide-if-smaller-than-mobile-device-regular-but-flex">
+        <div><a href="./">Zer0<br />Degree</a></div><div><sup class="degreeDot">o</sup><br />&nbsp;</div>
     </h1>
-    <div id="zeroDegreeNameAndDescription" style="margin-left:20px">
-    <h2 id="zeroDegreeName">
-      Handcarfted <small>single-handed by</small> <br /><a href>Archy Wilhes 魏何</a>
+    <div class="show-if-smaller-than-mobile-device-regular">
+    <div class="centerFlex footer-info-block">
+        <div>
+        <h5 class="hide-if-smaller-than-mobile-device-small">
+            A Website of <a href="./about-zer0-degree.html">Archy Wilhes 魏何</a><br />
+            Handcrafted by <a href="./about-zer0-degree.html">Archy Wilhes 魏何</a>
+        </h5>
+        <h5 class="show-if-smaller-than-mobile-device-small">
+            A Website of<br />
+            <a href="./about-zer0-degree.html">Archy Wilhes 魏何</a><br />
+
+        </h5>
+        <h3>
+            <a target="_blank" href="http://twitter.com/archywilhes"><i class="social-icon ion-social-twitter"></i></a>
+            <a target="_blank" href="http://github.com/archywilhes"><i class="social-icon ion-social-octocat"></i></a>
+            <a target="_blank" href="http://instagram.com/archywilhes"><i class="social-icon ion-social-instagram"></i></a>
+            <a target="_blank" href="http://archy.sh"><i class="social-icon ion-erlenmeyer-flask"></i></a>
+        </h3>
+        </div>
+</div>
+</div>
+    <div class="zeroDegreeNameAndDescription hide-if-smaller-than-mobile-device-regular-but-flex" style="margin-left:20px">
+    <h3 class="zeroDegreeName">
+      Handcarfted by <a href="./about.html">Archy Wilhes 魏何</a><br />
       <a style="margin-left:7px" href="https://github.com/archywilhes/zer0.degree">
           <small>vi3w_s0urce <i class="ion-beer"></i></small>
       </a>
-    </h2>
-    <div id="zeroDegreeDescription">
+  </h3>
+    <div class="zeroDegreeDescription">
         Frontend consists of vanilla JS, CSS & HTML with <a href="https://v4-alpha.getbootstrap.com/">Bootstrap</a>  <br />
          Backend written exclusively in Haskell using <a href="https://jaspervdj.be/hakyll/">Hakyll <i class="ion-heart"></a></i>
     </div>
     </div>
   </div>
-  <h2 class="stayCool thickRaleway" style="color:rgba(0,0,0,0.9)">
-    <a href="mailto:archy@zer0.degree">Stay in touch?</a>
-  </h2>
+  <h3 class="stayCool thickRaleway" style="color:rgba(0,0,0,0.9)">
+        See you around.
+  </h3>
   </div>
   </div>
 
 
-  </body>
+</div></div>
+
+</body>
+
 </html>
