@@ -26,6 +26,8 @@
 <link href="../css/main.css" rel="stylesheet">
 <link href="../css/fonts.css" rel="stylesheet">
 
+<link href="../css/highlight.css" rel="stylesheet">
+
 <meta property="og:url" content="http://zer0.degree//chapter1/boolean-satisfiability-problem-or-sat-in-5-minutes.html" />
 
 <meta property="og:type" content="article" />
@@ -123,7 +125,7 @@
             <div class="row block-of-grey">
 This is a quick sum-up on (and a beginner guide to) the Boolean Satisfiability Problem.
 </div>
-<p><small><sup>*</sup>In 5 minutes if one skips the introduction and the words in <i>the Blocks of Grey Text</i>.<br> <a id="blockquoteToggle">Click here to hide the introduction and all <i> Blocks of Grey Text</i>.</a> <br> Word count includes only words <u>not</u> in <i>the Blocks of Grey Text</i>.</small></p>
+<p><small><sup>*</sup>In 5 minutes if one skips the introduction and the words in <i>the Blocks of Grey Text</i>.<br> <a id="blockquoteToggle" href="javascript:void(0)">Click here to hide the introduction and all <i> Blocks of Grey Text</i>.</a> <br> Word count includes only words <u>not</u> in <i>the Blocks of Grey Text</i>.</small></p>
 <div id="introduction">
 <h3 id="small0th-minutesmall-introduction-small-classwordcount386nbspwordssmall">
 <small>0th minute</small>: Introduction <small class="wordCount">382 words</small>
@@ -213,11 +215,11 @@ Here <span class="math inline">\(L\)</span> is often referred to as <a href="htt
 </p>
 </blockquote>
 </div>
-<h4 id="what-is-the-boolean-satisfiability-problem-334words">What is the Boolean Satisfiability Problem? <small class="wordCount">334 words</small></h4>
+<h3 id="st-minute-what-is-the-boolean-satisfiability-problem-334words"><small>1st minute</small>: What is the Boolean Satisfiability Problem? <small class="wordCount">334 words</small></h3>
 <p>The <strong>Boolean Satisfiability Problem</strong> (or S<small>AT</small>) is the problem of determining if a proposition statement<sup>*</sup> is <strong>satisfiable</strong>. A propositional statement is satisfiable when it is possible to assign some true-false values for the variables in the statement such that the statement yields <code>True</code>. Otherwise the statement is unsatisfiable.</p>
 <p>A propositional statement is simply a string made up of variables, brackets and these 3 symbols:</p>
 <div class="row block-of-grey text-center">
-<p><span class="math inline">\(\neg\)</span> with the meaning <i>not</i>.<br> $True = False $<br> <span class="math inline">\(\land\)</span> with the meaning <i>and</i>.<br> $ False True = False $<br> <span class="math inline">\(\lor\)</span> with the meaning <i>or</i>.<br> $ False True = True $ <br></p>
+<p><span class="math inline">\(\neg\)</span> with the meaning <i>not</i>.<br> <span class="math inline">\(\neg\)</span> $True = False $<br> <span class="math inline">\(\land\)</span> with the meaning <i>and</i>.<br> $ False$ <span class="math inline">\(\land\)</span> $True = False $<br> <span class="math inline">\(\lor\)</span> with the meaning <i>or</i>.<br> $ False$ <span class="math inline">\(\lor\)</span> $True = True $ <br></p>
 </div>
 <p>These symbols are also known as logical connectives. They’re arranged in the order of precedence above. Here is an example of a propositional statement:</p>
 <p><span class="math display">\[ d \lor (a \land b \land (c \lor d \land \neg a))\]</span></p>
@@ -225,7 +227,7 @@ Here <span class="math inline">\(L\)</span> is often referred to as <a href="htt
 <p><span class="math display">\[\text{Is }d \lor (a \land b \land (c \lor d \land \neg a)) \text{ satisfiable?}\]</span></p>
 <p>The answer is yes, it is satisfiable. One solution:</p>
 <div class="row block-of-grey">
-<p><span class="math inline">\(a\)</span> assigned: Any value<br> <span class="math inline">\(b\)</span> assigned: Any value<br> <span class="math inline">\(c\)</span> assigned: Any value<br> <span class="math inline">\(d\)</span> assigned: True<br></p>
+<p><span class="math inline">\(a\)</span> assigned: Any <br> <span class="math inline">\(b\)</span> assigned: Any <br> <span class="math inline">\(c\)</span> assigned: Any <br> <span class="math inline">\(d\)</span> assigned: True<br></p>
 </div>
 <p>Meanwhile, the answer to the question</p>
 <p><span class="math display">\[\text{Is } a \land \neg a \land b \land c \land d \text{ satisfiable?}\]</span></p>
@@ -259,7 +261,7 @@ Here <span class="math inline">\(L\)</span> is often referred to as <a href="htt
 <p class="text-center">
 ● ● ●
 </p>
-<h4 id="extra-skip-this-if-you-want-213words">Extra <small class="wordCount">(skip this if you want) 213 words</small></h4>
+<h3 id="extra-213words">Extra: <small class="wordCount"> 213 words</small></h3>
 <p>When a satisfiable statement always yields <code>True</code> no matter what the value the variables take (every set of true-false assignments to the variables is a solution), we call it a <strong>tautology</strong>. Here is one:</p>
 <p><span class="math display">\[ a \lor \neg a \]</span></p>
 <p>Interestingly, the problem of determining if some statement is not a tautology can be easily reduced into the Boolean Satisfiability Problem.</p>
@@ -277,10 +279,11 @@ Here <span class="math inline">\(L\)</span> is often referred to as <a href="htt
 </p>
 <p>From the 2nd minute on we’d be</p>
 <ol type="1">
-<li><p>using the word <strong>formula</strong> (instead of “statement”) [For the reason, see <sup>{1}</sup> in 1st minute: What is the Boolean Satisfiability Problem? if you haven’t]</p></li>
+<li><p>using the word <strong>formula</strong> (instead of “statement”)</p></li>
 <li><p>using <strong>S<small>AT</small></strong> as the abbreviation for the Boolean Satisfiability Problem</p></li>
 </ol>
-<h4 id="classifying-sat-354words">Classifying S<small>AT</small> <small class="wordCount">354 words</small></h4>
+<p><br /></p>
+<h3 id="nd-minute-classifying-sat-354words"><small>2nd minute</small>: Classifying S<small>AT</small> <small class="wordCount">354 words</small></h3>
 <p>We can classify instances of S<small>AT</small> based on what form the formulas are in.</p>
 <p><strong>3S<small>AT</small></strong> is the instances of S<small>AT</small> where the formulas are in the form</p>
 <p><span class="math display">\[\bigwedge_{j \in J} ( a_j \lor b_j \lor c_j ) \]</span></p>
@@ -320,7 +323,8 @@ Here <span class="math inline">\(L\)</span> is often referred to as <a href="htt
 </blockquote>
 <p>This pretty much sums up generally how instances of S<small>AT</small> are classified. If you are interested in classifying S<small>AT</small> in a more ‘hard core’ manner (viewing S<small>AT</small> itself as a classification problem), <a href="http://www.cs.ucc.ie/~osullb/pubs/classification.pdf">check out this 2008 paper by David Devlin and Barry O’Sullivan</a>.</p>
 <p>Perhaps you’ve also heard of problems with names like <a href="https://en.wikipedia.org/wiki/MAX-3SAT">MAXS<small>AT</small></a> and <a href="https://en.wikipedia.org/wiki/Sharp-SAT">#S<small>AT</small></a>. Instances of these problems are not really instances of S<small>AT</small>; it’d be more accurate to say that they are variations of S<small>AT</small>. MAXS<small>AT</small> is the problem of finding a boolean assignment satisfying most clauses in a CNF formula, and #S<small>AT</small> is the problem of counting the number of satisfying assignments.</p>
-<h4 id="sat-solvers---general-overview-337words"></small> S<small>AT</small> Solvers - General Overview <small class="wordCount">337 words</small></h4>
+<p><br /></p>
+<h3 id="rd-minute-sat-solvers---general-overview-337words"><small>3rd minute</small>: </small> S<small>AT</small> Solvers - General Overview <small class="wordCount">337 words</small></h3>
 <p>There are many known algorithms capable of solving some (but not all) instances of S<small>AT</small> pretty efficiently. We often refer to them as <b>S<small>AT</small> solvers</b>. In general they can be classified into <strong>complete</strong> or <strong>incomplete</strong>.</p>
 <p>Complete S<small>AT</small> solvers would always return either <code>satisfiable</code> or <code>unsatisfiable</code>. Incomplete S<small>AT</small> solvers, on the other hand, are less reliable - they may be unable to prove unsatisfiability (when it’s impossible for the formula to yield <code>True</code>), or unable to find a solution when the formula is satisfiable - but perhaps a lot more useful in scenarios when the instances of S<small>AT</small> cannot be solved by complete algorithms in reasonable time.</p>
 <blockquote>
@@ -336,7 +340,8 @@ Here <span class="math inline">\(L\)</span> is often referred to as <a href="htt
 <li><p>All variables are assigned to some boolean value and it does not break the overall satisfiability, and hence the formula is satisfiable.</p></li>
 <li><p>No matter what boolean values a set of variables are assigned to, it would break the overall satisfiability, and hence the formula is unsatisfiable.</p></li>
 </ol>
-<h4 id="sat-solvers---dpll-and-more-613words"></small> S<small>AT</small> Solvers - DPLL and More <small class="wordCount">613 words</small></h4>
+<p><br /></p>
+<h3 id="th-5th-minutes-sat-solvers---dpll-and-more-613words"><small>4th &amp; 5th minutes</small>: </small> S<small>AT</small> Solvers - DPLL and More <small class="wordCount">613 words</small></h3>
 <p>You may have already imagined, DPLL is basically a <a href="https://www.youtube.com/watch?v=bkROCj-BTWE">depth-first search</a>, and that means at its heart it uses <strong>backtracking</strong>, a brute-force-like technique that, rather than checking every single possible solution one by one (which is what’s known as brute-force), it checks possible solutions by compositing part by part in a combinatorial fashion [e.g. building a solution variable by variable as described above], discarding sets of solutions that are deemed invalid by parts.</p>
 <blockquote>
 <p>In short, <strong>a backtracking algorithm is very similar to a classical brute-force algorithm, except that it is slightly smarter and thus more efficient</strong>. Here is an example. Imagine you are given 9 numbers</p>
@@ -371,9 +376,7 @@ Here <span class="math inline">\(L\)</span> is often referred to as <a href="htt
 <p>This is because since it is pure, we can just make it yield <code>True</code> and it won’t have any other consequence to the overall satisfiable.</p>
 <p><span class="math display">\[ (a \lor b \lor \neg c) \land (a \lor \neg b) \land ( b \lor \neg c) \]</span></p>
 <p>In the formula above, <span class="math inline">\(a\)</span> and <span class="math inline">\(c\)</span> are both pure, so we can give <span class="math inline">\(a = True\)</span> and <span class="math inline">\(c = False\)</span>, and delete all the clauses that contain them. After that we’d end up with no clauses. And that means the formula is satisfiable with</p>
-<div class="row block-of-grey">
-<span class="math inline">\(a\)</span>: True<br> <span class="math inline">\(b\)</span>: Any value<br> <span class="math inline">\(c\)</span>: False<br>
-</div>
+<p><span class="math inline">\(a: True\)</span>    <span class="math inline">\(b: Any\)</span>    <span class="math inline">\(c: False\)</span></p>
 </blockquote></li>
 <li><p><strong>unit propagation</strong>: It is obvious that for clauses made up of 1 literal, that 1 literal has to evaluate <code>True</code> for the formula to yield <code>True</code>. Therefore</p>
 <ol type="1">
@@ -388,9 +391,7 @@ Here <span class="math inline">\(L\)</span> is often referred to as <a href="htt
 <p>Great! We can do a 2nd round of unit propagation with <span class="math inline">\(\neg b\)</span>: make <span class="math inline">\(b = False\)</span> and reduce it into:</p>
 <p><span class="math display">\[ c \]</span></p>
 <p>And here we have it, the original formula is satisfiable with</p>
-<div class="row block-of-grey">
-<span class="math inline">\(a\)</span>: True<br> <span class="math inline">\(b\)</span>: False<br> <span class="math inline">\(c\)</span>: False<br> <span class="math inline">\(d\)</span>: Any value<br>
-</div>
+<p><span class="math inline">\(a: True\)</span>    <span class="math inline">\(b: False\)</span>    <span class="math inline">\(c: False\)</span>    <span class="math inline">\(d: Any\)</span></p>
 <p class="text-center">
 ● ● ●
 </p>
@@ -559,7 +560,6 @@ Here <span class="math inline">\(L\)</span> is often referred to as <a href="htt
 <li><p><a href="http://www.cs.toronto.edu/~chechik/courses03/csc2108/algorithms-for-satisfiability.pdf">Algorithms for the Satisfiability Problem: A Survey (1996)</a> <small class="wordCount">~60k words</small></p></li>
 <li><p><a href="http://www.amazon.com/gp/product/3319092839/ref=as_li_tl?ie=UTF8&amp;camp=1789&amp;creative=390957&amp;creativeASIN=3319092839&amp;linkCode=as2&amp;tag=0aarhe-20&amp;linkId=ZKNKEH4TF3DC6R7R">Theory and Applications of Satisfiability Testing - S<small>AT</small> 2014</a> <small class="wordCount">a book</small> <small>Also available on <a href="http://www.springer.com/us/book/9783319092836">springer</a>.</small></p></li>
 </ol>
-<p>{{page.script}}</p>
         </div>
     </div>
 </article>
