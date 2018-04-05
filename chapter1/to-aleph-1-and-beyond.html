@@ -100,61 +100,6 @@
   </div>
 
   
-<div class="hide-if-bigger-than-mobile-device-regular">
-  <h2 class="thickRaleway menu">
-    <!-- <a href="/" class="menu-item">Back to Home Page</a> -->
-</h2>
-</div>
-<div class="container content">
-<article style>
-    <div class="coverPainting">
-    
-        <img src="../img/covers/L'Ora X Clock, 1945, Bruno Munari.jpg" />
-    
-    </div>
-    <div class="everythingElse">
-        <div class="info">
-            <i class="ion-calendar"></i>
-            <span class="date">29 Sep 2015</span>
-            
-        </div>
-        <h2 class="title">
-            to \aleph 1 and beyond
-        </h2>
-        <div class="text">
-            <p>Today’s lecture was on code abstraction. In one part Professor Danvy gave an example on how recursion can be viewed from a more mathematical point of view through demonstrating the <span class="math inline">\(\mathbb{N}\)</span>-bijective nature of some set of procedures. Here is the idea:</p>
-<div class="sourceCode" id="cb1"><pre class="sourceCode scheme"><code class="sourceCode scheme"><a class="sourceLine" id="cb1-1" data-line-number="1">(<span class="kw">define</span><span class="fu"> f0</span></a>
-<a class="sourceLine" id="cb1-2" data-line-number="2">    (<span class="kw">lambda</span> (a)</a>
-<a class="sourceLine" id="cb1-3" data-line-number="3">        (errorf 'f <span class="st">&quot;is not defined for ~s&quot;</span> a)))</a>
-<a class="sourceLine" id="cb1-4" data-line-number="4">(<span class="kw">define</span><span class="fu"> f1</span></a>
-<a class="sourceLine" id="cb1-5" data-line-number="5">    (<span class="kw">lambda</span> (a)</a>
-<a class="sourceLine" id="cb1-6" data-line-number="6">        (<span class="kw">if</span> (<span class="kw">zero?</span> a)</a>
-<a class="sourceLine" id="cb1-7" data-line-number="7">            <span class="dv">1</span></a>
-<a class="sourceLine" id="cb1-8" data-line-number="8">            (* a (f0 (<span class="kw">-</span> a <span class="dv">1</span>))))))</a>
-<a class="sourceLine" id="cb1-9" data-line-number="9">(<span class="kw">define</span><span class="fu"> f2</span></a>
-<a class="sourceLine" id="cb1-10" data-line-number="10">    (<span class="kw">lambda</span> (a)</a>
-<a class="sourceLine" id="cb1-11" data-line-number="11">        (<span class="kw">if</span> (<span class="kw">zero?</span> a)</a>
-<a class="sourceLine" id="cb1-12" data-line-number="12">            <span class="dv">1</span></a>
-<a class="sourceLine" id="cb1-13" data-line-number="13">            (* a (f1 (<span class="kw">-</span> a <span class="dv">1</span>))))))</a>
-<a class="sourceLine" id="cb1-14" data-line-number="14">(<span class="kw">define</span><span class="fu"> f3</span></a>
-<a class="sourceLine" id="cb1-15" data-line-number="15">    (<span class="kw">lambda</span> (a)</a>
-<a class="sourceLine" id="cb1-16" data-line-number="16">        (<span class="kw">if</span> (<span class="kw">zero?</span> a)</a>
-<a class="sourceLine" id="cb1-17" data-line-number="17">            <span class="dv">1</span></a>
-<a class="sourceLine" id="cb1-18" data-line-number="18">            (* a (f2 (<span class="kw">-</span> a <span class="dv">1</span>))))))</a></code></pre></div>
-<p>as more procedures are enumerated in this a manner, we would be able to do factorial on a larger subset of the natural numbers. There isn’t really recursion going on since there is no self-referencing. And this can continue to infinity. But as anyone with a common sense would know, this goes as far as <span class="math inline">\(\aleph_0\)</span> by virtue to the fact that it is bijective to <span class="math inline">\(\mathbb{N}\)</span>.</p>
-<p>So a curious question arises: let <span class="math inline">\(F_{\mathbb{N}}\)</span> be some set of procedures that can be enumerated like above, is it possible to construct a set of procedures, <span class="math inline">\(F_{\mathbb{R}}\)</span>, similar to <span class="math inline">\(F_{\mathbb{N}}\)</span> (the notation of it being similar to <span class="math inline">\(F_{\mathbb{N}}\)</span> is rather tricky here: let’s just say it is similar in that it is related to recursion, or that it is a generalization of <span class="math inline">\(F_{\mathbb{N}}\)</span>), that has a cardinality equal or greater than <span class="math inline">\(\aleph_1\)</span>? Since such set of procedures cannot be enumerated as George Cantor had demonstrated more than a century ago (O! the whirligig of time), it would need to be constructed in a different manner.</p>
-<p>The same question can be asked regarding Turing machine: can we formulate a model of computation, similar to that of Turing’s (or more of a generalization of it), such that there exists a single object, U, that can (similar to how every Turing machine can be simulated by a Universal Turing machine) simulate every object in this model, wherein every <span class="math inline">\(r \in \mathbb{R}\)</span> can be used to encode a distinct object? Perhaps in such model, there exists some object that can solve a subset of the Halting problem previously unsolvable (i.e. those which halt in a set of steps with a cardinality less than <span class="math inline">\(\aleph_1\)</span> (and now we have successfully drawn the <a href="http://plato.stanford.edu/entries/continuum-hypothesis/">continuum hypothesis</a> into the discussion)).</p>
-        </div>
-    </div>
-</article>
-</div>
-<div>
-  <h2 class="thickRaleway menu-bottom">
-    <a class="menu-item" href="../">Back to Home Page</a>
-</h2>
-</div>
-
-
   <div class="cover-image">
   <img class="hide-if-smaller-than-mobile-device-regular" src="../img/backgrounds/maarten-van-den-heuvel-346883.jpg" />
   <img class="show-if-smaller-than-mobile-device-regular" src="../img/backgrounds/maarten-van-den-heuvel-346883-full.jpg" />
