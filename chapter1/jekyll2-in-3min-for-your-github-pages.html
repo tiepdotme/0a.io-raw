@@ -86,6 +86,195 @@
   </div>
 
   
+
+<div class="hide-if-bigger-than-mobile-device-regular">
+  <h2 class="thickRaleway menu">
+    <!-- <a href="/" class="menu-item">Back to Home Page</a> -->
+</h2>
+</div>
+<div class="container content">
+<article style>
+    <div class="coverPainting">
+    
+        <img src="../img/covers/Capri Battery, 1985, Joseph Beuys.jpg" />
+    
+    </div>
+    <div class="everythingElse">
+        <div class="info">
+            <i class="ion-calendar"></i>
+            <span class="date">08 Jun 2015</span>
+            
+        </div>
+        <h2 class="title">
+            Jekyll 2 in 3 minutes - a quick tour for those who plan to make a customized Github Page
+        </h2>
+        <div class="text">
+            <div class="row block-of-grey">
+This post aims to provide a quick sum-up for anyone who is unfamiliar with Jekyll. To learn more about Jekyll, check the <a href="http://jekyllrb.com/docs/home/">doc</a> &amp; <a href="https://github.com/jekyll/jekyll">source</a> out.
+</div>
+<h3 id="general-overview-267words">General Overview <small class="wordCount">267 words</small></h3>
+<p><a href="https://github.com/Jekyll/Jekyll">Jekyll</a> is a tool to build static website that exists as merely a directory of files. That said, you can only use it to create websites that don’t have run-time logic in the backend. (such as <a href="http://0a.io/">a simple content-based website or a blog</a>) In other words, it is a web-pages generator.</p>
+<p>With a Github acc, anyone can <a href="https://pages.github.com">set up his or her Github Page for free with ease</a>. A Github Page is a static website hosted by Github. GitHub Pages™ has built-in support of Jekyll (So just push the code and you’ll have a website).</p>
+<blockquote>
+<p>That doesn’t mean you have to use Jekyll for a Github Page. You can always use some other static site generator to generate the site (e.g. <a href="http://jaspervdj.be/hakyll/">Hakyll</a>) before pushing the repo of generated files (aka static files ready for access).</p>
+</blockquote>
+<p>Keep in mind GitHub Pages™ supports only Jekyll 2.4.0 as of June 2015. To have a local environment for making GitHub Pages™ supporting Jekyll website, you are advised to <a href="https://github.com/github/pages-gem">install Jekyll via The GitHub Pages™ Gem</a> (instead of installing Jekyll separately by yourself). <a href="https://pages.github.com/versions.json">The GitHub Pages™ Gem also includes Jekyll-coffeescript, Jekyll-sass-converter, Liquid, etc</a>. That is to say, GitHub Pages™ will generate a site for you with these components.</p>
+<p>To sum up, GitHub Pages™ does not execute server-side code. It helps you generate static website (using Jekyll) if you give it the source code. That is as much as it does, aside from also hosting the static website for you and giving you a super cool github.io subdomain. <a href="https://help.github.com/articles/setting-up-a-custom-domain-with-github-pages/">(You can still use your own domain if you want.)</a></p>
+<p class="text-center">
+● ● ●
+</p>
+<h3 id="what-you-need-to-know-when-working-with-jekyll-314words">What you need to know when working with Jekyll <small class="wordCount">314 words</small></h3>
+<p>Jekyll is made in <a href="https://www.ruby-lang.org/en/">Ruby</a> (with <a href="https://cucumber.io">Cucumber</a>). Since all it does is generate static website, there is no <a href="http://rubyonrails.org">Rails</a> in it.Jekyll puts all the pieces (of html, <a href="http://daringfireball.net/projects/markdown/">md</a>, <a href="http://en.wikipedia.org/wiki/Textile_(markup_language)">textile</a>) you give it together, and that’s all. The way Jekyll works relies mainly on <a href="http://Liquidmarkup.org">Liquid (a templating language)</a> and <a href="http://Jekyllrb.com/docs/frontmatter/">YAML Front Matter Block, or <i>Front Matter</i></a> for short.</p>
+<p><i>Front Matter</i> is the starting session of each file where you put down meta-information in <a href="http://yaml.org">YAML format</a>.</p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode html"><code class="sourceCode html"><a class="sourceLine" id="cb1-1" data-line-number="1">---</a>
+<a class="sourceLine" id="cb1-2" data-line-number="2">layout: post</a>
+<a class="sourceLine" id="cb1-3" data-line-number="3">title: &quot;0a: About &quot;</a>
+<a class="sourceLine" id="cb1-4" data-line-number="4">permalink: /about/</a>
+<a class="sourceLine" id="cb1-5" data-line-number="5">extraClasses: ['aboutPage']</a>
+<a class="sourceLine" id="cb1-6" data-line-number="6">---</a>
+<a class="sourceLine" id="cb1-7" data-line-number="7"><span class="co">&lt;!-- The session on top is Front Matter --&gt;</span></a>
+<a class="sourceLine" id="cb1-8" data-line-number="8"><span class="kw">&lt;div</span><span class="ot"> class=</span><span class="st">&quot;archywrap&quot;</span><span class="kw">&gt;</span></a>
+<a class="sourceLine" id="cb1-9" data-line-number="9"><span class="kw">&lt;h2&gt;</span> {{site.data.author.bioTitle}}<span class="kw">&lt;/h2&gt;</span></a>
+<a class="sourceLine" id="cb1-10" data-line-number="10">{{site.data.author.bio}}</a>
+<a class="sourceLine" id="cb1-11" data-line-number="11"><span class="kw">&lt;/div&gt;</span></a></code></pre></div>
+<p>YAML is like a sister of <a href="http://json.org">JSON</a>. YAML to JSON is, syntax-wise, like what <a href="http://en.wikipedia.org/wiki/Less_(stylesheet_language)">Less</a> is to <a href="http://en.wikipedia.org/wiki/Sass_(stylesheet_language)">Sass</a>.</p>
+<p>For every HTML file you’d be dealing with in Jekyll, it’d either be</p>
+<ol type="1">
+<li><p>an <a href="http://jekyllrb.com/docs/templates/#includes"><em>Include</em> File</a>,</p></li>
+<li><p>a <a href="http://jekyllrb.com/docs/structure/"><em>Layout</em> File</a></p></li>
+<li><p>a serving file.</p></li>
+</ol>
+<p>Include Files, as its name suggested, are to be included in other files with this one-liner:</p>
+<div class="sourceCode" id="cb2"><pre class="sourceCode html"><code class="sourceCode html"><a class="sourceLine" id="cb2-1" data-line-number="1">{% include includeFileName.html %}</a></code></pre></div>
+<p>while Layout Files, obvious enough, are the layouts, to be used by other files:</p>
+<div class="sourceCode" id="cb3"><pre class="sourceCode yaml"><code class="sourceCode yaml"><a class="sourceLine" id="cb3-1" data-line-number="1"><span class="ot">---</span></a>
+<a class="sourceLine" id="cb3-2" data-line-number="2"><span class="fu">layout:</span><span class="at"> post</span></a>
+<a class="sourceLine" id="cb3-3" data-line-number="3"><span class="ot">---</span></a></code></pre></div>
+<p>Every file can contain multiple Include Files but can use only one Layout File. Each Layout File is located in <code>_layouts/</code> folder while each Include File is located in <code>_includes/</code> folder.</p>
+<p>A serving file on the other hand can be in any folder except the reserved ones (e.g. <code>_includes/</code>). Normally people put them in the root directory. A serving file will be served by its name (e.g. <code>about.html</code> will be served at <code>http://domainName/about.html</code>) unless you specify the url in <i>Front Matter</i>.</p>
+<div class="sourceCode" id="cb4"><pre class="sourceCode yaml"><code class="sourceCode yaml"><a class="sourceLine" id="cb4-1" data-line-number="1"><span class="ot">---</span></a>
+<a class="sourceLine" id="cb4-2" data-line-number="2"><span class="fu">permalink:</span><span class="at"> /about</span></a>
+<a class="sourceLine" id="cb4-3" data-line-number="3"><span class="ot">---</span></a>
+<a class="sourceLine" id="cb4-4" data-line-number="4"><span class="co">#this file would be served at http://domainName/about</span></a></code></pre></div>
+<p>Lastly, I would like to introduce 2 very special types of files: <a href="http://jekyllrb.com/docs/posts/"><em>Post</em> file</a> and <a href="http://jekyllrb.com/docs/datafiles/"><em>Data</em> file</a>. Post files are located in <code>_posts/</code> while Data Files in <code>_data/</code>. All Post files of a site can be accessed as an array using the variable <code>site.posts</code> in your Liquid html files, while all Data Files can be accessed as <code>site.data.filename</code>.</p>
+<blockquote>
+<p>You can <a href="http://jekyllrb.com/docs/collections/">define your own kinds of Collections files similar to Post files</a>. (E.g. Blogpost files accessed as <code>site.blogpost</code> located in the <code>_blogpost/</code> folder after <a href="http://jekyllrb.com/docs/collections/#step-1-tell-jekyll-to-read-in-your-collection">you’ve declared it in <code>_config.yml</code></a>).</p>
+</blockquote>
+<p class="text-center">
+● ● ●
+</p>
+<h3 id="on-the-liquid-templating-language-336words">on the Liquid templating language <small class="wordCount">336 words</small></h3>
+<p>Liquid is a Templating languages <a href="https://github.com/Shopify/Liquid">written in Ruby</a> and can be <a href="https://github.com/Shopify/Liquid/wiki/Liquid-for-Programmers">easily extended by exporting methods from your modules to the list of “filters”</a>. If you would like to stick to the Jekyll that is supported by GitHub Pages™, you can’t extend Liquid (<a href="http://jekyllrb.com/docs/plugins/">or Jekyll</a>) by yourself . That is to say, there would be some limitation on the Liquid that you are working with, data-manipulation-wise. This is why if the website you want to build consists of a lot of data-manipulating, you are advices to use frameworks like <a href="https://angularjs.org">Angular</a> to have a better architecture (e.g. <a href="http://stackoverflow.com/tags/model-view-controller/info">MVC</a>) and it would make your life easier too.</p>
+<p>There are basically 3 things in Liquid: Variable, Logic Blocks and Filter. Variables defined in Front Matter is accessed as <code>page.variableName</code>, while in <code>/_config.yml</code> it is as <code>site.variableName</code>. A variable can be either a primitive (e.g. an integer), an array, or a object. Pretty standard. Variables can be printed/echoed out as string, much the same way as <a href="http://handlebarsjs.com">Handlebar</a> &amp; <a href="http://mustache.github.io">mustache</a>:</p>
+<pre class="html{{site.title}}"><code></code></pre>
+<p>Or it can also be assigned using this one-liner:</p>
+<div class="sourceCode" id="cb6"><pre class="sourceCode html"><code class="sourceCode html"><a class="sourceLine" id="cb6-1" data-line-number="1">{% assign catName = &quot;Nyanchan&quot; %}</a>
+<a class="sourceLine" id="cb6-2" data-line-number="2"><span class="kw">&lt;p&gt;</span>The cat name is {{catName}}!<span class="kw">&lt;/p&gt;</span></a></code></pre></div>
+<p>You can check if some statement is true before deciding what to do with Conditions Blocks.</p>
+<div class="sourceCode" id="cb7"><pre class="sourceCode html"><code class="sourceCode html"><a class="sourceLine" id="cb7-1" data-line-number="1">{% if site.name == &quot;0a: Arch Here&quot; %}</a>
+<a class="sourceLine" id="cb7-2" data-line-number="2">   This is 0a.io</a>
+<a class="sourceLine" id="cb7-3" data-line-number="3">{% else %}</a>
+<a class="sourceLine" id="cb7-4" data-line-number="4">   You are on some other site.</a>
+<a class="sourceLine" id="cb7-5" data-line-number="5">{% endif %}</a></code></pre></div>
+<p>There is also a For loop block for going though an array.</p>
+<div class="sourceCode" id="cb8"><pre class="sourceCode html"><code class="sourceCode html"><a class="sourceLine" id="cb8-1" data-line-number="1">{% for post in site.posts %}</a>
+<a class="sourceLine" id="cb8-2" data-line-number="2">{{ post.title }}</a>
+<a class="sourceLine" id="cb8-3" data-line-number="3">{% endfor %}</a></code></pre></div>
+<p>Every logic block starts and ends with a corresponding start/end tag. To learn more about logic blocks you can <a href="https://github.com/Shopify/Liquid/wiki/Liquid-for-Designers#tags">read the doc here</a>.</p>
+<p>The last thing to introduce is <a href="https://github.com/Shopify/Liquid/wiki/Liquid-for-Designers#standard-filters">Filter</a>. It is the only thing you can use for data-manipulation. Let’s say you have a variable <code>x = 1</code> and you want to add 10 to it, you can’t just write <code>x + 10</code>, the only way to do it is to use the <code>plus</code> Filter:</p>
+<div class="sourceCode" id="cb9"><pre class="sourceCode html"><code class="sourceCode html"><a class="sourceLine" id="cb9-1" data-line-number="1">html{% assign x = 1 %}</a>
+<a class="sourceLine" id="cb9-2" data-line-number="2">{% assign x = x | plus: 10 %}</a>
+<a class="sourceLine" id="cb9-3" data-line-number="3">{{x}}</a></code></pre></div>
+<p>You can also apply filter before it is printed/echoed.</p>
+<div class="sourceCode" id="cb10"><pre class="sourceCode html"><code class="sourceCode html"><a class="sourceLine" id="cb10-1" data-line-number="1">html{{x | plus: 10}}</a></code></pre></div>
+<p>You can also apply filter after filter</p>
+<div class="sourceCode" id="cb11"><pre class="sourceCode html"><code class="sourceCode html"><a class="sourceLine" id="cb11-1" data-line-number="1">{% assign x = 2 | plus: 3 | times: 100 %}</a></code></pre></div>
+<p>The flow of operations moves from left to right, so you would expect the <code>x</code> above to be 500 (instead of 302 or 203).</p>
+<p>Aside from the default <a href="https://github.com/Shopify/Liquid/wiki/Liquid-for-Designers#standard-filters">Liquid Filters</a>, <a href="http://jekyllrb.com/docs/templates/">here</a> is a list of filters (came along with Jekyll) that you can use.</p>
+<p class="text-center">
+● ● ●
+</p>
+<h3 id="end-note-500-600words">End Note <small class="wordCount">500-600 words</small></h3>
+<p>Hope it didn’t take you longer than 3 minutes to read through this article! If you still have a bit more time to spare, here are a few tips you may find useful:</p>
+<ol>
+<li>
+<p>
+Liquid works in every file except for data files. So you can have Liquid in your <code>.md</code> files too, and it’d work!
+</p>
+</li>
+<li>
+<p>
+The Jekyll server reads <code>_config.yml</code> only once (when it is starting). Changes you made in <code>_config.yml</code> would only be reflected after the server is restarted.
+</p>
+</li>
+<li>
+<p>
+There seems to no way to create array or object declaratively on the fly. <code>{%raw%}{% assign %}{%endraw%}</code> is only capable of assigning primitive values to variables unless things are done in this way:
+</p>
+<div class="sourceCode" id="cb12"><pre class="sourceCode html"><code class="sourceCode html"><a class="sourceLine" id="cb12-1" data-line-number="1">{% assign x = b %}</a></code></pre></div>
+<p>
+where <code>b</code> is an array or object already defined in Front Matter. So the line below <b>would not work</b> at all:
+</p>
+<div class="sourceCode" id="cb13"><pre class="sourceCode html"><code class="sourceCode html"><a class="sourceLine" id="cb13-1" data-line-number="1">{% assign x = [1,2,3] %}</a></code></pre></div>
+</li>
+<li>
+<p>
+Apparently, every variable can be overwritten locally with <code><code>html{%assign%}</code></code>.
+</p>
+<div class="sourceCode" id="cb14"><pre class="sourceCode html"><code class="sourceCode html"><a class="sourceLine" id="cb14-1" data-line-number="1">{{site.url}}</a>
+<a class="sourceLine" id="cb14-2" data-line-number="2">{% assign site = 2 %}</a>
+<a class="sourceLine" id="cb14-3" data-line-number="3">{{site}}</a></code></pre></div>
+<p>
+Initially <code>site</code> is an object, after the <code><code>html{%assign%}</code></code> tag, <code>site</code> is <code>2</code>. This only has effect in a local scope.
+</p>
+</li>
+<li>
+<p>
+Having a <a href="https://github.com/ruby/rake)">Rake</a> file is a good way to define tasks to run in CLI. Tasks such as the ones in this <a href="https://github.com/plusjade/jekyll-bootstrap">Jekyll Bootstrap Repo</a> for <a href="https://github.com/plusjade/jekyll-bootstrap/blob/master/Rakefile">creating posts</a>. For that, an alternative is to use <a href="https://github.com/jekyll/jekyll-compose">jekyll-compose</a>. (But <a href="http://jekyllrb.com/docs/plugins/#commands">Jekyll compose only works for Jekyll 2.5 &amp; GitHub Pages™ supports 2.4 </a>.)
+</p>
+</li>
+<li>
+<p>
+<a href="http://jekyllrb.com/docs/templates/#code-snippet-highlighting">Jekyll has built in support for syntax highlighting!</a> (though it is <a href="http://pygments.org">actually done through Python</a>)
+</p>
+</li>
+<li>
+<p>
+<small>This is added on 19th June</small> If you are working with custom url for Collection files, remember to always end the permalink with <code>/</code> (e.g. <code>myCat/</code> instead of <code>myCat</code>) <a href="https://github.com/jekyll/jekyll/issues/3800">or the file would be served raw</a>.
+</p>
+</li>
+<li>
+<p>
+<p><small>This is added on 7th July</small> When working with angular in your Jekyll site, remember that liquid and Angular both uses the <code><code>html{{}}</code></code> syntax for templating and any <code><code>html{{}}</code></code> in your .html will be evaluated before it is servered. So you’d need to do it like this</p>
+<div class="sourceCode" id="cb15"><pre class="sourceCode html"><code class="sourceCode html"><a class="sourceLine" id="cb15-1" data-line-number="1"><span class="kw">&lt;div&gt;</span></a>
+<a class="sourceLine" id="cb15-2" data-line-number="2">{{ angular.stuff }}</a>
+<a class="sourceLine" id="cb15-3" data-line-number="3">{{ &quot;{%&quot; }} endraw {{ &quot;%}&quot; }}</a>
+<a class="sourceLine" id="cb15-4" data-line-number="4"><span class="kw">&lt;/div&gt;</span></a></code></pre></div>
+in order for <code>html{{}}</code> to show up when the broswer downloads the html. Also, consider using <code>ng-bind</code> instead of <code><code>html{{}}</code></code>. <a href="https://docs.angularjs.org/api/ng/directive/ngBind">It’s a lot neater this way.</a> (If necessary, <code>ng-bind-html</code>).
+</p>
+</li>
+<li>
+<p>
+Lastly, you don’t really need to stick to the GitHub Pages™ Jekyll (the Jekyll that GitHub Pages™ has built-in support for) for your GitHub Page if you prefer something else. Or something more advanced - <a href="http://jekyllrb.com/news/2015/01/24/jekyll-3-0-0-beta1-released/)">Try out Jekyll 3.0, it’s got hooks</a>. (If you want to use Jekyll 3.0 for production, you’d just need to build locally &amp; push the <code>_site/</code> dir as the repo.) This way you can <a href="http://jekyllrb.com/docs/plugins/">fully customize your Jekyll with plugins as well</a>.
+</p>
+</li>
+</ol>
+<blockquote>
+<p>If you are interested in server architecture, you can learn about the new infrastructure used by GitHub Pages™ in production (since Jan 2015) <a href="http://githubengineering.com/rearchitecting-github-pages/">here</a>.</p>
+<p>Despite advocating for Jekyll 3.0 &amp; Angular, I built this site of mine using Jekyll 2.4, without any JS framework or heavy library (jQuery is used only by 2 articles because they rely on a small jQuery widget I wrote some time ago). I just want to keep things lightweight &amp; simple (although I do have some really messy code in my templating files as a consequence of a pointless challenge I gave myself to hack around under the limitation imposed by the GitHub Pages™ Jekyll). So I’m considering using Angular.</p>
+<p>Update (early July): a part of the <a href="http://0a.io/">home page</a> now uses angular.</p>
+</blockquote>
+        </div>
+    </div>
+</article>
+</div>
+<div>
+  <h2 class="thickRaleway menu-bottom">
+    <a class="menu-item" href="../">Back to Home Page</a>
+</h2>
+</div>
+
+
   <div class="cover-image">
   <img class="hide-if-smaller-than-mobile-device-regular" src="../img/backgrounds/maarten-van-den-heuvel-346883.jpg" />
   <img class="show-if-smaller-than-mobile-device-regular" src="../img/backgrounds/maarten-van-den-heuvel-346883-full.jpg" />
