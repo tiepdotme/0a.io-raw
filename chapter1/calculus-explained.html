@@ -137,7 +137,7 @@
 </p>
 <br />
 <h3 class="_index to_function">
-What is a function?
+1. What is a function?
 </h3>
 <p>A <u>function</u> can be seen as a machine that takes in value and gives you back another value. It is what we use in maths to map numbers (input) to other numbers (output).</p>
 <p class="text-center">
@@ -153,7 +153,7 @@ What is a function?
 </blockquote>
 <br />
 <h3 class="_index to_limit">
-What is a limit?
+2. What is a limit?
 </h3>
 <p>A <u>limit</u> is the number you are “expected” to get from a function (or algebraic expression) when it takes in a certain input. By “expected” it is referring to the expectation of the output when <span class="math inline">\(x\)</span> “approaches” a certain value.</p>
 <p>Here is an example where the limit (the expected output) is the same as the actual output.</p>
@@ -178,7 +178,7 @@ What is a limit?
 <p>If you would like to learn more about limit, feel free to check out my essay <a href="what-do-we-talk-about-when-we-talk-about-limit.html">What do we talk about when we talk about limit</a>.</p>
 <p><br /></p>
 <h3 class="_index to_differentiation">
-What is differentiation?
+3. What is differentiation?
 </h3>
 <p>Differentiation is a fanciful name for the process of obtaining a <u>derivative</u>. And a derivative is a function that gives you the “slope” (or rate of change) of another function at a certain point.</p>
 <p>Basically, differentiation can be seen as a machine that takes in a function and gives you back another function.</p>
@@ -206,7 +206,7 @@ What is differentiation?
 <p>This is when we cannot use a constant to represent the “slope”: we need to use a function that gives us different “slope” (rate of change) at different point. Or rather, we shouldn’t even call it a “slope” anymore since the rate of change is not constant. We call it derivative.</p>
 <p><small> If you are still trying to get your head around what it means by “the rate of change is not constant”, imagine a cat at rest starts to accelerate constantly at <span class="math inline">\(1m/s^2\)</span>. Three seconds later it would be moving at the speed of <span class="math inline">\(3m/s\)</span>. So far the rate of change in its speed is constant. But when the cat begins to slow down, the rate of change would no longer be constant. </small></p>
 <h3 class="_index">
-How to find the derivative of a function?
+4. How to find the derivative of a function?
 </h3>
 <p>The rate of change at a certain point in the function can be visualized as a straight line across the point.</p>
 <p class="text-center">
@@ -282,6 +282,9 @@ This is the modern definition of derivative in terms of limit.
 ● ● ●
 </p>
 <br />
+<h3 class="to_antidifferentiation">
+5. Introducing anti-differentiation
+</h3>
 <p class="_index">
 I shall now introduce a new concept called <u>anti-differentiation</u>. It is just the inverse of differentiation. It can be seen as a machine that takes in a function, <span class="math inline">\(g(x)\)</span>, and give you back another function, <span class="math inline">\(f(x)\)</span>, whose derivative is <span class="math inline">\(g(x)\)</span>. Here, <span class="math inline">\(g(x)\)</span> is known as the <u>anti-derivative</u> of <span class="math inline">\(f(x)\)</span>.
 </p>
@@ -293,7 +296,7 @@ I shall now introduce a new concept called <u>anti-differentiation</u>. It is ju
 <p>As shown above, we can see that no matter what the constant is, it would always give us back the same function if we differentiate it. So, in order to be technically correct, we would need to put a placeholder, <span class="math inline">\(+ C\)</span>, in the end of the function to indicate that the anti-derivative can be any function that plus some constant (or minus some constant for cases when <span class="math inline">\(C\)</span> is negative).</p>
 <p><span class="math display">\[\begin{align}f(x) &amp;= 2x \\ \frac{d}{dx} g(x) &amp;= f(x) \\ g(x) &amp;= x^2 + C \end{align}\]</span></p>
 <h3 class="_index to_integration">
-What is integration?
+6. What is integration?
 </h3>
 <p>Integration is a fanciful name for the process of finding <u>integral</u>. Integral here is referring to either <u>indefinite integral</u>, or <u>definite integral</u>. (Therefore sometimes we say indefinite integration or definite integration just to be specific.)</p>
 <p><u>Indefinite integral</u> is fundamentally equivalent to anti-derivative. They are basically the same thing.</p>
@@ -359,14 +362,14 @@ This is known as the <a target="_blank" href="http://mathworld.wolfram.com/Riema
 </blockquote>
 <br />
 <h3 class="_index">
-How to find the definite integral of a function from <span class="math inline">\(a\)</span> to <span class="math inline">\(b\)</span>?
+7. How to find the definite integral of a function from <span class="math inline">\(a\)</span> to <span class="math inline">\(b\)</span>?
 </h3>
 <p>Computing the limit of a Riemann sum can really be a tedious thing to do. So what we normally do is to find the indefinite integral first before putting <span class="math inline">\(a\)</span> and <span class="math inline">\(b\)</span> into the indefinite integral and getting the difference between them (using the definition of definite integral from the 2nd fundamental theorem of calculus mentioned above).</p>
 <p><span class="math display">\[g(x) = x^4 \\ \int g(x)\ dx =\frac{x^5}{5} + C \\ \int_2^3 g(x)\ dx = \frac{3^5}{5}-\frac{2^5}{5} = 42.2 \]</span></p>
 <p>Of course, it is <a target="_blank" href="http://math.stackexchange.com/q/710175/65082">not always necessary to get the indefinite integral first (it is possible to arrive at an answer after some transformations of the definite integral)</a>.</p>
 <br />
 <h3 class="_index">
-How to find the indefinite integral (anti-derivative) of a function?
+8. How to find the indefinite integral (anti-derivative) of a function?
 </h3>
 <p>Apparently, we can reverse the differentiation shortcuts/rules above and turn them into integration shortcuts/rules. But sometimes a little bit of creativity is required for integration. Let’s take a look at the reverse-<a target="_blank" href="http://en.wikipedia.org/wiki/Chain_rule">chain-rule</a>.</p>
 <p><span class="math display">\[ f'(g(x))g'(x) = \frac{d}{dx} f(g(x))\]</span></p>
@@ -393,7 +396,7 @@ This technique (reversing chain rule) is known as <a target="_blank" href="http:
 </p>
 <p><br /></p>
 <h3 class="_index">
-Bonus: Partial derivative
+9. Bonus: Partial derivative
 </h3>
 <p>When a function has more than one input value, we call it a multivariable function.</p>
 <p><span class="math display">\[f(x_1,x_2) = 3x_1+x_2\]</span></p>
@@ -485,7 +488,7 @@ If you are interested in learning more about calculus, check out <a target="_bla
 
 </div></div>
 
-<div class="loading_maths">
+<!-- <div class="loading_maths">
 You may experience lag <br>while maths is being rendered (LaTeX).
 </div>
 <div class="fixed_top_nav">
@@ -503,7 +506,7 @@ You may experience lag <br>while maths is being rendered (LaTeX).
 <div class="inlineblock">9. Finding the indefinite Integral</div>
 <div class="inlineblock">10. Bonus: Partial derivative</div>
 </div>
-</div>
+</div> -->
 
 </body>
 
