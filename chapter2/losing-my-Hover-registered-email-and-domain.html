@@ -23,7 +23,7 @@
                 <meta name="theme-color" content="#ffffff">
 <link rel="stylesheet" href="../css/bootstrap.4.0.0-beta3.min.css" />
 <link href="../css/ionicons.2.0.1.min.css" rel="stylesheet">
-<link href="../css/main.css?v=2" rel="stylesheet">
+<link href="../css/main.css?v=3" rel="stylesheet">
 <link href="../css/fonts.css" rel="stylesheet">
 
 <link href="../css/highlight.css" rel="stylesheet">
@@ -135,7 +135,7 @@
 <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 </div>
 <p><img src="../img/hover-can-you-help.png" style="max-width:300px"></p>
-<p>Within 24 hours I received an email from Kenny from Hover Help Center. He suggested that I could either brute-force my way into my email or get a notarized affidavit to verify my identity since I’m not a U.S. citizen.</p>
+<p>Within 24 hours I received an email from Kenny from Hover Help Center. He suggested that I could either brute-force my way into the email or get a notarized affidavit to verify my identity since I’m not a U.S. citizen.</p>
 <blockquote>
 <h5 id="dec-27-0941-est">Dec 27, 09:41 EST</h5>
 <p>Hi Archy</p>
@@ -143,7 +143,7 @@
 <p>After reviewing the account, the easiest way for you to regain access is if you continue to try to access the primary contact email via https://mail.hover.com - if you can gain access by guessing the correct password, then you can do a password reset on the main Hover account.</p>
 <p>For security purposes, once an account has been locked out due to too many password attempts, the only way to unlock it is to do a password reset. If you absolutely cannot get into your email, we still have a way to verify you, but that’s going to take a bit longer. Just to check, are you the account holder a US citizen? If you’re a US citizen, we can schedule our security team to place a call to you to verify your identity. If you are not a US citizen however we will require a notarized affidavit to verify your identity. Once we process the affidavit or you’ve cleared the security team we can then update the primary contact email on your account and from there you can do a password reset.</p>
 </blockquote>
-<p>I asked him if there was any other way around this, such as using my credit card information, etc.</p>
+<p>I asked him if there was any other way to prove my identity, such as using my credit card information, sending a letter to my mailing address, etc.</p>
 <blockquote>
 <h5 id="dec-27-1321-est">Dec 27, 13:21 EST</h5>
 <p>Hi Archy,</p>
@@ -151,7 +151,7 @@
 <p>When you visit a notary public they’d need to see some form of ID, and sign off on having seen you in person and that you’ve presented the ID to them. We then match the name on the affidavit to the name on the account - if it’s the same name, we can update the email on the account for you, and you’d be able to do a password reset.</p>
 <p>When you obtain the affidavit, all you need to do is to send us an electronic copy, such as scanning the document, and emailing it back to me here via attaching it to the email. From there we can process it for you</p>
 </blockquote>
-<p>Nope. They appeared to be very strict about it. Kenny proceeded by giving me very elaborate information on obtaining an affidavit! This would be very useful except I had a little problem here. I explained to him that my 17 years old self didn’t register the domain under my legal name. (As a Chinese passport holder growing up in Singapore I have an English name that is not a part of my legal name. My legal name is merely the pinyin romanisation of my Chinese name &amp; the English name is the name I go by in everyday life. The only time I’d use my legal name is when dealing with strictly legal documents and distant relatives who don’t speak English.)</p>
+<p>Nope. They appeared to be very strict about it. Kenny proceeded by giving me very elaborate information on obtaining an affidavit! This would be very useful except I had a little problem here. I explained to him that my 17 years old self didn’t register the domain under my legal name. (As a Chinese passport holder growing up in Singapore I have an English name that is not a part of my legal name. My legal name is simply the pinyin romanisation of my Chinese name, while my English name is the name I go by in everyday life. The only time I’d use my legal name is when dealing with strictly legal documents or distant relatives who don’t speak English.)</p>
 <blockquote>
 <h5 id="dec-28-1132-est">Dec 28, 11:32 EST</h5>
 <p>Hi Archy,</p>
@@ -159,7 +159,7 @@
 <p>…</p>
 <p>Alternatively, if you did use your real name on the Hover account, you can provide a single notarized affidavit of just your first and last name, in which case you can claim ownership of the account.</p>
 </blockquote>
-<p>Kenny then explained to me why I wouldn’t be able to reclaim the ownership of my domains, emphasising that the name in the registration has to be my <em>real</em> name. I was rather tempted to tell him that I did use my <em>real</em> name but it just so happened to have no legal bearing yet (before I become a Singapore citizen which is when I’ll be entitled to include an English name as a part of my legal name). But I wouldn’t want to get into an ontological argument with Kenny on <em>What is Real, really?</em> I thanked him for all the detailed break-downs and ended the conversation.</p>
+<p>Kenny then explained to me why I wouldn’t be able to reclaim the ownership of my domains, emphasising that the name in the registration has to be my <em>real</em> name. I was rather tempted to tell him that I did use my <em>real</em> name but it just so happened to have no legal bearing yet. (Someday in the future I become a Singapore citizen and that is when I’ll be entitled to include an English name as a part of my legal name.) But I wouldn’t want to get into an ontological argument with Kenny on <em>What is Real, really?</em> I thanked him for the detailed break-downs and ended the conversation.</p>
 <p>Feeling defeated, I wrote a <a href="https://addons.mozilla.org/en-US/firefox/addon/greasemonkey/">Greasemonkey</a> script in hopes of brute-forcing my way in.</p>
 <div class="sourceCode" id="cb1"><pre class="sourceCode js"><code class="sourceCode javascript"><a class="sourceLine" id="cb1-1" data-line-number="1"><span class="co">// ==UserScript==</span></a>
 <a class="sourceLine" id="cb1-2" data-line-number="2"><span class="co">// @name     please work</span></a>
@@ -236,17 +236,17 @@
 <a class="sourceLine" id="cb1-73" data-line-number="73"></a>
 <a class="sourceLine" id="cb1-74" data-line-number="74">  <span class="op">}</span>)()</a>
 <a class="sourceLine" id="cb1-75" data-line-number="75"><span class="op">}</span></a></code></pre></div>
-<p>Nope. After ~600 POST requests to mail.hover.com it still didn’t find the right combination.</p>
+<p>Nope. It did ~600 POST requests to mail.hover.com but to no avail.</p>
 <p style="text-align:center; font-size:1.3em">
 • • •
 </p>
-<p>I did the post-mortem and disabled the credit card affiliated with my Hover account to turn off the auto-renewals. I wondered what would happen when these domains expired? Perhaps that is when domain merchant bots would take their chance. I doubt I would be able to re-register any of them. Oh dear. a@0a.io and 0a.io are gone forever.</p>
+<p>I did the post-mortem and disabled the credit card affiliated with my Hover account, which was the only way to turn off the auto-renewals. I wondered what will happen when these domains expire. Perhaps that is when domain merchant bots would take their chance. I doubt I would be able to re-register any of them.</p>
+<p>Oh dear. My super cool email <code>a@0a.io</code> and domain <code>0a.io</code> are gone forever.</p>
 <p>On the bright side work wasn’t affected by this screw-up since I hadn’t been doing anything email-intensive lately. I just needed to get a new email address and update my contacts about it, and probably losing some weak ties along the way.</p>
 <p>It wasn’t really that much of a loss overall.</p>
-<p>Convincing oneself the insignificance in losses often helped to alleviate the agony. Although gradually we all learn that losing things is a large part of what life is about, it would always take a while to get used to. At some point in time 0a.io had become somewhat an identity to me.</p>
+<p>Convincing oneself the insignificance in losses often helped to alleviate the agony. Gradually we all learn that losing things is a large part of what life is about. Nonetheless, it would always take a while to get used to. At some point in time 0a.io had become somewhat an identity to me.</p>
 <p>While grieving over the bygone domain I recall how it has been two years since I last updated my blog. Perhaps it’s time that I start <a href="http://zer0.degree">a new one</a>, migrate everything to it, and get back to writing again.</p>
-<p>Farewell 0a.io.</p>
-<p>Farewell a@0a.io.</p>
+<p>Farewell <code>a@0a.io</code>. Farewell <code>0a.io</code>.</p>
         </div>
     </div>
 </article>
