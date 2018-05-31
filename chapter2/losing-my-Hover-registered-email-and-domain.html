@@ -23,7 +23,7 @@
                 <meta name="theme-color" content="#ffffff">
 <link rel="stylesheet" href="../css/bootstrap.4.0.0-beta3.min.css" />
 <link href="../css/ionicons.2.0.1.min.css" rel="stylesheet">
-<link href="../css/main.css?v=1" rel="stylesheet">
+<link href="../css/main.css?v=2" rel="stylesheet">
 <link href="../css/fonts.css" rel="stylesheet">
 
 <link href="../css/highlight.css" rel="stylesheet">
@@ -115,10 +115,36 @@
         </h2>
         <div class="text">
             <p>It began with the trackpad. A few weeks ago my half-decade old Apple companion decided it’s time for the trackpad to malfunction again, which had gotten me to ponder quite extensively upon the extravagant dependency I had on cursor navigation as a command line advocate.</p>
-<p>I figured it was perhaps time to leave my comfort zone and continue the exploration into Vim and the Linux jungle, I thought. I did the usual backup procedure and diskwiped my Macintosh‎ before porting <a href="https://wiki.archlinux.org/index.php/Arch_is_the_best">Arch</a> onto my machine. It had been 2 years since I last ran Arch.</p>
-<p>As I was doing so it didn’t occur to me to back up the passwords. Somewhere down the subconscious rabbit hole lazed the idea of how simple the recovery process would be in the case of losing a password. You see, I lost passwords all the time and resetting password had become some sort of a routine. Sun Tzu once said, “When you confuse yourself you confuse the enemy.”</p>
-<p>I used <a href="https://en.wikipedia.org/wiki/Hover_(domain_registrar)">Hover</a> to set up both my domains and emails. There was this unsettling symmetry in the recovery dependency between my email and Hover account: just like the password of my email which can only be reset by my Hover account, the password of my Hover account can only be reset by the same email. A recursive and logically flawed design indeed, one that I will never allow to exist in programs I write. Nonetheless I had kept it this way for as long as I could remember. It was still somewhat a stable system since the probability of losing access to both accounts concurrently was pretty low.</p>
-<p>Years had passed and I hadn’t run into any problem, expect this time. Hover had become hyper-sensitive with security over the years. It decided to lock my account after <b>two</b> failed attempts of mine log in as I fumbled for the right key. Normally I could gracefully recover the account through my email. But this time to access the inbox I would need to rely on this short-term memory of mine, and it just so happened I had recently changed the password in a variation experiment. I ended up writing a <a href="https://addons.mozilla.org/en-US/firefox/addon/greasemonkey/">Greasemonkey</a> script in hopes of brute-forcing my way in.</p>
+<p>I figured it was perhaps time to leave my comfort zone and continue the exploration into Vim and the Linux jungle. I did the usual backup procedure and disk-wiped my Macintosh‎ before porting <a href="https://wiki.archlinux.org/index.php/Arch_is_the_best">Arch</a> onto it. Farewell OS X.</p>
+<p>Little did I know this was when I had shot myself in the foot. When I tried to log into my email in Arch I realised I couldn’t quite remember the new password I set a few days ago. Well, I lost passwords all the time and resetting password had become some sort of a routine. Sun Tzu once said, “When you confuse yourself you confuse the enemy.” So I tried to log into my Hover account to reset my email password.</p>
+<p>There were four password variations I had in mind for my Hover account. I tried the first two. It didn’t work (well, the probability was 50%). And when I tried my third attempt I was notified that Hover had locked my account.</p>
+<p><img src="../img/locked.png" style="max-width:350px"></p>
+<p>Okay. So I would need to use my email to unlock the account. Fair enough. Hmm. I had used <a href="https://en.wikipedia.org/wiki/Hover_(domain_registrar)">Hover</a> to set up both the domain and email. And the only way to recover my Hover email was to log into my Hover account, which now required logging in my email to unlock it. What a typical deadlock situation! I decided to contact Hover support and see if they could do anything about it.</p>
+<p>I used another hover registered email and wrote to help@hover.com. Tweeted to them &amp; Fb messaged them.</p>
+<p>They responded by telling me to brute-force my way into my email. Or I would need to get a notarized affidavit to verify my identity since I’m not a U.S. citizen.</p>
+<blockquote>
+<h5 id="dec-27-0941-est">Dec 27, 09:41 EST</h5>
+<p>Hi Archy</p>
+<p>Thanks for reaching out.</p>
+<p>After reviewing the account, the easiest way for you to regain access is if you continue to try to access the primary contact email via https://mail.hover.com - if you can gain access by guessing the correct password, then you can do a password reset on the main Hover account.</p>
+<p>For security purposes, once an account has been locked out due to too many password attempts, the only way to unlock it is to do a password reset. If you absolutely cannot get into your email, we still have a way to verify you, but that’s going to take a bit longer. Just to check, are you the account holder a US citizen? If you’re a US citizen, we can schedule our security team to place a call to you to verify your identity. If you are not a US citizen however we will require a notarized affidavit to verify your identity. Once we process the affidavit or you’ve cleared the security team we can then update the primary contact email on your account and from there you can do a password reset.</p>
+</blockquote>
+<p>I asked them if there is any other way around it for a none-U.S. citizen.</p>
+<blockquote>
+<h5 id="dec-27-1321-est">Dec 27, 13:21 EST</h5>
+<p>Hi Archy,</p>
+<p>I’m very sorry to hear that. I understand that this is an inconvenience to you to have an affidavit, but we only do it for security purposes. In this case when we receive an account access request from another email address that’s not listed on file, there’s no way for us to know whether you are the account holder or if someone else is trying to social engineer into the account to get access to your domains. To prevent anyone else from accessing your Hover account, and thus the domains, we’d need to verify that you are the account holder. Since the email address on file isn’t valid, the only way for us to do that, is for you too visit a notary public and obtain an affidavit.</p>
+<p>When you visit a notary public they’d need to see some form of ID, and sign off on having seen you in person and that you’ve presented the ID to them. We then match the name on the affidavit to the name on the account - if it’s the same name, we can update the email on the account for you, and you’d be able to do a password reset.</p>
+<p>When you obtain the affidavit, all you need to do is to send us an electronic copy, such as scanning the document, and emailing it back to me here via attaching it to the email. From there we can process it for you</p>
+</blockquote>
+<p>I explained to them the main problem with the affidavit is that my 17 years old self didn’t register the domain in my legal name. (As a Chinese passport holder growing up in Singapore, my legal name is the Pinyin romanisation of my Chinese name which I rarely used in everyday life. So I had put my English name during registration. And now I’m fucked.)</p>
+<blockquote>
+<h5 id="dec-28-1132-est">Dec 28, 11:32 EST</h5>
+<p>Hi Archy, …. When it comes to domain registration and account ownership, the ownership belongs to the person whose name is on the account and the domain registration. In some cases, if the organization field is filled in on a domain registration, the organization supersedes the ownership of the domain. That’s why it’s important to use real and valid information on domain registrations. For example, if you used John Smith on the domain registration and the account name, in that case John Smith is the owner of the domain and the account. If the email on the hover management account is no longer valid, or you no longer have access to it, then we have nothing else to verify you on other than the name on the account, which should be your real name.</p>
+<p>In this case, after reviewing the domains you mentioned previously in your email, to claim ownership of the individual domains: …</p>
+</blockquote>
+<p>Yup. There is no way to claim the ownership of my domain. And I had only got myself to blame.</p>
+<p>Feeling defeated, I wrote a <a href="https://addons.mozilla.org/en-US/firefox/addon/greasemonkey/">Greasemonkey</a> script in hopes of brute-forcing my way in.</p>
 <div class="sourceCode" id="cb1"><pre class="sourceCode js"><code class="sourceCode javascript"><a class="sourceLine" id="cb1-1" data-line-number="1"><span class="co">// ==UserScript==</span></a>
 <a class="sourceLine" id="cb1-2" data-line-number="2"><span class="co">// @name     please work</span></a>
 <a class="sourceLine" id="cb1-3" data-line-number="3"><span class="co">// @version  1</span></a>
@@ -186,7 +212,7 @@
 <a class="sourceLine" id="cb1-65" data-line-number="65">    <span class="kw">let</span> pw <span class="op">=</span> passwords[count]</a>
 <a class="sourceLine" id="cb1-66" data-line-number="66">    await <span class="va">GM</span>.<span class="at">setValue</span>(<span class="st">'count'</span><span class="op">,</span> count <span class="op">+</span> <span class="dv">1</span>)</a>
 <a class="sourceLine" id="cb1-67" data-line-number="67"></a>
-<a class="sourceLine" id="cb1-68" data-line-number="68">    <span class="va">document</span>.<span class="at">getElementById</span>(<span class="st">&quot;rcmloginuser&quot;</span>).<span class="at">value</span> <span class="op">=</span> <span class="st">&quot;&lt;a&gt;a@0a.io&lt;/a&gt;&quot;</span></a>
+<a class="sourceLine" id="cb1-68" data-line-number="68">    <span class="va">document</span>.<span class="at">getElementById</span>(<span class="st">&quot;rcmloginuser&quot;</span>).<span class="at">value</span> <span class="op">=</span> <span class="st">&quot;&lt;a&gt;/*my email address*/&lt;/a&gt;&quot;</span></a>
 <a class="sourceLine" id="cb1-69" data-line-number="69">    <span class="va">document</span>.<span class="at">getElementById</span>(<span class="st">&quot;rcmloginpwd&quot;</span>).<span class="at">value</span> <span class="op">=</span> pw</a>
 <a class="sourceLine" id="cb1-70" data-line-number="70">    <span class="va">console</span>.<span class="at">log</span>(<span class="st">&quot;submitting form... for the &quot;</span> <span class="op">+</span> count <span class="op">+</span> <span class="st">&quot; times&quot;</span>)</a>
 <a class="sourceLine" id="cb1-71" data-line-number="71">    <span class="va">console</span>.<span class="at">log</span>(<span class="st">&quot;of password&quot;</span> <span class="op">+</span> pw)</a>
@@ -194,47 +220,12 @@
 <a class="sourceLine" id="cb1-73" data-line-number="73"></a>
 <a class="sourceLine" id="cb1-74" data-line-number="74">  <span class="op">}</span>)()</a>
 <a class="sourceLine" id="cb1-75" data-line-number="75"><span class="op">}</span></a></code></pre></div>
-<p>After ~600 POST requests to mail.hover.com attempting all possible combinations I could derive, I was surprised that Hover didn’t block my IP address more so than that none of them got it right. Just a few months back I lost my Etheruem wallet (and my Ethers consequentially) after unsuccessful brute force attempts to decrypt the private key (<a href="https://github.com/ethereum/mist/issues/2411">though for that incident it was clearly the wallet’s fault</a>). Such Déjà vu. Lucky for me there’s a centralised system I could contact this time. Yay.</p>
-<blockquote class="twitter-tweet" data-lang="en">
-<p lang="en" dir="ltr">
-<a href="https://twitter.com/hover?ref_src=twsrc%5Etfw"><span class="citation" data-cites="hover">@hover</span></a> Hi there. Please get back to me asap. I need your help. My account is locked &amp; I can't access to my recovery account.
-</p>
-— Archy Wilhes 魏何 (<span class="citation" data-cites="archywilhes">@archywilhes</span>) <a href="https://twitter.com/archywilhes/status/945929498201006081?ref_src=twsrc%5Etfw">December 27, 2017</a>
-</blockquote>
-<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-<p><img src="../img/hover-can-you-help.png" style="max-width:300px"></p>
-<p>They replied. Not very helpful though. To make the situation worst my 16 years old self didn’t register the Hover account under my legal name. So things got complicated.</p>
-<blockquote>
-<h5 id="dec-27-0941-est">Dec 27, 09:41 EST</h5>
-<p>Hi Archy</p>
-<p>Thanks for reaching out.</p>
-<p>After reviewing the account, the easiest way for you to regain access is if you continue to try to access the primary contact email via https://mail.hover.com - if you can gain access by guessing the correct password, then you can do a password reset on the main Hover account.</p>
-<p>For security purposes, once an account has been locked out due to too many password attempts, the only way to unlock it is to do a password reset. If you absolutely cannot get into your email, we still have a way to verify you, but that’s going to take a bit longer. Just to check, are you the account holder a US citizen? If you’re a US citizen, we can schedule our security team to place a call to you to verify your identity. If you are not a US citizen however we will require a notarized affidavit to verify your identity. Once we process the affidavit or you’ve cleared the security team we can then update the primary contact email on your account and from there you can do a password reset.</p>
-</blockquote>
-<div>
-
-</div>
-<blockquote>
-<h5 id="dec-27-1321-est">Dec 27, 13:21 EST</h5>
-<p>Hi Archy,</p>
-<p>I’m very sorry to hear that. I understand that this is an inconvenience to you to have an affidavit, but we only do it for security purposes. In this case when we receive an account access request from another email address that’s not listed on file, there’s no way for us to know whether you are the account holder or if someone else is trying to social engineer into the account to get access to your domains. To prevent anyone else from accessing your Hover account, and thus the domains, we’d need to verify that you are the account holder. Since the email address on file isn’t valid, the only way for us to do that, is for you too visit a notary public and obtain an affidavit.</p>
-<p>When you visit a notary public they’d need to see some form of ID, and sign off on having seen you in person and that you’ve presented the ID to them. We then match the name on the affidavit to the name on the account - if it’s the same name, we can update the email on the account for you, and you’d be able to do a password reset.</p>
-<p>When you obtain the affidavit, all you need to do is to send us an electronic copy, such as scanning the document, and emailing it back to me here via attaching it to the email. From there we can process it for you</p>
-</blockquote>
-<div>
-
-</div>
-<blockquote>
-<h5 id="dec-28-1132-est">Dec 28, 11:32 EST</h5>
-<p>Hi Archy,</p>
-<p>When it comes to domain registration and account ownership, the ownership belongs to the person whose name is on the account and the domain registration. In some cases, if the organization field is filled in on a domain registration, the organization supersedes the ownership of the domain. That’s why it’s important to use real and valid information on domain registrations. For example, if you used John Smith on the domain registration and the account name, in that case John Smith is the owner of the domain and the account. If the email on the hover management account is no longer valid, or you no longer have access to it, then we have nothing else to verify you on other than the name on the account, which should be your real name.</p>
-<p>In this case, after reviewing the domains you mentioned previously in your email, to claim ownership of the individual domains: …</p>
-</blockquote>
-<p>Apparently I wouldn’t be able to claim ownership for the domain since my 17 years old self <a href="https://www.whois.com/whois/0a.io">had decided to put only half my legal name in the WHOIS record during registration</a> believing that it would suffice. Looks like the domain is gone forever, unless I manage to somehow snatch it away from domain merchants right after it expires. And that would likely be pretty damn hard considering I would either be competing with bots or Hover itself.</p>
+<p>Nope. After ~600 POST requests to mail.hover.com it still didn’t find the right combination.</p>
+<p>Looks like the domain is gone forever, unless I manage to somehow snatch it away from domain merchants right after it expires. And that would likely be pretty damn hard considering I would either be competing with bots or Hover itself.</p>
 <p>On the bright side work wasn’t affected by this screw-up since I hadn’t been doing anything email-intensive lately. I just needed to get a new email address and update my contacts about it, and probably losing some weak ties along the way.</p>
 <p>It wasn’t really that much of a loss overall.</p>
-<p>Convincing oneself the insignificance in stuff often helped to alleviate. I have been having quite a hard time getting over the loss. Although gradually we all learn that losing things is a large part of what life is about, it would always take a while to get used to. At some point in time the email and domain had become somewhat an identity to me.</p>
-<p>While grieving over the bygone domain I recall how it has been two years since I last updated my website. Perhaps it’s time that I start <a href="http://zer0.degree">a new site</a>, migrate everything to it, and get back to writing again.</p>
+<p>Convincing oneself the insignificance in losses often helped to alleviate the agony. Although gradually we all learn that losing things is a large part of what life is about, it would always take a while to get used to. At some point in time the email and domain had become somewhat an identity to me.</p>
+<p>While grieving over the bygone domain I recall how it has been two years since I last updated my blog. Perhaps it’s time that I start <a href="http://zer0.degree">a new one</a>, migrate everything to it, and get back to writing again.</p>
         </div>
     </div>
 </article>
