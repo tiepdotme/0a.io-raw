@@ -303,6 +303,13 @@
     </url>
 
     <url>
+        <loc>http://zer0.degree/chapter2/an-intro-to-axioms-and-set-theory-for-12-years-old.html</loc>
+        <changefreq>weekly</changefreq>
+        
+        <priority>0.8</priority>
+    </url>
+
+    <url>
         <loc>http://zer0.degree/chapter2/Film-Night-a-blog-series-Prelude.html</loc>
         <changefreq>weekly</changefreq>
         
