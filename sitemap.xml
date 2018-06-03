@@ -198,6 +198,13 @@
     </url>
 
     <url>
+        <loc>http://zer0.degree/chapter1/giving-a-phony-some-great-search-results-when-her-name-is-googled.html</loc>
+        <changefreq>weekly</changefreq>
+        
+        <priority>0.8</priority>
+    </url>
+
+    <url>
         <loc>http://zer0.degree/chapter1/backup-your-code-every-n-minutes-with-git-and-watch.html</loc>
         <changefreq>weekly</changefreq>
         
@@ -206,13 +213,6 @@
 
     <url>
         <loc>http://zer0.degree/chapter1/some-posts-from-an-old-blog.html</loc>
-        <changefreq>weekly</changefreq>
-        
-        <priority>0.8</priority>
-    </url>
-
-    <url>
-        <loc>http://zer0.degree/chapter1/giving-a-phony-some-great-search-results-when-her-name-is-googled.html</loc>
         <changefreq>weekly</changefreq>
         
         <priority>0.8</priority>
