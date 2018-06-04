@@ -23,7 +23,7 @@
                 <meta name="theme-color" content="#ffffff">
 <link rel="stylesheet" href="../css/bootstrap.4.0.0-beta3.min.css" />
 <link href="../css/ionicons.2.0.1.min.css" rel="stylesheet">
-<link href="../css/main.css?v=7" rel="stylesheet">
+<link href="../css/main.css?v=8" rel="stylesheet">
 <link href="../css/fonts.css" rel="stylesheet">
 
 <meta property="og:url" content="http://zer0.degree//chapter2/an-intro-to-axioms-with-set-theory-for-10-years-old.html" />
@@ -141,9 +141,10 @@
 </p>
 <p>Throughout a child’s life there are many scenarios where the concept of equivalence is more flexible than it seems. It is really up to a person to decide what equals to what and what not. If Mike thinks that is the banana he lost, <em>that’s it</em>. This corresponds very nicely to the notion of equivalence in mathematics from an axiomatic perspective. Ultimately it is all up to the axioms to decide what equal to what and what not.</p>
 <p>In plain language an axiom is a statement that is taken to be true, giving us a bottom-up process in reasoning about things. It is often expressed in a formal manner (as you’ll see below) in order to remove ambiguities semantically and conceptually. That can be difficult for young children though.</p>
-<p>The first baby step to embrace the notion of axioms is to accept that we always need a beginning in our reasoning (in order to do it in an extremely righteous manner. We are serious people). Before their 10th birthdays many baby nihilists would come to the staggering realisation that the past may not have existed - perhaps everyone was created a second ago with memories of a common past intact as the world popped into existence like soda water, preconfigured. In this case we need to equip them with the axiom that the past existed so they can continue their everyday life unaffected by the realisation.</p>
+<p>The first baby step to embrace the notion of axioms is to accept that we always need a beginning in our reasoning<sup>1</sup>. Before their 10th birthdays many baby nihilists would come to the staggering realisation that the past may not have existed - perhaps everyone was created just a moment ago with memories of a common past intact as the world popped into existence like <a href="https://www.youtube.com/watch?v=D97v6XOSLLw&amp;feature=youtu.be&amp;t=2s">soda water</a>, preconfigured. In this case we need to equip them with the axiom that the past existed<sup>2</sup> so they can continue their everyday life unaffected by the realisation.</p>
 <blockquote>
-<p>Actually almost all of us humans (except for <em>true</em> nihilists) live our lives with this axiom as if it is built into our neural circuitries. Humans are strange.</p>
+<p><sup>1</sup>: in order to do it in an <strong>extremely</strong> righteous manner. We are serious people.</p>
+<p><sup>2</sup>: Actually almost all of us humans (except for <em>true</em> nihilists) live our lives with this axiom as if it is built into our neural circuitries. Humans are strange.</p>
 </blockquote>
 <p>Once a child is comfortable with the concept of axioms, we can proceed to the ambiguities-ridding formalisation. With an intuitive understanding of naïve set theory, a child is ready to dissect the axiom that formalises equivalence in set theory, written in the language of first order logic:</p>
 <p><span class="math display">\[\forall A \, \forall B \, (\forall x \ (x \in A \Leftrightarrow x \in B) \, \Rightarrow A = B)\]</span></p>
@@ -171,14 +172,12 @@ More on <i>the axiom of extensionality</i>
 <p>applies to everything in the universe too (due to the preceding <span class="math inline">\(\forall A \, \forall B\)</span>). That is so say every mathematical object in the universe is distinguished only by the elements in them. In such universe (such as <a target="_blank" href="http://www.math.uchicago.edu/~may/VIGRE/VIGRE2011/REUPapers/Lian.pdf">ZF</a>’s universe), empty set is the building block of everything. Let’s say we have a set <span class="math inline">\(A=\{a,b\}\)</span>. Here is an example of what <span class="math inline">\(a\)</span> and <span class="math inline">\(b\)</span> can be:</p>
 <p><span class="math display">\[\begin{align} a &amp;= \{\} =\varnothing \\ b &amp;= \{\{\}\} =\{\varnothing\} \end{align}\]</span></p>
 <blockquote>
-<p>By the <i>axiom of extensionality</i>, we can see that:</p>
-<p><span class="math display">\[\forall x (x \in \{\{\}\} \not\Leftrightarrow x \in \{\}), \text{therefore } \{\varnothing\} \not= \varnothing\]</span></p>
+<p>By the <i>axiom of extensionality</i>, we can see that: <span class="math display">\[\forall x (x \in \{\{\}\} \not\Leftrightarrow x \in \{\}), \text{therefore } \{\varnothing\} \not= \varnothing\]</span></p>
 </blockquote>
 <p>No matter what mathematical objects we come up with, if we look at their elements, the elements of their elements, the elements of the elements of their elements … we will eventually arrive at an empty set. Here is an example</p>
 <p><span class="math display">\[\begin{align} W &amp;= \{a,b,c,d\} \\ ( a=\{b,\{c\}\} ) \Rightarrow W&amp;=\{\{b,\{c\}\},b,c,d\} \\ ( b=\{\{d\}\} ) \Rightarrow W&amp;=\{\{\{\{d\}\},\{c\}\},\{\{d\}\},c,d\} \\ ( c=\varnothing ) \Rightarrow W&amp;=\{\{\{\{d\}\},\{\varnothing\}\},\{\{d\}\},\varnothing,d\} \\ ( d=\{\varnothing,\{\varnothing\}\}  ) \Rightarrow W&amp;=\{\{\{\{\{\varnothing,\{\varnothing\}\}\}\},\{\varnothing\}\},\{\{\{\varnothing,\{\varnothing\}\}\}\},\varnothing,\{\varnothing,\{\varnothing\}\}\} \end{align}\]</span></p>
 <p>In this universe, natural numbers would have to be built up with empty set too. This is Zermelo’s construction/definition of natural numbers:</p>
-<p><span class="math display">\[\begin{align}0 &amp;:= \{\} = \varnothing \\ 1 &amp;:= \{0\} = \{\{\}\} = \{\varnothing\} \\ 2 &amp;:= \{1\} = \{\{0\}\} = \{\{\{\}\}\} = \{\{\varnothing\}\}  \end{align} \\ \]</span></p>
-<p><span class="math display">\[...\]</span></p>
+<p><span class="math display">\[\begin{align}0 &amp;:= \{\} = \varnothing \\ 1 &amp;:= \{0\} = \{\{\}\} = \{\varnothing\} \\ 2 &amp;:= \{1\} = \{\{0\}\} = \{\{\{\}\}\} = \{\{\varnothing\}\}  \end{align} \\ \]</span> <span class="math display">\[...\]</span></p>
 <p>We can say that this is the universe <i> the axiom of extensionality </i> has beautifully entailed.</p>
 <blockquote>
 <p>“It is said that the world is empty, the world is empty, lord. In what respect is it said that the world is empty?” The Buddha replied, “Insofar as it is empty of a self or of anything pertaining to a self: <a target="_blank" href="http://en.wikipedia.org/wiki/%C5%9A%C5%ABnyat%C4%81">Thus it is said, Ānanda, that the world is empty</a>.”</p>
