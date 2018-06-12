@@ -15,3 +15,20 @@ _.each(document.getElementsByClassName("ArchyItem"),function(item){
         date.classList.remove("ArchyItemDateHover")
     })})
 })
+
+var zer0DLogo = document.getElementsByClassName("zeroDegreeLogo")[0]
+var zer0DLogod = zer0DLogo.querySelector(".description")
+
+zer0DLogo.addEventListener("mouseover",function(){
+    zer0DLogod.classList.add("hover")
+})
+
+zer0DLogo.addEventListener("mouseout",function(){
+    zer0DLogod.classList.remove("hover")
+})
+
+window.copyCurrentURL = function(){
+    var copyText = document.getElementById("currrentLink");
+    copyText.select();
+    document.execCommand("copy");
+}
