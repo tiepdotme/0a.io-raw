@@ -61,7 +61,7 @@
       displayMath: [ ['$$','$$'], ["\\[","\\]"] ],
       processEscapes: true
     },
-    "HTML-CSS": { availableFonts: ["TeX"] }
+    "HTML-CSS": { availableFonts: ["TeX"], minScaleAdjust: 100}
   });
 </script>
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
@@ -171,12 +171,12 @@
 <p>This is known as <em>the axiom of extensionality</em>, and it is used in many formal systems of set theory (such as <i><a target="_blank" href="http://www.math.uchicago.edu/~may/VIGRE/VIGRE2011/REUPapers/Lian.pdf">Zermelo–Fraenkel set theory</a></i> (ZF), <i><a target="_blank" href="https://proofwiki.org/wiki/Definition:G%C3%B6del-Bernays_Axioms">von Neumann–Bernays–Gödel set theory</a></i> (NGB) and <i><a target="_blank" href="http://math.boisestate.edu/~holmes/holmes/nf.html">New Foundations</a></i> (NF)).</p>
 </blockquote>
 <p>Similarly, in the banana example above, we can express the banana equivalence as an axiom in the language of first order logic:</p>
-<p><span class="math display">\[\forall A \, \forall B \, (nameTag(A) = nameTag(B) \Rightarrow A = B)\]</span></p>
-<p>where <span class="math inline">\(nameTag(X)\)</span> returns the name on the name tag of <span class="math inline">\(X\)</span>.</p>
+<p><span class="math display">\[\forall A \, \forall B \, (name(A) = name(B) \Rightarrow A = B)\]</span></p>
+<p>where <span class="math inline">\(name(X)\)</span> returns the name on the name tag of <span class="math inline">\(X\)</span>.</p>
 <p>One obvious consequence of this axiom is that if we see two bananas on the table, <span class="math inline">\(banana_1\)</span> and <span class="math inline">\(banana_2\)</span>, each having the same name in its name tag, by our axiom we would have no choice but to conclude that the two bananas are equivalent.</p>
-<p>Another detrimental consequence is that <span class="math inline">\(nameTag(A) = nameTag(B) \Rightarrow A = B\)</span> applies to not just bananas but <strong>everything</strong> in the universe (hence the <a target="_blank" href="http://en.wikipedia.org/wiki/Universal_quantification">universal quantification, <span class="math inline">\(\forall\)</span></a> in <span class="math inline">\(\forall A \, \forall B\)</span>). So if you have a tailor-made suit and a high school uniform that both have your name on it, by the axiom the tailor-made suit would be equivalent to the school uniform! But you spent almost a grand on the suit!</p>
+<p>Another detrimental consequence is that <span class="math inline">\(name(A) = name(B) \Rightarrow A = B\)</span> applies to not just bananas but <strong>everything</strong> in the universe (hence the <a target="_blank" href="http://en.wikipedia.org/wiki/Universal_quantification">universal quantification, <span class="math inline">\(\forall\)</span></a> in <span class="math inline">\(\forall A \, \forall B\)</span>). So if you have a tailor-made suit and a high school uniform that both have your name on it, by the axiom the tailor-made suit would be equivalent to the school uniform! But you spent almost a grand on the suit!</p>
 <blockquote>
-<p>This can be fixed by introducing the Universal Banana Set <span class="math inline">\(U_{Banana}\)</span> that contains all bananas in the world and rewrite the axiom as <span class="math display">\[\forall A \in U_{Banana} \, \forall B \in U_{Banana} \, (nameTag(A) = nameTag(B) \Rightarrow A = B)\]</span></p>
+<p>This can be fixed by introducing the Universal Banana Set <span class="math inline">\(U_{_{Banana}}\)</span> that contains all bananas in the world and rewrite the axiom as <span class="math display">\[\forall A \in U_{_{Banana}} \, \forall B \in U_{_{Banana}} \, (name(A) = name(B) \Rightarrow A = B)\]</span></p>
 </blockquote>
 <h3 class="_index">
 More on <i>the axiom of extensionality</i>
@@ -199,7 +199,7 @@ b  &amp; \text{if }a = \varnothing \\
 Add(a',\{b\}) \text{ where }a = \{a'\} &amp; \text{otherwise}
 \end{cases}\]</span></p>
 <p>Here is what adding 2 and 3 looks like:</p>
-<p><span class="math display">\[ Add(2,3) = Add(\{\{\varnothing\}\},\{\{\{\varnothing\}\}\}) = Add(\{\varnothing\},\{\{\{\{\varnothing\}\}\}\}) = \\ Add(\varnothing,\{\{\{\{\{\varnothing\}\}\}\}\}) = \{\{\{\{\{\varnothing\}\}\}\}\} = 5 \]</span></p>
+<p><span class="math display">\[ \begin{align} Add(2,3) &amp; = Add(\{\{\{\}\}\},\{\{\{\{\}\}\}\}) \\ &amp; = Add(\{\{\}\},\{\{\{\{\{\}\}\}\}\}) \\ &amp; = Add(\{\},\{\{\{\{\{\{\}\}\}\}\}\}) \\ &amp; =  \{\{\{\{\{\{\}\}\}\}\}\} \\ &amp; = 5 \end{align}\]</span></p>
 <p>We can say that this is the universe <i> the axiom of extensionality </i> has beautifully entailed.</p>
 <blockquote>
 <p>“It is said that the world is empty, the world is empty, lord. In what respect is it said that the world is empty?” The Buddha replied, “Insofar as it is empty of a self or of anything pertaining to a self: <a target="_blank" href="http://en.wikipedia.org/wiki/%C5%9A%C5%ABnyat%C4%81">Thus it is said, Ānanda, that the world is empty</a>.”</p>
