@@ -24,4 +24,3 @@
 (from-cardhu-to-archy)
 ;;archy
 ;;阿奇博爾德
-;;https://en.wiktionary.org/wiki/%E9%98%BF%E5%A5%87%E5%8D%9A%E7%88%BE%E5%BE%B7
