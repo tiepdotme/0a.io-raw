@@ -303,6 +303,13 @@
     </url>
 
     <url>
+        <loc>http://zer0.degree/chapter2/the-past.html</loc>
+        <changefreq>weekly</changefreq>
+        
+        <priority>0.8</priority>
+    </url>
+
+    <url>
         <loc>http://zer0.degree/chapter2/the-future.html</loc>
         <changefreq>weekly</changefreq>
         
