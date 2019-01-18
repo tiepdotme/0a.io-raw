@@ -247,7 +247,7 @@
     toPopDOM.className = "scale-up-center"
     var popItUp = function(e) {
         var currentBTM = (window.scrollY+window.innerHeight)
-        var triggeringPoint =  (document.getElementsByTagName("body")[0].offsetHeight - 516)
+        var triggeringPoint =  (document.getElementsByTagName("body")[0].offsetHeight - 526)
         if(currentBTM > triggeringPoint){
             window.removeEventListener('scroll', popItUp)
             toPopDOM.className = "scale-up-center scale-up-center-animates-desu"
