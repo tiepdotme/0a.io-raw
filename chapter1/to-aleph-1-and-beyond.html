@@ -71,7 +71,7 @@
       <div id="body-wrapper"><div id="body">
     <div class="cover-image">
           <div class="whiteOverlay2 hide-if-smaller-than-mobile-device-large"></div>
-    <img class="hide-if-smaller-than-mobile-device-large" src="../img/backgrounds/nicholas-loo-372788-unsplash.jpg" />
+    <img class="hide-if-smaller-than-mobile-device-large" src="../img/backgrounds/adrien-olichon-760577-unsplash.jpg" />
     <img class="show-if-smaller-than-mobile-device-large-and-hide-if-smaller-than-mobile-device-regular" src="../img/backgrounds/chuttersnap-1103171-unsplash.jpg" />
     <img class="show-if-smaller-than-mobile-device-regular" src="../img/backgrounds/chuttersnap-1103178-unsplash-mobile.jpg" />
     <div class="cover-image-text-wrapper">
@@ -180,10 +180,24 @@
         </div>
     </div>
 </article>
-<blockquote>
+<blockquote id="scale-up-center">
     <span class="helloo">Archy Wilhes: Hey there! Thanks for reading! Hit me up at a@0a.io if you enjoy this piece and/or would like to give me some suggesitons on stuff, etc! Thanks! Let's be pen pals :))</span>
 </blockquote>
-
+<script>
+    window.addEventListener('load', function() {
+    var toPopDOM = document.getElementById("scale-up-center")
+    toPopDOM.className = "scale-up-center"
+    var popItUp = function(e) {
+        var currentBTM = (window.scrollY+window.innerHeight)
+        var triggeringPoint =  (document.getElementsByTagName("body")[0].offsetHeight - 516)
+        if(currentBTM > triggeringPoint){
+            window.removeEventListener('scroll', popItUp)
+            toPopDOM.className = "scale-up-center scale-up-center-animates-desu"
+        }
+    }
+    window.addEventListener('scroll', popItUp)
+})
+</script>
 
 </div>
 <div>
