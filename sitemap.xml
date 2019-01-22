@@ -100,6 +100,34 @@
     </url>
 
     <url>
+        <loc>https://0a.io</loc>
+        <changefreq>weekly</changefreq>
+        
+        <priority>0.8</priority>
+    </url>
+
+    <url>
+        <loc>https://0a.io</loc>
+        <changefreq>weekly</changefreq>
+        
+        <priority>0.8</priority>
+    </url>
+
+    <url>
+        <loc>https://0a.io</loc>
+        <changefreq>weekly</changefreq>
+        
+        <priority>0.8</priority>
+    </url>
+
+    <url>
+        <loc>https://0a.io</loc>
+        <changefreq>weekly</changefreq>
+        
+        <priority>0.8</priority>
+    </url>
+
+    <url>
         <loc>https://0a.io/about-0a.html</loc>
         <changefreq>weekly</changefreq>
         
@@ -297,13 +325,6 @@
 
     <url>
         <loc>https://0a.io/chapter1.5/gap-years.html</loc>
-        <changefreq>weekly</changefreq>
-        
-        <priority>0.8</priority>
-    </url>
-
-    <url>
-        <loc>https://0a.io/chapter2/death.html</loc>
         <changefreq>weekly</changefreq>
         
         <priority>0.8</priority>
