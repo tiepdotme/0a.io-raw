@@ -303,6 +303,13 @@
     </url>
 
     <url>
+        <loc>https://0a.io/chapter2/death.html</loc>
+        <changefreq>weekly</changefreq>
+        
+        <priority>0.8</priority>
+    </url>
+
+    <url>
         <loc>https://0a.io/chapter2/why-learn-a-language.html</loc>
         <changefreq>weekly</changefreq>
         
