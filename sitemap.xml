@@ -450,6 +450,13 @@
     </url>
 
     <url>
+        <loc>https://0a.io/film-night/eternal-sunshine-of-the-spotless-mind.html</loc>
+        <changefreq>weekly</changefreq>
+        
+        <priority>0.8</priority>
+    </url>
+
+    <url>
         <loc>https://0a.io/film-night/the-end-of-tour.html</loc>
         <changefreq>weekly</changefreq>
         
