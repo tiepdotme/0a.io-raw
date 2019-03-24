@@ -149,13 +149,6 @@
     </url>
 
     <url>
-        <loc>https://0a.io/film-night.html</loc>
-        <changefreq>weekly</changefreq>
-        
-        <priority>0.8</priority>
-    </url>
-
-    <url>
         <loc>https://0a.io/index.html</loc>
         <changefreq>weekly</changefreq>
         
@@ -164,6 +157,13 @@
 
     <url>
         <loc>https://0a.io/music-for-work.html</loc>
+        <changefreq>weekly</changefreq>
+        
+        <priority>0.8</priority>
+    </url>
+
+    <url>
+        <loc>https://0a.io/pretentious-reviews.html</loc>
         <changefreq>weekly</changefreq>
         
         <priority>0.8</priority>
@@ -443,70 +443,70 @@
     </url>
 
     <url>
-        <loc>https://0a.io/film-night/eternal-sunshine-of-the-spotless-mind.html</loc>
+        <loc>https://0a.io/pretentious-reviews/film/eternal-sunshine-of-the-spotless-mind.html</loc>
         <changefreq>weekly</changefreq>
         
         <priority>0.8</priority>
     </url>
 
     <url>
-        <loc>https://0a.io/film-night/the-end-of-tour.html</loc>
+        <loc>https://0a.io/pretentious-reviews/film/the-end-of-tour.html</loc>
         <changefreq>weekly</changefreq>
         
         <priority>0.8</priority>
     </url>
 
     <url>
-        <loc>https://0a.io/film-night/shirkers.html</loc>
+        <loc>https://0a.io/pretentious-reviews/film/shirkers.html</loc>
         <changefreq>weekly</changefreq>
         
         <priority>0.8</priority>
     </url>
 
     <url>
-        <loc>https://0a.io/film-night/Nymphomaniac-Vol-1.html</loc>
+        <loc>https://0a.io/pretentious-reviews/film/Nymphomaniac-Vol-1.html</loc>
         <changefreq>weekly</changefreq>
         
         <priority>0.8</priority>
     </url>
 
     <url>
-        <loc>https://0a.io/film-night/kimyo-na-sakasu.html</loc>
+        <loc>https://0a.io/pretentious-reviews/film/kimyo-na-sakasu.html</loc>
         <changefreq>weekly</changefreq>
         
         <priority>0.8</priority>
     </url>
 
     <url>
-        <loc>https://0a.io/film-night/ai-no-mukidashi.html</loc>
+        <loc>https://0a.io/pretentious-reviews/film/ai-no-mukidashi.html</loc>
         <changefreq>weekly</changefreq>
         
         <priority>0.8</priority>
     </url>
 
     <url>
-        <loc>https://0a.io/film-night/frank.html</loc>
+        <loc>https://0a.io/pretentious-reviews/film/frank.html</loc>
         <changefreq>weekly</changefreq>
         
         <priority>0.8</priority>
     </url>
 
     <url>
-        <loc>https://0a.io/film-night/La-Vie-dAdele.html</loc>
+        <loc>https://0a.io/pretentious-reviews/film/La-Vie-dAdele.html</loc>
         <changefreq>weekly</changefreq>
         
         <priority>0.8</priority>
     </url>
 
     <url>
-        <loc>https://0a.io/film-night/the-big-short.html</loc>
+        <loc>https://0a.io/pretentious-reviews/film/the-big-short.html</loc>
         <changefreq>weekly</changefreq>
         
         <priority>0.8</priority>
     </url>
 
     <url>
-        <loc>https://0a.io/film-night/shame.html</loc>
+        <loc>https://0a.io/pretentious-reviews/film/shame.html</loc>
         <changefreq>weekly</changefreq>
         
         <priority>0.8</priority>
