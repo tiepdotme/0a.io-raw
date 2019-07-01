@@ -464,6 +464,13 @@
     </url>
 
     <url>
+        <loc>https://0a.io/pretentious-reviews/film/madama-butterfly.html</loc>
+        <changefreq>weekly</changefreq>
+        
+        <priority>0.8</priority>
+    </url>
+
+    <url>
         <loc>https://0a.io/pretentious-reviews/film/the-lawnmower-man.html</loc>
         <changefreq>weekly</changefreq>
         
