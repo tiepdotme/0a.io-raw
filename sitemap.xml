@@ -135,6 +135,13 @@
     </url>
 
     <url>
+        <loc>https://0a.io</loc>
+        <changefreq>weekly</changefreq>
+        
+        <priority>0.8</priority>
+    </url>
+
+    <url>
         <loc>https://0a.io/about-0a.html</loc>
         <changefreq>weekly</changefreq>
         
