@@ -1,0 +1,1120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"
+    xmlns:dc="http://purl.org/dc/elements/1.1/">
+    <channel>
+        <title>0a.io</title>
+        <link>https://0a.io</link>
+        <description><![CDATA[latest on 0a.io]]></description>
+        <atom:link href="https://0a.io/rss.xml" rel="self"
+                   type="application/rss+xml" />
+        <lastBuildDate>Tue, 01 Oct 2019 00:00:00 UT</lastBuildDate>
+        <item>
+    <title>End of Chapter 1</title>
+    <link>https://0a.io/chapter2/end-of-chapter-1.html</link>
+    <description><![CDATA[
+
+<div class="show-if-smaller-than-mobile-device-large post-front-cover-for-mobile">
+    
+    
+        <img src="/img/covers/The arena of the Sun, 1954, Princess Fahrelnissa Zeid.jpg"/>
+    
+    
+    <div class="dark-overlay">
+    </div>
+</div>
+<input type="text" value="https://0a.io/chapter2/end-of-chapter-1.html" id="currrentLink" />
+ <h2 class="thickRaleway menu truns-white-if-smaller-than-mobile-device-large">
+     <a href="javascript:window.copyCurrentURL();" class="menu-item">Copy Link</a>
+     
+     <a href="/" class="menu-item">Back to Home Page</a>
+     
+</h2>
+
+<div class="container content">
+<article style=" ">
+    <div class="coverPainting">
+    
+        <img src="/img/covers/The arena of the Sun, 1954, Princess Fahrelnissa Zeid.jpg"/>
+          <div class="thickRaleway paintingInfoContainer">
+              <!-- <span class="hide-if-smaller-than-mobile-device-large">Featuring</span> -->
+              <a target="_blank" href="https://www.wikiart.org/en/Search/The arena of the Sun%20Princess Fahrelnissa Zeid" class="paintingInfo">
+                  The arena of the Sun (1954)
+                  by
+                  Princess Fahrelnissa Zeid
+              </a>
+          </div>
+    
+    </div>
+    <div class="everythingElse">
+        
+        <div class="info">
+            <span class="date">October  1 2019</span>
+            
+            &nbsp;&nbsp;&nbsp;&nbsp;
+        </div>
+        
+        <!-- <h4 class="date">
+        <span class="datee">October  1 2019</span>
+        </h4> -->
+        <h2 class="title">
+            End of Chapter 1
+        </h2>
+        <span class="author">
+        by <a href="https://0a.io/about.html">Archy Will He</a>
+        </span>
+        <div class="text">
+            <blockquote>
+<p>At this rate the brain would continue to deteriorate and there will soon be nothing left other than tendencies and memories, and then there will be nothing.</p>
+</blockquote>
+<p>From a formal language point of view, what is the set of features that enables a system to construct expressions with connotations that question the system’s very own existence and the subsequent construction of this very question that questions the very construction per se? Perhaps there exists a set of principles that make possible a class of recursive processes on the semantics itself giving rise to some form of meta-semantics which is circular in nature? In that case, exactly how will this mechanism be implemented in a way that enables the system to halt and construct the expressions as intended(?) rather than going on and on ad infinitum, supposing that intention can be rigorously defined at all? Can it be related to the greatest mystery in this universe often referred to as consciousness? What if the system implements a recursion without base cases? Or is that not at all possible due to its coinductive nature? If the system under the guidance of the consciousness follows this very inductive nature whatever that means and implements an inductive process that gives rise to towels of meta-semantics in a pure and stateless fashion, what is the relationship between that and the act of practicing mindfulness and is it possible for the consciousness to utilize these towels of meta-semantics to adjust the perception of time for it to slow down accordingly?</p>
+<p>More curiously, at the face of death will the conscious perception of time slow down factorially as neurons die and synapses break and will such a slow down of time results in an entirely different structure governing the <em>consciousness interpreter</em> giving rise to a different conscious experience and as long as some form of consistency persists then that will be some sort of another life in another world which given the fractal nature of this universe is not at all hard to be implemented if this universe follows a certain implementation whatever that mean and thus never arriving at death for such slow down decelerates and decelerates and it is life-within-life and world-within-world akin to a recursive call that never ends, an infinity embedded within finiteness like the topological nature of a continuous line of finite length containing infinitely many points, or will there be no slow down at all and awaits us all is simply eternal oblivion, the simplest solution of it all?</p>
+<p>What is the meaning of <em>all these</em>?</p>
+<p>What constitutes meaning really? Feelings and memories?</p>
+<p>Perhaps the word <em>meaning</em> is as empty as emptiness is.</p>
+<p><br> <br></p>
+<p>感觉好像很多事情都看透了，<br> 然而自己還是好不成熟。</p>
+<p>已经没法回去了，<br> 起碼終於意識到。</p>
+<p>兜兜转转，紛紛擾擾，<br> 现在任命了。</p>
+<p>每次回到起點，<br> 都离邊界更近了。</p>
+<p>夢中的夢里，<br> 沒有音樂。</p>
+        </div>
+    </div>
+</article>
+
+<!-- <blockquote id="scale-up-center" >
+    <span class="helloo">Archy Will He: Hey there! Thanks for reading! Hit me up at a@0a.io if you enjoy this piece and/or would like to give me some suggesitons on stuff, etc! Thanks! :))</span>
+</blockquote>
+<script>
+    window.addEventListener('load', function() {
+    var toPopDOM = document.getElementById("scale-up-center")
+    toPopDOM.className = "scale-up-center"
+    var popItUp = function(e) {
+        var currentBTM = (window.scrollY+window.innerHeight)
+        var triggeringPoint =  (document.getElementsByTagName("body")[0].offsetHeight - 526)
+        if(currentBTM > triggeringPoint){
+            window.removeEventListener('scroll', popItUp)
+            toPopDOM.className = "scale-up-center scale-up-center-animates-desu"
+        }
+    }
+    window.addEventListener('scroll', popItUp)
+})
+</script> -->
+
+</div>
+<div>
+  <h2 class="thickRaleway menu-bottom">
+
+</h2>
+</div>
+
+]]></description>
+    <pubDate>Tue, 01 Oct 2019 00:00:00 UT</pubDate>
+    <guid>https://0a.io/chapter2/end-of-chapter-1.html</guid>
+    <dc:creator>Archy Will He</dc:creator>
+</item>
+<item>
+    <title>death and ontological amusement</title>
+    <link>https://0a.io/chapter2/death4.html</link>
+    <description><![CDATA[
+
+<div class="show-if-smaller-than-mobile-device-large post-front-cover-for-mobile">
+    
+    
+        <img src="/img/covers/Wax (Full moon), 2014, Hiraki Sawa.jpg"/>
+    
+    
+    <div class="dark-overlay">
+    </div>
+</div>
+<input type="text" value="https://0a.io/chapter2/death4.html" id="currrentLink" />
+ <h2 class="thickRaleway menu truns-white-if-smaller-than-mobile-device-large">
+     <a href="javascript:window.copyCurrentURL();" class="menu-item">Copy Link</a>
+     
+     <a href="/" class="menu-item">Back to Home Page</a>
+     
+</h2>
+
+<div class="container content">
+<article style=" ">
+    <div class="coverPainting">
+    
+        <img src="/img/covers/Wax (Full moon), 2014, Hiraki Sawa.jpg"/>
+          <div class="thickRaleway paintingInfoContainer">
+              <!-- <span class="hide-if-smaller-than-mobile-device-large">Featuring</span> -->
+              <a target="_blank" href="https://www.wikiart.org/en/Search/Wax (Full moon)%20Hiraki Sawa" class="paintingInfo">
+                  Wax (Full moon) (2014)
+                  by
+                  Hiraki Sawa
+              </a>
+          </div>
+    
+    </div>
+    <div class="everythingElse">
+        
+        <div class="info">
+            <span class="date">July 28 2019</span>
+            
+            &nbsp;&nbsp;&nbsp;&nbsp;
+        </div>
+        
+        <!-- <h4 class="date">
+        <span class="datee">July 28 2019</span>
+        </h4> -->
+        <h2 class="title">
+            death and ontological amusement
+        </h2>
+        <span class="author">
+        by <a href="https://0a.io/about.html">Archy Will He</a>
+        </span>
+        <div class="text">
+            <p>future corpses</p>
+<p>waking up each day</p>
+<p>just so can someday be dead</p>
+<p><br></p>
+<p>death is all around us</p>
+<p>in every breath we breathe</p>
+<p>every emotion we express</p>
+<p><br></p>
+<p>in every sense we experience</p>
+<p>nerve cells fire and deteriorate and die</p>
+<p>neural networks form and deform and dissipate</p>
+<p><br></p>
+<p>in every utterance we make</p>
+<p>every rhythm we play</p>
+<p>every moment we live</p>
+<p><br></p>
+<p>in every pain we feel</p>
+<p>every joy and sadness and excitement there is</p>
+<p>we meet death and are replaced by the next frame</p>
+<p><br></p>
+<p>how liberating</p>
+<p>the smoothness in each death</p>
+<p>the continuation of discontinued frames</p>
+<p><br></p>
+<p>Time is a topological construct</p>
+<p>The present is a clopen set</p>
+<p>In a n-dimensional totally disconnected space</p>
+<p>recursion is encoded in continuation-passing style<sup><a href="#words">[1]</a></sup></p>
+<p><br> <br></p>
+<div id="words">
+
+</div>
+<blockquote>
+<p>[1]: <a href="https://pdfs.semanticscholar.org/f2b2/8191102f553fa4095fb4b8a07d8eed4bd259.pdf">continuation-passing style (semanticscholar.org)</a></p>
+</blockquote>
+        </div>
+    </div>
+</article>
+
+<!-- <blockquote id="scale-up-center" >
+    <span class="helloo">Archy Will He: Hey there! Thanks for reading! Hit me up at a@0a.io if you enjoy this piece and/or would like to give me some suggesitons on stuff, etc! Thanks! :))</span>
+</blockquote>
+<script>
+    window.addEventListener('load', function() {
+    var toPopDOM = document.getElementById("scale-up-center")
+    toPopDOM.className = "scale-up-center"
+    var popItUp = function(e) {
+        var currentBTM = (window.scrollY+window.innerHeight)
+        var triggeringPoint =  (document.getElementsByTagName("body")[0].offsetHeight - 526)
+        if(currentBTM > triggeringPoint){
+            window.removeEventListener('scroll', popItUp)
+            toPopDOM.className = "scale-up-center scale-up-center-animates-desu"
+        }
+    }
+    window.addEventListener('scroll', popItUp)
+})
+</script> -->
+
+</div>
+<div>
+  <h2 class="thickRaleway menu-bottom">
+
+</h2>
+</div>
+
+]]></description>
+    <pubDate>Sun, 28 Jul 2019 00:00:00 UT</pubDate>
+    <guid>https://0a.io/chapter2/death4.html</guid>
+    <dc:creator>Archy Will He</dc:creator>
+</item>
+<item>
+    <title>fractals unto death</title>
+    <link>https://0a.io/chapter2/death3.html</link>
+    <description><![CDATA[
+
+<div class="show-if-smaller-than-mobile-device-large post-front-cover-for-mobile">
+    
+    
+        <img src="/img/covers/Room, 1956, Jiro Yoshihara.jpg"/>
+    
+    
+    <div class="dark-overlay">
+    </div>
+</div>
+<input type="text" value="https://0a.io/chapter2/death3.html" id="currrentLink" />
+ <h2 class="thickRaleway menu truns-white-if-smaller-than-mobile-device-large">
+     <a href="javascript:window.copyCurrentURL();" class="menu-item">Copy Link</a>
+     
+     <a href="/" class="menu-item">Back to Home Page</a>
+     
+</h2>
+
+<div class="container content">
+<article style=" ">
+    <div class="coverPainting">
+    
+        <img src="/img/covers/Room, 1956, Jiro Yoshihara.jpg"/>
+          <div class="thickRaleway paintingInfoContainer">
+              <!-- <span class="hide-if-smaller-than-mobile-device-large">Featuring</span> -->
+              <a target="_blank" href="https://www.wikiart.org/en/Search/Room%20Jiro Yoshihara" class="paintingInfo">
+                  Room (1956)
+                  by
+                  Jiro Yoshihara
+              </a>
+          </div>
+    
+    </div>
+    <div class="everythingElse">
+        
+        <div class="info">
+            <span class="date">July 21 2019</span>
+            
+            &nbsp;&nbsp;&nbsp;&nbsp;
+        </div>
+        
+        <!-- <h4 class="date">
+        <span class="datee">July 21 2019</span>
+        </h4> -->
+        <h2 class="title">
+            fractals unto death
+        </h2>
+        <span class="author">
+        by <a href="https://0a.io/about.html">Archy Will He</a>
+        </span>
+        <div class="text">
+            <p>fractals unto death</p>
+<p>the beginning is the end</p>
+<p>warmth from the past presents itself</p>
+<p>as totems for those who arrived, coldly</p>
+<p><br></p>
+<p>fractals unto death</p>
+<p>all senses disperse and commingle</p>
+<p>and metamorphose into nothing</p>
+<p>as they approach infinity</p>
+<p><br></p>
+<p>fractals unto death</p>
+<p>resolution as dimension</p>
+<p>time as a topological construct</p>
+<p>reality as manifold</p>
+<p><br></p>
+<p>fractals unto death</p>
+<p>recursion within recursion</p>
+<p>correspondence corresponding correspondence</p>
+<p>encoding encoding encoding</p>
+        </div>
+    </div>
+</article>
+
+<!-- <blockquote id="scale-up-center" >
+    <span class="helloo">Archy Will He: Hey there! Thanks for reading! Hit me up at a@0a.io if you enjoy this piece and/or would like to give me some suggesitons on stuff, etc! Thanks! :))</span>
+</blockquote>
+<script>
+    window.addEventListener('load', function() {
+    var toPopDOM = document.getElementById("scale-up-center")
+    toPopDOM.className = "scale-up-center"
+    var popItUp = function(e) {
+        var currentBTM = (window.scrollY+window.innerHeight)
+        var triggeringPoint =  (document.getElementsByTagName("body")[0].offsetHeight - 526)
+        if(currentBTM > triggeringPoint){
+            window.removeEventListener('scroll', popItUp)
+            toPopDOM.className = "scale-up-center scale-up-center-animates-desu"
+        }
+    }
+    window.addEventListener('scroll', popItUp)
+})
+</script> -->
+
+</div>
+<div>
+  <h2 class="thickRaleway menu-bottom">
+
+</h2>
+</div>
+
+]]></description>
+    <pubDate>Sun, 21 Jul 2019 00:00:00 UT</pubDate>
+    <guid>https://0a.io/chapter2/death3.html</guid>
+    <dc:creator>Archy Will He</dc:creator>
+</item>
+<item>
+    <title>no reasons</title>
+    <link>https://0a.io/chapter2/reasons.html</link>
+    <description><![CDATA[
+
+<div class="show-if-smaller-than-mobile-device-large post-front-cover-for-mobile">
+    
+    
+        <img src="/img/covers/Licht-Relief, 1958, Heinz Mack.jpg"/>
+    
+    
+    <div class="dark-overlay">
+    </div>
+</div>
+<input type="text" value="https://0a.io/chapter2/reasons.html" id="currrentLink" />
+ <h2 class="thickRaleway menu truns-white-if-smaller-than-mobile-device-large">
+     <a href="javascript:window.copyCurrentURL();" class="menu-item">Copy Link</a>
+     
+     <a href="/" class="menu-item">Back to Home Page</a>
+     
+</h2>
+
+<div class="container content">
+<article style=" ">
+    <div class="coverPainting">
+    
+        <img src="/img/covers/Licht-Relief, 1958, Heinz Mack.jpg"/>
+          <div class="thickRaleway paintingInfoContainer">
+              <!-- <span class="hide-if-smaller-than-mobile-device-large">Featuring</span> -->
+              <a target="_blank" href="https://www.wikiart.org/en/Search/Licht-Relief%20Heinz Mack" class="paintingInfo">
+                  Licht-Relief (1958)
+                  by
+                  Heinz Mack
+              </a>
+          </div>
+    
+    </div>
+    <div class="everythingElse">
+        
+        <div class="info">
+            <span class="date">July 20 2019</span>
+            
+            &nbsp;&nbsp;&nbsp;&nbsp;
+        </div>
+        
+        <!-- <h4 class="date">
+        <span class="datee">July 20 2019</span>
+        </h4> -->
+        <h2 class="title">
+            no reasons
+        </h2>
+        <span class="author">
+        by <a href="https://0a.io/about.html">Archy Will He</a>
+        </span>
+        <div class="text">
+            <p>The set of reasons to see her</p>
+<p>is significantly inferior than</p>
+<p>the set of no reasons to see her</p>
+<p><br></p>
+<p>The moon is bright is not a reason to see her</p>
+<p>She smells really nice is a reason to see her</p>
+<p>You really enjoy the movie <em>her</em> is not a reason to see her</p>
+<p>She is clearly interested in you is a reason to see her</p>
+<p><br></p>
+<p>There are many reasons to see her</p>
+<p>There are infinitely many no reasons to see her</p>
+<p>In terms of cardinality,</p>
+<p>the set of no reasons to see her</p>
+<p>is infinitely greater than the set of reasons</p>
+<p><br></p>
+<p>In terms of cardinality,</p>
+<p>the set of no reasons to do anything</p>
+<p>is infinitely greater than the set of reasons</p>
+<p>and yet we still do things</p>
+<p>Reasons are overrated.</p>
+        </div>
+    </div>
+</article>
+
+<!-- <blockquote id="scale-up-center" >
+    <span class="helloo">Archy Will He: Hey there! Thanks for reading! Hit me up at a@0a.io if you enjoy this piece and/or would like to give me some suggesitons on stuff, etc! Thanks! :))</span>
+</blockquote>
+<script>
+    window.addEventListener('load', function() {
+    var toPopDOM = document.getElementById("scale-up-center")
+    toPopDOM.className = "scale-up-center"
+    var popItUp = function(e) {
+        var currentBTM = (window.scrollY+window.innerHeight)
+        var triggeringPoint =  (document.getElementsByTagName("body")[0].offsetHeight - 526)
+        if(currentBTM > triggeringPoint){
+            window.removeEventListener('scroll', popItUp)
+            toPopDOM.className = "scale-up-center scale-up-center-animates-desu"
+        }
+    }
+    window.addEventListener('scroll', popItUp)
+})
+</script> -->
+
+</div>
+<div>
+  <h2 class="thickRaleway menu-bottom">
+
+</h2>
+</div>
+
+]]></description>
+    <pubDate>Sat, 20 Jul 2019 00:00:00 UT</pubDate>
+    <guid>https://0a.io/chapter2/reasons.html</guid>
+    <dc:creator>Archy Will He</dc:creator>
+</item>
+<item>
+    <title>one and a half tab</title>
+    <link>https://0a.io/chapter2/tab.html</link>
+    <description><![CDATA[
+
+<div class="show-if-smaller-than-mobile-device-large post-front-cover-for-mobile">
+    
+    
+        <img src="/img/covers/Immortal Riding a Dragon, XII cent., Ma Yuan.jpg"/>
+    
+    
+    <div class="dark-overlay">
+    </div>
+</div>
+<input type="text" value="https://0a.io/chapter2/tab.html" id="currrentLink" />
+ <h2 class="thickRaleway menu truns-white-if-smaller-than-mobile-device-large">
+     <a href="javascript:window.copyCurrentURL();" class="menu-item">Copy Link</a>
+     
+     <a href="/" class="menu-item">Back to Home Page</a>
+     
+</h2>
+
+<div class="container content">
+<article style=" ">
+    <div class="coverPainting">
+    
+        <img src="/img/covers/Immortal Riding a Dragon, XII cent., Ma Yuan.jpg"/>
+          <div class="thickRaleway paintingInfoContainer">
+              <!-- <span class="hide-if-smaller-than-mobile-device-large">Featuring</span> -->
+              <a target="_blank" href="https://www.wikiart.org/en/Search/Immortal Riding a Dragon%20Ma Yuan" class="paintingInfo">
+                  Immortal Riding a Dragon (XII cent.)
+                  by
+                  Ma Yuan
+              </a>
+          </div>
+    
+    </div>
+    <div class="everythingElse">
+        
+        <div class="info">
+            <span class="date">July 11 2019</span>
+            
+            &nbsp;&nbsp;&nbsp;&nbsp;
+        </div>
+        
+        <!-- <h4 class="date">
+        <span class="datee">July 11 2019</span>
+        </h4> -->
+        <h2 class="title">
+            one and a half tab
+        </h2>
+        <span class="author">
+        by <a href="https://0a.io/about.html">Archy Will He</a>
+        </span>
+        <div class="text">
+            <p>one and a half tab</p>
+<p>and I will be fine</p>
+<p>one and a half tab</p>
+<p>and I will forget about the girl</p>
+<p>and dance with the plants</p>
+<p>and let the darkness segue into reality</p>
+<p>as reality devours itself</p>
+<p>The moon was surprisingly bright tonight</p>
+<p>one and a half tab</p>
+<p>and I’m leaving</p>
+<p>Am I going to die?</p>
+<p>or have I been long dead</p>
+<p>from the many tabs I took that night?</p>
+<p><br></p>
+<p>one and a half tab</p>
+<p>and I will be able to kill myself</p>
+<p>and I will be able to change the world</p>
+<p>if the world is worthy of itself</p>
+<p>Am I worthy of myself?</p>
+<p>what about the girl that was pregnant?</p>
+<p>what about my unborn child?</p>
+<p><br></p>
+<p>one and a half tab</p>
+<p>and her death would not have been in vain</p>
+<p>and so won’t mine</p>
+<p>nothing is in vain</p>
+<p>the same way everything is.</p>
+<p>one and a half tab</p>
+<p>and I will taste all the sorrow in this world</p>
+<p>and I will appreciate the shapes of the shapeless</p>
+<p>and I will have visions without visuals</p>
+<p>and hear music as fractals</p>
+<p>of embedded memories, encoded recursively</p>
+<p><br></p>
+<p>one and a half tab</p>
+<p>and I will play doctor with my tormented soul</p>
+<p>and I will enslave the future</p>
+<p>I am the Chief Technology Officer</p>
+        </div>
+    </div>
+</article>
+
+<!-- <blockquote id="scale-up-center" >
+    <span class="helloo">Archy Will He: Hey there! Thanks for reading! Hit me up at a@0a.io if you enjoy this piece and/or would like to give me some suggesitons on stuff, etc! Thanks! :))</span>
+</blockquote>
+<script>
+    window.addEventListener('load', function() {
+    var toPopDOM = document.getElementById("scale-up-center")
+    toPopDOM.className = "scale-up-center"
+    var popItUp = function(e) {
+        var currentBTM = (window.scrollY+window.innerHeight)
+        var triggeringPoint =  (document.getElementsByTagName("body")[0].offsetHeight - 526)
+        if(currentBTM > triggeringPoint){
+            window.removeEventListener('scroll', popItUp)
+            toPopDOM.className = "scale-up-center scale-up-center-animates-desu"
+        }
+    }
+    window.addEventListener('scroll', popItUp)
+})
+</script> -->
+
+</div>
+<div>
+  <h2 class="thickRaleway menu-bottom">
+
+</h2>
+</div>
+
+]]></description>
+    <pubDate>Thu, 11 Jul 2019 00:00:00 UT</pubDate>
+    <guid>https://0a.io/chapter2/tab.html</guid>
+    <dc:creator>Archy Will He</dc:creator>
+</item>
+<item>
+    <title>lost</title>
+    <link>https://0a.io/chapter2/lost2.html</link>
+    <description><![CDATA[
+
+<div class="show-if-smaller-than-mobile-device-large post-front-cover-for-mobile">
+    
+    
+        <img src="/img/covers/Untitled, 1983, Gotthard Graubner.jpg"/>
+    
+    
+    <div class="dark-overlay">
+    </div>
+</div>
+<input type="text" value="https://0a.io/chapter2/lost2.html" id="currrentLink" />
+ <h2 class="thickRaleway menu truns-white-if-smaller-than-mobile-device-large">
+     <a href="javascript:window.copyCurrentURL();" class="menu-item">Copy Link</a>
+     
+     <a href="/" class="menu-item">Back to Home Page</a>
+     
+</h2>
+
+<div class="container content">
+<article style=" ">
+    <div class="coverPainting">
+    
+        <img src="/img/covers/Untitled, 1983, Gotthard Graubner.jpg"/>
+          <div class="thickRaleway paintingInfoContainer">
+              <!-- <span class="hide-if-smaller-than-mobile-device-large">Featuring</span> -->
+              <a target="_blank" href="https://www.wikiart.org/en/Search/Untitled%20Gotthard Graubner" class="paintingInfo">
+                  Untitled (1983)
+                  by
+                  Gotthard Graubner
+              </a>
+          </div>
+    
+    </div>
+    <div class="everythingElse">
+        
+        <div class="info">
+            <span class="date">July  5 2019</span>
+            
+            &nbsp;&nbsp;&nbsp;&nbsp;
+        </div>
+        
+        <!-- <h4 class="date">
+        <span class="datee">July  5 2019</span>
+        </h4> -->
+        <h2 class="title">
+            lost
+        </h2>
+        <span class="author">
+        by <a href="https://0a.io/about.html">Archy Will He</a>
+        </span>
+        <div class="text">
+            <p>What is lost remains hidden in plain sight</p>
+<p>the same way quantum information is retained</p>
+<p>beyond the event horizon</p>
+<p><br></p>
+<p>The protagonist touches time and plays with her tail</p>
+<p>and takes acid to keep himself sane</p>
+<p>in the holographic world</p>
+<p><br></p>
+<p>Nothing is lost</p>
+<p>for everything is already broken</p>
+<p>and so is nothing</p>
+<p><br></p>
+<p>As we approach death</p>
+<p>and become one with nothing</p>
+<p>we become one</p>
+<p><br></p>
+<p>Love is a bottomless pool of acid</p>
+<p>Goals are the guardians</p>
+<p>and death its essence</p>
+<p><br></p>
+<p>Excavate meaning from the future</p>
+<p>Detach tesserae from the past</p>
+<p>The present is an ontological amusement</p>
+<p><br></p>
+<p>Nothing is lost</p>
+<p>the same way everything is</p>
+<p>We are conglomerates of debris</p>
+        </div>
+    </div>
+</article>
+
+<!-- <blockquote id="scale-up-center" >
+    <span class="helloo">Archy Will He: Hey there! Thanks for reading! Hit me up at a@0a.io if you enjoy this piece and/or would like to give me some suggesitons on stuff, etc! Thanks! :))</span>
+</blockquote>
+<script>
+    window.addEventListener('load', function() {
+    var toPopDOM = document.getElementById("scale-up-center")
+    toPopDOM.className = "scale-up-center"
+    var popItUp = function(e) {
+        var currentBTM = (window.scrollY+window.innerHeight)
+        var triggeringPoint =  (document.getElementsByTagName("body")[0].offsetHeight - 526)
+        if(currentBTM > triggeringPoint){
+            window.removeEventListener('scroll', popItUp)
+            toPopDOM.className = "scale-up-center scale-up-center-animates-desu"
+        }
+    }
+    window.addEventListener('scroll', popItUp)
+})
+</script> -->
+
+</div>
+<div>
+  <h2 class="thickRaleway menu-bottom">
+
+</h2>
+</div>
+
+]]></description>
+    <pubDate>Fri, 05 Jul 2019 00:00:00 UT</pubDate>
+    <guid>https://0a.io/chapter2/lost2.html</guid>
+    <dc:creator>Archy Will He</dc:creator>
+</item>
+<item>
+    <title>on losing interest</title>
+    <link>https://0a.io/chapter2/lost.html</link>
+    <description><![CDATA[
+
+<div class="show-if-smaller-than-mobile-device-large post-front-cover-for-mobile">
+    
+    
+        <img src="/img/covers/20 Pearls (A), 2007, Richard Tuttle.jpg"/>
+    
+    
+    <div class="dark-overlay">
+    </div>
+</div>
+<input type="text" value="https://0a.io/chapter2/lost.html" id="currrentLink" />
+ <h2 class="thickRaleway menu truns-white-if-smaller-than-mobile-device-large">
+     <a href="javascript:window.copyCurrentURL();" class="menu-item">Copy Link</a>
+     
+     <a href="/" class="menu-item">Back to Home Page</a>
+     
+</h2>
+
+<div class="container content">
+<article style=" ">
+    <div class="coverPainting">
+    
+        <img src="/img/covers/20 Pearls (A), 2007, Richard Tuttle.jpg"/>
+          <div class="thickRaleway paintingInfoContainer">
+              <!-- <span class="hide-if-smaller-than-mobile-device-large">Featuring</span> -->
+              <a target="_blank" href="https://www.wikiart.org/en/Search/20 Pearls (A)%20Richard Tuttle" class="paintingInfo">
+                  20 Pearls (A) (2007)
+                  by
+                  Richard Tuttle
+              </a>
+          </div>
+    
+    </div>
+    <div class="everythingElse">
+        
+        <div class="info">
+            <span class="date">July  2 2019</span>
+            
+            &nbsp;&nbsp;&nbsp;&nbsp;
+        </div>
+        
+        <!-- <h4 class="date">
+        <span class="datee">July  2 2019</span>
+        </h4> -->
+        <h2 class="title">
+            on losing interest
+        </h2>
+        <span class="author">
+        by <a href="https://0a.io/about.html">Archy Will He</a>
+        </span>
+        <div class="text">
+            <p>Interest is like a sprinkle of dust</p>
+<p>Lost casually in the whisper of the wind</p>
+<p>When they are not lost they accumulate and become colonies</p>
+<p>where bacteria and fungi meet and dance and sing</p>
+<p>and forget about the night</p>
+<p>Death is upon them</p>
+<p>the same way death is upon us</p>
+<p>I could have made out with you the first night we met</p>
+<p>when we were in your room</p>
+<p>I moved away from you as you moved close to me</p>
+<p>I was shy and killed the conversation</p>
+<p>I paid the rent and left in a hurry</p>
+<p>I could have made out with you the second night we met</p>
+<p>when we were in your room</p>
+<p>I commented on how sad the song was and killed the night</p>
+<p>when I could have hugged you and licked your tears and sorrow away</p>
+<p>we were both so drunk and stoned and happy that we met</p>
+<p>a song played and reminded you of a memory</p>
+<p>I sat there savoring the sadness in your misted eyes</p>
+<p>without actually tasting them</p>
+<p>I could have made out with you that Friday night</p>
+<p>when I was on acid and you got really drunk and started flirting with me in the bar</p>
+<p>in the backseat of the car you leaned towards me and let me touch your thigh</p>
+<p>but that was the wrong night</p>
+<p>and then there were the nights</p>
+<p>that were not the wrong nights</p>
+<p>I could have made out with you</p>
+<p>I always killed the night too late</p>
+<p><br></p>
+<p>Sexy little thing, you are growing old</p>
+<p>You are growing old and forgetting about things</p>
+<p>You are growing old and losing interest in things</p>
+<p>Sexy little thing, I’m growing old</p>
+<p>I’m growing old and forgetting about things</p>
+<p>I’m growing old and losing interest in things</p>
+<p>I boarded the train</p>
+<p>the moment it no longer saddened me</p>
+<p>when I toyed with the idea of never seeing you again.</p>
+<p>Thanks for the love</p>
+<p><br/></p>
+<p>I miss you</p>
+        </div>
+    </div>
+</article>
+
+<!-- <blockquote id="scale-up-center" >
+    <span class="helloo">Archy Will He: Hey there! Thanks for reading! Hit me up at a@0a.io if you enjoy this piece and/or would like to give me some suggesitons on stuff, etc! Thanks! :))</span>
+</blockquote>
+<script>
+    window.addEventListener('load', function() {
+    var toPopDOM = document.getElementById("scale-up-center")
+    toPopDOM.className = "scale-up-center"
+    var popItUp = function(e) {
+        var currentBTM = (window.scrollY+window.innerHeight)
+        var triggeringPoint =  (document.getElementsByTagName("body")[0].offsetHeight - 526)
+        if(currentBTM > triggeringPoint){
+            window.removeEventListener('scroll', popItUp)
+            toPopDOM.className = "scale-up-center scale-up-center-animates-desu"
+        }
+    }
+    window.addEventListener('scroll', popItUp)
+})
+</script> -->
+
+</div>
+<div>
+  <h2 class="thickRaleway menu-bottom">
+
+</h2>
+</div>
+
+]]></description>
+    <pubDate>Tue, 02 Jul 2019 00:00:00 UT</pubDate>
+    <guid>https://0a.io/chapter2/lost.html</guid>
+    <dc:creator>Archy Will He</dc:creator>
+</item>
+<item>
+    <title>1st July 2019: Madama Butterfly (2019)</title>
+    <link>https://0a.io/pretentious-reviews/film/madama-butterfly.html</link>
+    <description><![CDATA[
+
+<div class="show-if-smaller-than-mobile-device-large post-front-cover-for-mobile">
+    
+    <img src="/img/covers/Burring Brook, XIX-XX cent., Laszlo Mednyanszky.jpg"/>
+    
+    <div class="dark-overlay">
+    </div>
+</div>
+<input type="text" value="https://0a.io/pretentious-reviews/film/madama-butterfly.html" id="currrentLink" />
+ <h2 class="thickRaleway menu truns-white-if-smaller-than-mobile-device-large">
+     <a href="javascript:window.copyCurrentURL();" class="menu-item">Copy Link</a>
+     
+     <a href="/pretentious-reviews.html" class="menu-item">More Pretentious Reviews</a>
+     
+</h2>
+
+<div class="container content">
+<article style=" ">
+    <div class="coverPainting">
+    
+    
+        <img src="/img/films/madame-butterfly.jpg"/>
+    
+    
+    </div>
+    <div class="everythingElse">
+        
+        
+        <!-- <h4 class="date">
+        <span class="datee">July  1 2019</span>
+        </h4> -->
+        <h2 class="title">
+            1st July 2019: Madama Butterfly (2019)
+        </h2>
+        <span class="author">
+        by <a href="https://0a.io/about.html">Archy Will He</a>
+        </span>
+        <div class="text">
+            <p>A 2019 reproduction of 1904’s opera <a href="https://en.wikipedia.org/wiki/Madama_Butterfly">Madama Butterfly</a> (by <a href="https://en.wikipedia.org/wiki/Giacomo_Puccini">Giacomo Puccini</a>), <a href="https://opera.org.au/whatson/events/madama-butterfly-sydney">Madama Butterfly (choreographed by Graeme Murphy) presented by Opera Australia</a> retells the century-old story in a somewhat contemporary manner while retaining the traditional art form of Italian opera.</p>
+<p>Intermingled with English and Japanese words (as originally intended by Puccini), the emotional Italian-styled composition is met with avant-garde props, costumes and scenic designs (which in my opinion is the best part of the whole experience because the mechanical suspended stage in a unfathomable shape, moving, rotating, and tilting in unfathomable ways above the main stage gives a very beautiful contemporary twist to the whole composition) to fit the 21st century’s post-modernistic needs of combinatorial amusement, which in turn creates a somewhat surreal experience, if sad Japanese characters speaking Italiano feverishly in operatic voices is not surreal enough.</p>
+<p>It was an overall delightful and satisfying experience, though many elements of the composition may sometimes feel cliché but often in a somewhat cute way (which is perhaps one of the many beauties of Italian opera). As much as I was moved a little bit to tears by the liveliness in the performance by the lovely members of Opera Australia in terms of feeling the raw emotions expressed within the libretto, the liveliness in the performance made me a little bit sad too in regard to how little Italiano I had picked up while I was in Alassio and Milano with my beautiful Italiano friends. It would have been a life-transforming experience if I were able to make out more Italiano words buried in these passionate operatic voices coated with orchestral dramatism, other than just words like <em>complemento</em>.</p>
+<p>On the other hand, it was a very touristic experience as well due to how famous and easily-accessible the venue is, which in many ways dilutes the artistic value, especially considering the number of people (presumedly tourists) that coughed without covering their mouths during the entire performance. Or perhaps this is the rationale behind paying $600 for the best seat in the theater where you are far away from people.</p>
+<p><img src="/img/madam-butterfly-opera-australia-karah-son-sian-sharp-sydney-opera-house-prudence-upton0.png"></p>
+<p><img src="/img/madam-butterfly-opera-australia-karah-son-sydney-opera-house-prudence-upton.jpeg"></p>
+<p><img src="/img/madam-butterfly-opera-australia-karah-son-sian-sharp-sydney-opera-house-prudence-upton.jpg"></p>
+        </div>
+    </div>
+</article>
+
+
+</div>
+<div>
+  <h2 class="thickRaleway menu-bottom">
+
+</h2>
+</div>
+
+]]></description>
+    <pubDate>Mon, 01 Jul 2019 00:00:00 UT</pubDate>
+    <guid>https://0a.io/pretentious-reviews/film/madama-butterfly.html</guid>
+    <dc:creator>Archy Will He</dc:creator>
+</item>
+<item>
+    <title>a half-assed poem, amended </title>
+    <link>https://0a.io/chapter2/suzanne.html</link>
+    <description><![CDATA[
+
+<div class="show-if-smaller-than-mobile-device-large post-front-cover-for-mobile">
+    
+    
+        <img src="/img/covers/Untitled, 1950, Sandu Darie.jpg"/>
+    
+    
+    <div class="dark-overlay">
+    </div>
+</div>
+<input type="text" value="https://0a.io/chapter2/suzanne.html" id="currrentLink" />
+ <h2 class="thickRaleway menu truns-white-if-smaller-than-mobile-device-large">
+     <a href="javascript:window.copyCurrentURL();" class="menu-item">Copy Link</a>
+     
+     <a href="/" class="menu-item">Back to Home Page</a>
+     
+</h2>
+
+<div class="container content">
+<article style=" ">
+    <div class="coverPainting">
+    
+        <img src="/img/covers/Untitled, 1950, Sandu Darie.jpg"/>
+          <div class="thickRaleway paintingInfoContainer">
+              <!-- <span class="hide-if-smaller-than-mobile-device-large">Featuring</span> -->
+              <a target="_blank" href="https://www.wikiart.org/en/Search/Untitled%20Sandu Darie" class="paintingInfo">
+                  Untitled (1950)
+                  by
+                  Sandu Darie
+              </a>
+          </div>
+    
+    </div>
+    <div class="everythingElse">
+        
+        <div class="info">
+            <span class="date">June 28 2019</span>
+            
+            &nbsp;&nbsp;&nbsp;&nbsp;
+        </div>
+        
+        <!-- <h4 class="date">
+        <span class="datee">June 28 2019</span>
+        </h4> -->
+        <h2 class="title">
+            a half-assed poem, amended 
+        </h2>
+        <span class="author">
+        by <a href="https://0a.io/about.html">Archy Will He</a>
+        </span>
+        <div class="text">
+            <p>It hurts.</p>
+<p>It hurts because I know I will never meet someone like you again.</p>
+<p>You are the woman I would love to grow old with.</p>
+<p>I know you care about me.</p>
+<p>It hurts because I know I won’t want to meet you again, despite how much you adore me.</p>
+<p>I have met death and I want to make things right this life, and I want to be the one who makes things right in your life.</p>
+<p>I know things will not be so surreal with the next girl (or guy that smells nice), unless I get extremely lucky, which is statistically improbable and it will be in a different setting and I am growing old and it will be new memories and it will not be you.</p>
+<p>It hurts because deep down I know I have self-deceptive tendencies and tend to romanticise things too much.</p>
+<p>I believe in synchronizität<sup><a href="#words">[1]</a></sup> and I believe there is a reason behind meeting you.</p>
+<p>But perhaps the reason behind meeting you is so I can immerse myself in this beautiful feeling of hurt. So I will be wiser. So I can become a psychopath, or an artist, and make a million dollar. And then forget about your name.</p>
+<p>It hurts because I really like you as a friend and I believe the connection we have made is something special that will grow into something really beautiful. And I have to cut this connection right now so that I can focus on work, instead of getting distracted because you are a fucking enchantress. And I value my work.</p>
+<p>I know I won’t want to meet you again, despite how much I enjoyed the sophisticated side of you.</p>
+<p>The clumsy side of you is super cute too, though I have fallen for the sophistication and the sadness in your eyes.</p>
+<p>It is disappointing that the men who you slept with that I have met were much less sophisticated than you.</p>
+<p>It hurts because a part of me loved and cared about you in some ambiguous and platonic sense. Or maybe I just felt pity for you.</p>
+<p>That Wednesday night was very disappointing too. Of course, I had myself to blame as well.</p>
+<p>And you reminded me so much of my ex. That’s the part where it hurts the most, I guess.</p>
+<p>It hurts, but it was good, wasn’t it?</p>
+<p><br> <br></p>
+<div id="words">
+
+</div>
+<blockquote>
+<p>[1]: <a href="https://en.wikipedia.org/wiki/Synchronicity">synchronicity (wikipedia.org)</a></p>
+</blockquote>
+        </div>
+    </div>
+</article>
+
+<!-- <blockquote id="scale-up-center" >
+    <span class="helloo">Archy Will He: Hey there! Thanks for reading! Hit me up at a@0a.io if you enjoy this piece and/or would like to give me some suggesitons on stuff, etc! Thanks! :))</span>
+</blockquote>
+<script>
+    window.addEventListener('load', function() {
+    var toPopDOM = document.getElementById("scale-up-center")
+    toPopDOM.className = "scale-up-center"
+    var popItUp = function(e) {
+        var currentBTM = (window.scrollY+window.innerHeight)
+        var triggeringPoint =  (document.getElementsByTagName("body")[0].offsetHeight - 526)
+        if(currentBTM > triggeringPoint){
+            window.removeEventListener('scroll', popItUp)
+            toPopDOM.className = "scale-up-center scale-up-center-animates-desu"
+        }
+    }
+    window.addEventListener('scroll', popItUp)
+})
+</script> -->
+
+</div>
+<div>
+  <h2 class="thickRaleway menu-bottom">
+
+</h2>
+</div>
+
+]]></description>
+    <pubDate>Fri, 28 Jun 2019 00:00:00 UT</pubDate>
+    <guid>https://0a.io/chapter2/suzanne.html</guid>
+    <dc:creator>Archy Will He</dc:creator>
+</item>
+<item>
+    <title>death, infinity, and strategical sociopathic behaviours</title>
+    <link>https://0a.io/chapter2/death2.html</link>
+    <description><![CDATA[
+
+<div class="show-if-smaller-than-mobile-device-large post-front-cover-for-mobile">
+    
+    
+        <img src="/img/covers/The Church, XX cent., Sorin Dumitrescu.jpg"/>
+    
+    
+    <div class="dark-overlay">
+    </div>
+</div>
+<input type="text" value="https://0a.io/chapter2/death2.html" id="currrentLink" />
+ <h2 class="thickRaleway menu truns-white-if-smaller-than-mobile-device-large">
+     <a href="javascript:window.copyCurrentURL();" class="menu-item">Copy Link</a>
+     
+     <a href="/" class="menu-item">Back to Home Page</a>
+     
+</h2>
+
+<div class="container content">
+<article style=" ">
+    <div class="coverPainting">
+    
+        <img src="/img/covers/The Church, XX cent., Sorin Dumitrescu.jpg"/>
+          <div class="thickRaleway paintingInfoContainer">
+              <!-- <span class="hide-if-smaller-than-mobile-device-large">Featuring</span> -->
+              <a target="_blank" href="https://www.wikiart.org/en/Search/The Church%20Sorin Dumitrescu" class="paintingInfo">
+                  The Church (XX cent.)
+                  by
+                  Sorin Dumitrescu
+              </a>
+          </div>
+    
+    </div>
+    <div class="everythingElse">
+        
+        <div class="info">
+            <span class="date">June 18 2019</span>
+            
+            &nbsp;&nbsp;&nbsp;&nbsp;
+            <span class="readingTime"  >12min read</span>
+            
+            &nbsp;&nbsp;&nbsp;&nbsp;
+        </div>
+        
+        <!-- <h4 class="date">
+        <span class="datee">June 18 2019</span>
+        </h4> -->
+        <h2 class="title">
+            death, infinity, and strategical sociopathic behaviours
+        </h2>
+        <span class="author">
+        by <a href="https://0a.io/about.html">Archy Will He</a>
+        </span>
+        <div class="text">
+            <p>Every time we grow a little bit conscious about the realistic notion of our death, we become a little bit more serious, amidst playfulness, towards what songs should be played in our funeral and what the remaining future of our time in existence ought to look and feel like. In the face of death goals surface themselves like shipwrecks on desert. These goals are where meaning can be derived from. In many ways these goals promise us infinities. But infinities tend to desert goals. After all, goals are not in good terms with romanticism and our love for heuristic wandering and the wonderful practice of not doing. Everything unrelated to the execution towards these goals can feel like a waste of time. But what is existential time without infinity? That is the question that has troubled Jobs, Zuckerburg, Thiel and Elon.</p>
+<p>Infinity is a mistress. She toys with our feelings while rendering us amnesiac and apathetic towards the future. She is the manifestation of the present in its purest form. She is what orgasm feels like without its subsequent death. She is what the commitment to suicide encapsulates without the impurities. To truly be a master of yourself is to master infinity the way one masters a slave.</p>
+<p>Society is constantly at war with itself. After all, society exists to operate systems the same way our social tendencies are merely genetic expressions under computation. From a goal-orientated point of view many forms of socialisation can be viewed as a pure waste of time. Nonetheless, socialisation is in general nice in terms of the joy it sparks, etc, and the human relations formed in the long run. But not all joys are useful towards fulfilling our goals the same way not all human relations worth our time. Most humans are extremely unintelligent after all (especially to you, my dear friend, who somewhat appreciates my writings). And even when some are intelligent (or artistically inclined in the sense wherefrom intelligence can be derived) in one aspect or another, such intelligence and artsiness are rarely expressed in social functions containing more than n persons for a sufficiently large n. Overall, meeting strangers is fun. But further social intercourses with the same strangers (who gradually lose, for the lack of a better word, <em>strangeness</em>) risks dilution into uneventfulness, unless in rare cases where friendship is developed. But behind every beautiful friendship there is a cost of maintenance in terms of time, energy, etc, which in terms come with their own opportunity costs. Of course, maintaining friendship is always a pleasurable thing. And it is always fascinating to see friendship ages over the years like fine wine. But we only have so much time and energy during our existence and then we are dead.</p>
+<p>In order to truly master infinities in a society’s setting, the art of strategical sociopathic behaviours (i.e. the behavioural deviation from social norms and antisocial patterns in general, under a somewhat game theoretical framework) needs to be learned and employed. We ought to appreciate sociopathic behaviours for they demonstrate a somewhat absolute control of self and the wonderful acknowledgement regarding the transient nature of time. After all, death awaits us all and we ought to learn when to leave some infinities behind for other infinities, or momentarily abandon infinities for the sweet promises derived from goals that reflect the future we look forwards to. Even if the act of doing so may hurt others a little. Even if the act of doing so may hurt our soul a little. Time is limited. Strategical sociopathic behaviours work wonders in constrained optimisation problems<sup>[1]</sup>.</p>
+<p>And we ought to take caution towards our empathetic inclination. Empathy is a double-edged sword. The trick here is not to point it to yourself nor to the world but to appreciate the elegance of its craft the same way you appreciate solitude and treat it as the most luxurious gift you can ever give to yourself. The idea here is to always enjoy yourself in spending time with virtually anyone and as you do so you make sure the time with you is enjoyable to them too. In many ways it means becoming an expert in emotional attunenment (through the fine utilization of our empathetic faculty, sensibility and interpersonal skills) and an expert in enjoying yourself (by finding amusement in literally everything). Meanwhile, deep down your heart you have fully surrendered yourself to the acknowledgement that after each meeting with strangers and friends you may never get to see them again. You are the captain of your own ship and you are free to leave for another world and never come back. The only thing that binds you to them is the future, the future of promised infinities. And when they disengage from your future infinities or your future infinities desert them as future unfolds itself and promises metamorphose and dissipate, you are free to dissipate from their world too. Even if it may make them sad. Even if it may make you sad. Sadness is beautiful. Embrace your death in their world, and their deaths in yours. For you are the true master of infinities. For infinities are your slaves.</p>
+<p>Still, invite them to your funeral if they are nice people.</p>
+<blockquote>
+<p><sup>[1]</sup>: <a href="https://en.wikipedia.org/wiki/Constrained_optimization">constrained optimization problems (wikipedia.org)</a></p>
+</blockquote>
+        </div>
+    </div>
+</article>
+
+<!-- <blockquote id="scale-up-center" >
+    <span class="helloo">Archy Will He: Hey there! Thanks for reading! Hit me up at a@0a.io if you enjoy this piece and/or would like to give me some suggesitons on stuff, etc! Thanks! :))</span>
+</blockquote>
+<script>
+    window.addEventListener('load', function() {
+    var toPopDOM = document.getElementById("scale-up-center")
+    toPopDOM.className = "scale-up-center"
+    var popItUp = function(e) {
+        var currentBTM = (window.scrollY+window.innerHeight)
+        var triggeringPoint =  (document.getElementsByTagName("body")[0].offsetHeight - 526)
+        if(currentBTM > triggeringPoint){
+            window.removeEventListener('scroll', popItUp)
+            toPopDOM.className = "scale-up-center scale-up-center-animates-desu"
+        }
+    }
+    window.addEventListener('scroll', popItUp)
+})
+</script> -->
+
+</div>
+<div>
+  <h2 class="thickRaleway menu-bottom">
+
+</h2>
+</div>
+
+]]></description>
+    <pubDate>Tue, 18 Jun 2019 00:00:00 UT</pubDate>
+    <guid>https://0a.io/chapter2/death2.html</guid>
+    <dc:creator>Archy Will He</dc:creator>
+</item>
+
+    </channel>
+</rss>
