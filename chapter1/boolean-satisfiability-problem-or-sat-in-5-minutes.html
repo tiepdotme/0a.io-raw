@@ -35,3 +35,700 @@
 
 <meta property="og:title" content="The Boolean Satisfiability Problem [S<small>AT</small>] and S<small>AT</small> solvers in 5 mins* (or&nbsp;more)" />
 
+
+<meta property="og:image" content="http://0a.io/img/covers/Untitled,%201962,%20Larry%20Bell.jpg" />
+
+
+
+
+
+
+
+
+<title> The Boolean Satisfiability Problem [S<small>AT</small>] and S<small>AT</small> solvers in 5 mins* (or&nbsp;more) - 0a.io -</title>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?class=UA-112409544-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-112409544-1');
+</script>
+
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    jax: ["input/TeX", "output/HTML-CSS"],
+    tex2jax: {
+      inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+      displayMath: [ ['$$','$$'], ["\\[","\\]"] ],
+      processEscapes: true
+    },
+    "HTML-CSS": { availableFonts: ["TeX"], minScaleAdjust: 100}
+  });
+</script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+
+  </head>
+  <body>
+      <div id="body-wrapper"><div id="body">
+    <div class="cover-image cover-image-short">
+
+    <img class="hide-if-smaller-than-mobile-device-large" src="../img/backgrounds/ian-espinosa-311604-unsplash.jpg" />
+    <img class="show-if-smaller-than-mobile-device-large-and-hide-if-smaller-than-mobile-device-regular" src="../img/backgrounds/ian-espinosa-311604-unsplash.jpg" />
+    <img class="show-if-smaller-than-mobile-device-regular" src="../img/backgrounds/ian-espinosa-311604-unsplash-mobile.jpg" />
+
+    <!-- <div style="" class="whiteOverlay2 hide-if-smaller-than-mobile-device-large"></div> -->
+    <div class="cover-image-text-wrapper">
+    <div class="cover-image-text">
+      <h1 class="zeroDegreeLogo centerFlex">
+        <div>
+            <a href="../">&nbsp;&nbsp;</a>
+        </div>
+        <div class="description show-if-smaller-than-mobile-device-large">
+            <!-- <a href="/">0a.io</a> -->
+        </div>
+      </h1>
+
+      <div class="zeroDegreeNameAndDescription hide-if-smaller-than-mobile-device-large-but-flex" style="margin-left:20px">
+      <h2 class="zeroDegreeName">
+        <a href="../">0a.io</a>
+        <!--  -->
+        
+        <br />
+        <a target="_blank" href="https://archy.sh"><i style="margin-right:1px;" class="social-icon ion-erlenmeyer-flask"></i></a>
+        <a target="_blank" href="https://mailing-list.xn--nqr.xn--fiqs8s/0a.io"><i class="social-icon ion-social-rss"></i></a>
+        <!-- <a target="_blank" href="https://arxiv.org/search/?query=Wilhes%2C+Archy&searchtype=author&order=-announced_date_first&size=50"><i class="social-icon ion-ios-paper"></i></a> -->
+          <!-- <a target="_blank" href="https://castella.art"><i class="social-icon ion-erlenmeyer-flask"></i></a> -->
+          <!-- <a target="_blank" href="https://twitter.com/archywillhe"><i class="social-icon ion-social-twitter"></i></a> -->
+        <!-- <a target="_blank" href="https://castella.art"><i class="social-icon ion-erlenmeyer-flask"></i></a> -->
+        <a href="../about.html"><small style="font-size: 50%; margin-left:3px;top:-1px;position:relative">ABOUT</small></a>
+      </h2>
+      <div class="zeroDegreeDescription"> <br /> </div>
+      </div>
+    </div>
+    <h2 class="stayCool thickRaleway hide-if-smaller-than-mobile-device-large">
+
+    </h2>
+    <h3 class="stayCool thickRaleway show-iff-mobile-device-large">
+      <a href="../about.html">About</a>
+      <span style="font-size:1.5em;margin-left:10px">
+      <a target="_blank" href="https://mailing-list.xn--nqr.xn--fiqs8s/0a.io"><i class="social-icon ion-social-rss"></i></a>
+    </span>
+  </h3>
+  <h2 class="stayCool thickRaleway show-if-smaller-than-mobile-device-medium">
+    <a href="../about-0a.html">About</a>
+    <span style="font-size:1.5em;margin-left:10px">
+    <a target="_blank" href="https://mailing-list.xn--nqr.xn--fiqs8s/0a.io"><i class="social-icon ion-social-rss"></i></a>
+  </span>
+  </h2>
+    </div>
+  </div>
+  <div style="position:relative">
+  
+
+<div class="show-if-smaller-than-mobile-device-large post-front-cover-for-mobile">
+    
+    
+    
+        <img src="../img/covers/Untitled, 1962, Larry Bell.jpg" />
+    
+    
+    
+    <div class="dark-overlay">
+    </div>
+</div>
+<input type="text" value="https://0a.io/chapter1/boolean-satisfiability-problem-or-sat-in-5-minutes.html" id="currrentLink" />
+ <h2 class="thickRaleway menu truns-white-if-smaller-than-mobile-device-large">
+     <a href="javascript:window.copyCurrentURL();" class="menu-item">Copy Link</a>
+     
+     <a href="../" class="menu-item">Back to Home Page</a>
+     
+</h2>
+
+<div class="container content">
+<article style=" ">
+    <div class="coverPainting">
+      
+    
+        <img src="../img/covers/Untitled, 1962, Larry Bell.jpg" />
+          <div class="thickRaleway paintingInfoContainer">
+              <!-- <span class="hide-if-smaller-than-mobile-device-large">Featuring</span> -->
+              <a target="_blank" href="https://www.wikiart.org/en/Search/Untitled%20Larry Bell" class="paintingInfo">
+                  Untitled (1962)
+                  by
+                  Larry Bell
+              </a>
+          </div>
+    
+    
+
+    </div>
+    <div class="everythingElse">
+        
+        <div class="info">
+            <span class="date">August  6 2015</span>
+            
+            &nbsp;&nbsp;&nbsp;&nbsp;
+        </div>
+        
+        <!-- <h4 class="date">
+        <span class="datee">August  6 2015</span>
+        </h4> -->
+        <h2 class="title">
+            The Boolean Satisfiability Problem [S<small>AT</small>] and S<small>AT</small> solvers in 5 mins* (or&nbsp;more)
+        </h2>
+        <span class="author">
+        作者 <a href="https://0a.io/about">Archy Will He 何魏奇</a>
+        </span>
+        <div class="text">
+            <div class="row block-of-grey">
+This is a quick sum-up on (and a beginner guide to) the Boolean Satisfiability Problem.
+</div>
+<p><small><sup>*</sup>In 5 minutes if one skips the introduction and the words in <i>the Blocks of Grey Text</i>.<br> <a id="blockquoteToggle" href="javascript:void(0)">Click here to hide the introduction and all <i> Blocks of Grey Text</i>.</a> <br> Word count includes only words <u>not</u> in <i>the Blocks of Grey Text</i>.</small></p>
+<div id="introduction">
+<h3 id="small0th-minutesmall-introduction-small-classwordcount386nbspwordssmall">
+<small>0th minute</small>: Introduction <small class="wordCount">382 words</small>
+</h3>
+<p>
+In CS, when we talk about a <strong>problem</strong>, we are referring to a set of questions, where each question is an instance of the problem. “Is 7 a prime number?” and “Is 2513414231 a prime number?” are both instances of a problem that can be expressed as: “Is n a prime number?”
+</p>
+<p>
+Problems can be classified based on the time or space complexity of the algorithms used to compute an answer for every instance of the problem. Among the most easy-to-understand <strong>NP-complete</strong> problems is the <strong>Boolean Satisfiability Problem</strong> (aka S<small>ATISFIABILITY</small>, or S<small>AT</small>).
+</p>
+<p>
+The <strong>Boolean Satisfiability Problem</strong> is also the first problem proven<sup>{2}</sup> to be NP-complete. A problem is <b>NP-complete</b> if it belongs to the set (or <a href="https://en.wikipedia.org/wiki/Class_(set_theory)">“class”</a> if you prefer) of the hardest problems in <strong>NP</strong> - hardest in the sense that every problem ever exists in NP can be <a href="https://en.wikipedia.org/wiki/Polynomial-time_reduction">reduced</a> to them. (Thus being able to solve a NP-complete problem is equivalent to being able to solve every problem in NP).
+</p>
+<p class="text-center">
+<img style="max-width:400px" src="../img/from-chapter-1/SAT.jpg">
+</p>
+<blockquote>
+<p>
+<strong>NP</strong> is the set of decision problems for which there exists a non-deterministic Turing machine that would output a value 1, or 0, after at most O(n<sup>k</sup>) steps where k is some constant and n is the complexity of the input. We often refer to such number of steps (or running time) as polynomial, hence Non-deterministic Polynomial time, or NP.
+</p>
+<p>
+A Turing machine is basically a mathematical object that formalizes that idea of algorithm (<a href="http://www.cs.virginia.edu/~robins/Turing_Paper_1936.pdf">in Turing model’s of computation</a>). A non-deterministic Turing machine (NDTM) is, in simple words, a theoretical Turing machine that can, in a sense, engage in all possible computations while taking the same time/step as a deterministic Turing machine. (<a href="http://www.encyclopediaofmath.org/index.php/Probabilistic_Turing_machine">Note: nondeterministic doesn’t mean probabilistic.</a>) <b>One way I like to think about a non-deterministic Turing machine is that it can only exist in a universe where time is a 2 dimensional plane.</b> A deterministic Turing machine (DTM) on the other hand computes in one-dimension time (and is defined in terms of a <strong>transition function</strong>, unlike NDTM which relies on a <strong>transition relation</strong>).
+</p>
+<p>
+Besides the Boolean Satisfiability Problem, the prime factorization problem, “Given <span class="math inline">\(X\)</span> and <span class="math inline">\(N\)</span>, where <span class="math inline">\(1 &lt; X &lt; N\)</span>, is there a <span class="math inline">\(d\)</span> where <span class="math inline">\(X &lt; d &lt; N\)</span> and <span class="math inline">\(d\)</span> a prime factor of <span class="math inline">\(N\)</span>?”, is also a problem in <strong>NP</strong>.
+</p>
+<p>
+Decision problems<sup>{1}</sup> are problems concerning only with the “trueness” of some statement. That is to say that algorithms for solving decision problems would output either <code>True</code> or <code>False</code> (often in binary value). The problem above is a decision problem, and so is the problem “Is X a prime number?”
+</p>
+<p>
+I would be diving deeper into computational complexity in an upcoming essay. If you are interested in theoretical CS, I recommend you checking these out:
+</p>
+<ol>
+<li>
+<p>
+<a href="http://www.amazon.com/gp/product/0521424267/ref=as_li_tl?ie=UTF8&amp;camp=1789&amp;creative=390957&amp;creativeASIN=0521424267&amp;linkCode=as2&amp;tag=0aarhe-20&amp;linkId=PHEETUYVXM6OG77J">Computational Complexity: A Modern Approach</a> (Book)
+</p>
+</li>
+<li>
+<p>
+<a href="http://www.amazon.com/gp/product/052188473X/ref=as_li_tl?ie=UTF8&amp;camp=1789&amp;creative=390957&amp;creativeASIN=052188473X&amp;linkCode=as2&amp;tag=0aarhe-20&amp;linkId=PDEIBZRCW7SZRZHB">Computational Complexity: A Conceptual Perspective</a> (Book)
+</p>
+</li>
+<li>
+<p>
+<a href="http://www.amazon.com/gp/product/0716710455/ref=as_li_tl?ie=UTF8&amp;camp=1789&amp;creative=390957&amp;creativeASIN=0716710455&amp;linkCode=as2&amp;tag=0aarhe-20&amp;linkId=SAE3OYM4X44YGLQS">Computers and Intractability: A Guide to the Theory of NP-Completeness</a> (Book)
+</p>
+</li>
+<li>
+<p>
+<a href="https://complexityzoo.uwaterloo.ca/">Complexity Zoo</a> (Website)
+</p>
+</li>
+<li>
+<p>
+<a href="https://rjlipton.wordpress.com/">Gödel’s Lost Letter and P=NP</a> (Website)
+</p>
+</li>
+</ol>
+</blockquote>
+<p>
+You can just think of <b>NP</b> as the set of problems whose solution can be <b>verified</b> by an efficient algorithm. And that is different from <b>P</b>, the set of problems whose solution can be <b>found</b> by an efficient algorithm. We can easily prove that each problem in P is also in NP, but we are not sure whether it is true that each problem in NP is too in P.
+</p>
+<script type="math/tex; mode=display"> (P \subseteq NP) \text{ Duh! }  \\ (NP \subseteq P) \text{ ???? }</script>
+<p>
+Take the prime factorization problem for example. At the moment the most efficient algorithm <a href="http://www.math.vt.edu/people/brown/doc/briggs_gnfs_thesis.pdf">(for integers larger than 100 digits)</a> we can implement into pre-existing computers<sup>{3}</sup> has a sub-exponential running time. But we can’t say for certainty that the it is not in P. Many brave men and women have tried but failed to come up with a polynomial time algorithm for every instance of the problem. It may simply be the case that we, members of the Human species, are not intelligent enough to design such algorithm. (Or it may be that <span class="math inline">\(NP \not= P\)</span> and the prime factorization problem is simply not in P, in which case we have yet to prove it.)
+</p>
+<p>
+If we ever come up with an algorithm that can solve all Boolean Satisfiability Problem in polynomial time, it would mean that <span class="math inline">\(P = NP\)</span> since any problem in NP can be reduced into the Boolean Satisfiability Problem. <a href="https://news.ycombinator.com/item?id=2121727">(Here’s a courageous attempt.)</a>
+</p>
+<blockquote>
+<p>
+statement<sup>{1}</sup>: More formally, a <strong>decision problem</strong> is defined as a set of strings, <span class="math inline">\(L\)</span> composed by an alphabet <span class="math inline">\(\Sigma\)</span>, where there exists a Turing Machine TM,
+</p>
+<script type="math/tex; mode=display"> x \in L \Leftrightarrow TM(x) = 1</script>
+<p>
+So, by the formal definition, <strong>the set of prime numbers is a decision problem</strong>. And this decision problem is known as PRIMES. In 2002, it was <a href="https://www.cs.auckland.ac.nz/~msta039/primality_v6.pdf">proven that PRIMES is in P</a>.
+</p>
+<p>
+Here <span class="math inline">\(L\)</span> is often referred to as <a href="https://en.wikipedia.org/wiki/Formal_language">a language over <span class="math inline">\(\Sigma\)</span></a>.
+</p>
+<p>
+<sup>{2}</sup>: First proven by Cook in his 1971 paper, <a href="https://www.cs.toronto.edu/~sacook/homepage/1971.pdf"><em>The complexity of theorem-proving procedure</em></a>. It was later known as the <a href="https://en.wikipedia.org/wiki/Cook%E2%80%93Levin_theorem">Cook–Levin theorem</a>.
+</p>
+<p>
+<sup>{3}</sup>: By “pre-existing computerese I mean classical ones that don’t rely on quantum mechanics (for computation). The most efficient factorization algorithm we know of in the 21st century is the one described in <a href="http://arxiv.org/pdf/quant-ph/9508027v2.pdf">Shor’s 1995 paper</a>, a super-polynomial time algorithm that makes use of <a href="https://en.wikipedia.org/wiki/Quantum_Fourier_transform">quantum Fourier transform</a>. The sad (or <a href="https://edwardsnowden.com/2014/01/04/penetrating-hard-targets-and-owning-the-net/">good</a>) news is that there yet exists a quantum computer powerful enough to have <a href="https://en.wikipedia.org/wiki/RSA_problem">any practical uses of the algorithm</a>.
+</p>
+</blockquote>
+</div>
+<h3 id="st-minute-what-is-the-boolean-satisfiability-problem-334words"><small>1st minute</small>: What is the Boolean Satisfiability Problem? <small class="wordCount">334 words</small></h3>
+<p>The <strong>Boolean Satisfiability Problem</strong> (or S<small>AT</small>) is the problem of determining if a proposition statement<sup>*</sup> is <strong>satisfiable</strong>. A propositional statement is satisfiable when it is possible to assign some true-false values for the variables in the statement such that the statement yields <code>True</code>. Otherwise the statement is unsatisfiable.</p>
+<p>A propositional statement is simply a string made up of variables, brackets and these 3 symbols:</p>
+<div class="row block-of-grey text-center">
+<p><span class="math inline">\(\neg\)</span> with the meaning <i>not</i>.<br> <span class="math inline">\(\neg\)</span> $True = False $<br> <span class="math inline">\(\land\)</span> with the meaning <i>and</i>.<br> $ False$ <span class="math inline">\(\land\)</span> $True = False $<br> <span class="math inline">\(\lor\)</span> with the meaning <i>or</i>.<br> $ False$ <span class="math inline">\(\lor\)</span> $True = True $ <br></p>
+</div>
+<p>These symbols are also known as logical connectives. They’re arranged in the order of precedence above. Here is an example of a propositional statement:</p>
+<p><span class="math display">\[ d \lor (a \land b \land (c \lor d \land \neg a))\]</span></p>
+<p>And here is an instance of The Boolean Satisfiability Problem:</p>
+<p><span class="math display">\[\text{Is }d \lor (a \land b \land (c \lor d \land \neg a)) \text{ satisfiable?}\]</span></p>
+<p>The answer is yes, it is satisfiable. One solution:</p>
+<div class="row block-of-grey">
+<p><span class="math inline">\(a\)</span> assigned: Any <br> <span class="math inline">\(b\)</span> assigned: Any <br> <span class="math inline">\(c\)</span> assigned: Any <br> <span class="math inline">\(d\)</span> assigned: True<br></p>
+</div>
+<p>Meanwhile, the answer to the question</p>
+<p><span class="math display">\[\text{Is } a \land \neg a \land b \land c \land d \text{ satisfiable?}\]</span></p>
+<p>is no, it is unsatisfiable. That is because there is no value we can assign to <span class="math inline">\(a\)</span> such that <span class="math inline">\(a \land \neg a\)</span> would yield <code>True</code>, and therefore it is impossible for the entire statement to yield <code>True</code>.</p>
+<blockquote>
+<p><sup>*</sup>: More technically, it is known as a “formula” or “wff” (“well-formed formula”). “Well-formed” in the sense that it is syntactically correct such that it can be interpreted in our context. “Formula” in the sense that it is something formed by putting symbols together.</p>
+<p><span class="math display">\[ wff \subset statement \]</span></p>
+<p>“<span class="math inline">\(\land\land\land A \land \lor B B B\)</span>” for example is a statement but not a formula since it is not well-formed.</p>
+<p>p.s. In order to know how the symbol works here we rely on its association with the meaning of some lexical item in English, like the word “not” in the case of <span class="math inline">\(\neg\)</span>, and our intuitive understanding of how “not” functions. We need to keep in mind that the symbols by themselves have no absolute meaning: some are even interpreted differently in different systems of logic (<a href="http://ncatlab.org/nlab/show/classical+logic">classical logic</a> vs <a href="http://ncatlab.org/nlab/show/intuitionistic+logic">intuitionistic logic</a> for example). But that is outside of the scope of this essay, and so for the moment let’s just take it as that these symbols indeed mean what the words mean.</p>
+<p>p.s. Often in proposition logic, you would encounter these symbols as well:</p>
+<div class="row block-of-grey text-center">
+<span class="math inline">\(\Rightarrow\)</span> with the meaning <i>imply (if .. then ..) </i>. [<span class="math inline">\(\Leftarrow\)</span> for different direction]<br> $ (False True) = True $<sup>{4}</sup><br> <span class="math inline">\(\Leftrightarrow\)</span> with the meaning <i>if and only if (two-way implication)</i>.<br>$ (False True) = False $
+</div>
+<p>They are omitted because statements that use these symbols can be rewritten using the basic Boolean operations: <span class="math inline">\(\lor\)</span>, <span class="math inline">\(\land\)</span>, and <span class="math inline">\(\neg\)</span>.</p>
+<p><span class="math display">\[ a \Rightarrow b \text{ can be rewritten as } \neg a \lor b  \\ \text{without changing its satisfiability}\]</span></p>
+<p>Since our main concern is satisfiability here, we’d like to be minimalist, and exclude symbols from our alphabet that are not necessary.</p>
+<p>p.s. In model theory, we can view the assignment of booleans values to the variables in a statement as <strong>an interpretation</strong> of the statement, and we write</p>
+<p><span class="math display">\[I \models F\]</span></p>
+<p>where <span class="math inline">\(I\)</span> is the interpretation and <span class="math inline">\(F\)</span> is the statement (or more technically, formula<sup>{1}</sup>) and we say <span class="math inline">\(I\)</span> is a model of <span class="math inline">\(F\)</span>. With this in mind, we can say that two formulas <span class="math inline">\(F_1\)</span> and <span class="math inline">\(F_2\)</span> are equivalent as long as each model of A is a model of B, and vice versa.</p>
+<p><span class="math display">\[F_1 \equiv F_2 \Leftrightarrow (\forall I (I \models F_1) \Leftrightarrow (I \models F_2))\]</span></p>
+</blockquote>
+<p>S<small>AT</small> is a member of problems known as the <strong>Constraint Satisfaction Problems (or CSPs)</strong>. CSP is basically a generalization of S<small>AT</small>, where the followings are both to be defined:</p>
+<ol type="1">
+<li><p>the values a variable can be assigned to (often referred to as <em>domain</em>)</p></li>
+<li><p>the constraints on what makes a satisfiable statement</p></li>
+</ol>
+<p>Another member of CSPs is the <a href="http://www.eecs.berkeley.edu/~sseshia/pubdir/SMT-BookChapter.pdf"><strong>Satisfiability Modulo Theories Problem (or SMT)</strong></a>, where, instead of proposition statements (like what we are dealing with in S<small>AT</small>), it is the problem of determining the satisfiability of first-order logic statements, and whether a first-order logic statement is satisfiable depends on the theory of our choice.</p>
+<p>Let’s say the theory of our choice is linear arithmetic, we would say that the statement below is satisfiable if variables can take in any value in <span class="math inline">\(\mathbb{R}\)</span>, the set of real numbers.</p>
+<p><span class="math display">\[2a + 4b = 7\]</span></p>
+<p>It is, however, unsatisfiable if we define <span class="math inline">\(\mathbb{Z}\)</span>, the set of integers, to be the domain instead.</p>
+<p class="text-center">
+● ● ●
+</p>
+<h3 id="extra-213words">Extra: <small class="wordCount"> 213 words</small></h3>
+<p>When a satisfiable statement always yields <code>True</code> no matter what the value the variables take (every set of true-false assignments to the variables is a solution), we call it a <strong>tautology</strong>. Here is one:</p>
+<p><span class="math display">\[ a \lor \neg a \]</span></p>
+<p>Interestingly, the problem of determining if some statement is not a tautology can be easily reduced into the Boolean Satisfiability Problem.</p>
+<p>Since a tautology always yields <code>True</code>, negating a tautology would give us a statement that always yields <code>False</code>, and that, my friend, is an unsatisfiable statement. The problem of determining if some statement, V, is not a tautology is thus equivalent to the problem of determining if the negation of the statement, V, is satisfiable. And that means the “Not-Tautology problem” is also in NP.</p>
+<p>On the other hand, the Boolean Unsatisfiability Problem is in what’s known as <b>co-NP</b>, and so is the problem of determining if a statement is a tautology.</p>
+<p><strong>co-NP</strong> can be thought of as the set of problems whose non-solution can be verified efficiently using a Non-Deterministic Turing Machine. At the moment “NP = co-NP?” remains an open question.</p>
+<blockquote>
+<p>Formally, a co-NP problem is a language<sup>*</sup> over some alphabet Σ, for which there exists Non-Deterministic Turing Machine that would output 0 in polynomial time, after taking in any string from the language as input.</p>
+<p>Note that that is different from a definition of a NP problem, a language<sup>*</sup> for which there exists exists Non-Deterministic Turing Machine that would output 1 in polynomial time, after taking in any string from the language as input.</p>
+<p>* : If you are confused by the usage of the word “language”, read {1} (in the <em>block of Grey Text</em>) in 0th minute: Introduction.</p>
+<p>All problems in P are in (NP <span class="math inline">\(\cap\)</span> co-NP). Among other known problems in (NP <span class="math inline">\(\cap\)</span> co-NP) is the prime factorization problem.</p>
+</blockquote>
+<p class="text-center">
+● ● ●
+</p>
+<p>From the 2nd minute on we’d be</p>
+<ol type="1">
+<li><p>using the word <strong>formula</strong> (instead of “statement”)</p></li>
+<li><p>using <strong>S<small>AT</small></strong> as the abbreviation for the Boolean Satisfiability Problem</p></li>
+</ol>
+<p><br /></p>
+<h3 id="nd-minute-classifying-sat-354words"><small>2nd minute</small>: Classifying S<small>AT</small> <small class="wordCount">354 words</small></h3>
+<p>We can classify instances of S<small>AT</small> based on what form the formulas are in.</p>
+<p><strong>3S<small>AT</small></strong> is the instances of S<small>AT</small> where the formulas are in the form</p>
+<p><span class="math display">\[\bigwedge_{j \in J} ( a_j \lor b_j \lor c_j ) \]</span></p>
+<p>where <span class="math inline">\(a_j,b_j,c_j\)</span> are called <strong>literals</strong>. A literal is either an atomic formula or its negation. One example:</p>
+<p><span class="math display">\[ ( x \lor \neg y \lor \neg x ) \land ( x \lor \neg x \lor z ) \]</span></p>
+<blockquote>
+<p>An atomic formula is a formula that has no deeper structure: such as “<span class="math inline">\(a\)</span>” in “<span class="math inline">\(a \land b\)</span>”.</p>
+<p><span class="math inline">\(\bigwedge\)</span> works the same as a loop. We can arrive at the formula above by taking $J = \{ 1,2 \} a_1 = a_2 = x, b_1 = y, b_2 = c_1 = x, c_2 = z $.</p>
+<p><span class="math display">\[\begin{align} &amp;\bigwedge_{j \in J} ( a_j \lor b_j \lor c_j )  \\ =&amp; ( a_1 \lor b_1 \lor c_1 ) \land ( a_2 \lor b_2 \lor c_2 ) \\ =&amp; ( x \lor \neg y \lor \neg x ) \land ( x \lor \neg x \lor z ) \\ \end{align}\]</span></p>
+</blockquote>
+<p>This is also known as the <b>Conjunctive<sup>{1}</sup> Normal Form (CNF)</b>. To be more precise, the form above is called <b>3CNF</b> (because it has 3 literals in each clause<sup>{2}</sup>). <b>kCNF</b> is the type of CNF with k number of literals in each clause.</p>
+<p><span class="math display">\[\begin{align}  \bigwedge_{j \in J} ( a_j \lor b_j \lor c_j ) &amp;\text{ is 3CNF} \\ \bigwedge_{j \in J} ( a_j \lor b_j) &amp;\text{ is 2CNF}  \end{align}\]</span></p>
+<p>More generally, any formula is in CNF as long as it’s of the form:</p>
+<p><span class="math display">\[\bigwedge \bigvee x \text{ is CNF}\]</span></p>
+<p>Clauses in a general CNF formula need not contain the same number of literals. Examples:</p>
+<p><span class="math display">\[( a \lor b) \land ( c \lor d ) \land (a \lor c \lor b \lor \neg b) \land (\neg a \lor c \lor d) \\ ( a \lor b ) \land c\]</span></p>
+<p>Instances of S<small>AT</small> on statements in <strong><em>k</em>CNF</strong> are called <strong><em>k</em>S<small>AT</small></strong>, where <em>k</em> is a natural number. Great thing about 3S<small>AT</small> is that all instances of S<small>AT</small> are <a href="http://web.mit.edu/~neboat/www/6.046-fa09/rec8.pdf">reducible</a> into 3S<small>AT</small>. And that means 3S<small>AT</small> is also NP-complete. <strong>2S<small>AT</small></strong>, on the other hand, is S<small>AT</small> in 2CNF and it is not NP-complete.</p>
+<p>2S<small>AT</small> is in P (and <a href="https://en.wikipedia.org/wiki/NL-complete">NL-complete</a>) and not all instances of S<small>AT</small> can be reduced into 2S<small>AT</small> (or else we can conclude that P = NP).</p>
+<p>Lastly, we shall talk about <strong>HORN-S<small>AT</small></strong>, instances of S<small>AT</small> with Horn formula. When each clause contains at most 1 positive literal, we call it a <strong>Horn<sup>{3}</sup> formula</strong>. Here are some examples:</p>
+<p><span class="math display">\[( a \lor \neg b) \land ( c \lor \neg d ) \land (\neg a \lor \neg c \lor \neg b) \land \neg x \\ x \land y \land z \land (\neg d \lor \neg x \lor \neg i \lor \neg y) \\ ( a \lor \neg b ) \land c\]</span></p>
+<div class="text-center">
+<p><img style="max-width:300px" src="../img/from-chapter-1/such horn.jpg"></p>
+</div>
+<p>Not only is Horn-S<small>AT</small> in P (just like 2S<small>AT</small>), it is also <a href="https://en.wikipedia.org/wiki/P-complete">P-complete</a>, and <a href="http://www.sciencedirect.com/science/article/pii/0743106684900141">solvable in linear time</a>. (<a href="http://cs.stackexchange.com/questions/45002/is-horn-sat-in-lin-if-so-why-is-that-not-an-indication-that-p-lin">That doesn’t mean P = LIN though.</a>)</p>
+<blockquote>
+<p><sup>{1}</sup> Conjunctive since it’s formed by <span class="math inline">\(\land\)</span>. It yields <code>False</code> if one of its clauses yields <code>False</code>.</p>
+<p><sup>{2}</sup>: Formally a <strong>clause</strong> is defined to be a <strong>disjunction</strong> of literal:</p>
+<p>Dejunctive since it’s formed by <span class="math inline">\(\lor\)</span>. It yields <code>True</code> if one of its literals yields <code>True</code>.</p>
+<p><sup>{3}</sup> Initially in propositional logic, a Horn clause is in the form</p>
+<p><span class="math display">\[ (\bigwedge_{a \in A} a) \Rightarrow b \]</span></p>
+<p>In S<small>AT</small>, since we don’t use the <span class="math inline">\(\Rightarrow\)</span> symbol, the above is re-written as:</p>
+<p><span class="math display">\[ b \lor (\bigvee_{a \in A} \neg a )\]</span></p>
+<p>or in the case that <span class="math inline">\(b\)</span> is an absolute <code>True</code>, we have <span class="math inline">\((\bigwedge_{a \in A} a) \Rightarrow True\)</span>, which gives us</p>
+<p><span class="math display">\[ \bigvee_{a \in A} \neg a\]</span></p>
+<p>or in the case that <span class="math inline">\(\bigvee_{a \in A}\)</span> is an absolute <code>True</code>, we have <span class="math inline">\(True \Rightarrow b\)</span>, giving us</p>
+<p><span class="math display">\[ b \]</span></p>
+</blockquote>
+<p>This pretty much sums up generally how instances of S<small>AT</small> are classified. If you are interested in classifying S<small>AT</small> in a more ‘hard core’ manner (viewing S<small>AT</small> itself as a classification problem), <a href="http://www.cs.ucc.ie/~osullb/pubs/classification.pdf">check out this 2008 paper by David Devlin and Barry O’Sullivan</a>.</p>
+<p>Perhaps you’ve also heard of problems with names like <a href="https://en.wikipedia.org/wiki/MAX-3SAT">MAXS<small>AT</small></a> and <a href="https://en.wikipedia.org/wiki/Sharp-SAT">#S<small>AT</small></a>. Instances of these problems are not really instances of S<small>AT</small>; it’d be more accurate to say that they are variations of S<small>AT</small>. MAXS<small>AT</small> is the problem of finding a boolean assignment satisfying most clauses in a CNF formula, and #S<small>AT</small> is the problem of counting the number of satisfying assignments.</p>
+<p><br /></p>
+<h3 id="rd-minute-sat-solvers---general-overview-337words"><small>3rd minute</small>: </small> S<small>AT</small> Solvers - General Overview <small class="wordCount">337 words</small></h3>
+<p>There are many known algorithms capable of solving some (but not all) instances of S<small>AT</small> pretty efficiently. We often refer to them as <b>S<small>AT</small> solvers</b>. In general they can be classified into <strong>complete</strong> or <strong>incomplete</strong>.</p>
+<p>Complete S<small>AT</small> solvers would always return either <code>satisfiable</code> or <code>unsatisfiable</code>. Incomplete S<small>AT</small> solvers, on the other hand, are less reliable - they may be unable to prove unsatisfiability (when it’s impossible for the formula to yield <code>True</code>), or unable to find a solution when the formula is satisfiable - but perhaps a lot more useful in scenarios when the instances of S<small>AT</small> cannot be solved by complete algorithms in reasonable time.</p>
+<blockquote>
+<p>To make thing simpler S<small>AT</small> solvers normally take in formulas in CNF form encoded in <a href="http://www.satcompetition.org/2009/format-benchmarks2009.html">DIMACS</a> format as inputs. Suppose we have a formula that isn’t in CNF form, we would first <a href="http://stackoverflow.com/a/11582917/2041954">convert it into CNF form</a> before inputting it into a S<small>AT</small> solver.</p>
+</blockquote>
+<p>To compare the performance between different S<small>AT</small> solvers, we give them a large set of formulas and see how well each performs (e.g. by the total time taken, or number of formulas solved in n-minutes, or using <a href="http://link.springer.com/chapter/10.1007%2F978-3-642-21581-0_25#page-1">a methodology called <em>careful ranking</em></a>). The set of formulas is often referred to as a benchmark instance. A solver previously lost to another solver may do better if different type of benchmark instances are used.</p>
+<p>In <a href="http://satcompetition.org/2014/index.shtml">the S<small>AT</small> 2014 competition</a>, <a href="http://fmv.jku.at/lingeling/">Lingeling</a> beat all the other solvers when evaluated using application-type benchmark instances, but lose to <a href="http://www.labri.fr/perso/lsimon/glucose/">glucose</a> when hard-combinatorial-type are used.</p>
+<blockquote>
+<p>Due to the NP-complete nature of S<small>AT</small>, we can use S<small>AT</small> solvers to solve real world problems in areas like circuit design (for <a href="http://www.cise.ufl.edu/~zhuang/doc/TR-05.pdf">Combinational Equivalence Checking</a>), and artificial intelligence (for <a href="http://users.ics.aalto.fi/rintanen/jussi/papers/Rintanen11aaai.pdf">Automated Planning and Scheduling</a>). Application-type benchmark instances consist of formulas from real world problems.</p>
+</blockquote>
+<p>Many modern S<small>AT</small> solvers are based on the original <strong>DPLL</strong> algorithm designed in the 60’s. In summary, DPLL is a complete algorithm that works by assigning a variable some boolean value, checks if this breaks the overall satisfiability: if it doesn’t break, pick a new variable, and check again; if it breaks, alters the assigned value and check again (if both True-False values are tried, go back to the previous variable, alter it and check). Repeatedly doing so until we arrive at either one of these two ends:</p>
+<ol type="1">
+<li><p>All variables are assigned to some boolean value and it does not break the overall satisfiability, and hence the formula is satisfiable.</p></li>
+<li><p>No matter what boolean values a set of variables are assigned to, it would break the overall satisfiability, and hence the formula is unsatisfiable.</p></li>
+</ol>
+<p><br /></p>
+<h3 id="th-5th-minutes-sat-solvers---dpll-and-more-613words"><small>4th &amp; 5th minutes</small>: </small> S<small>AT</small> Solvers - DPLL and More <small class="wordCount">613 words</small></h3>
+<p>You may have already imagined, DPLL is basically a <a href="https://www.youtube.com/watch?v=bkROCj-BTWE">depth-first search</a>, and that means at its heart it uses <strong>backtracking</strong>, a brute-force-like technique that, rather than checking every single possible solution one by one (which is what’s known as brute-force), it checks possible solutions by compositing part by part in a combinatorial fashion [e.g. building a solution variable by variable as described above], discarding sets of solutions that are deemed invalid by parts.</p>
+<blockquote>
+<p>In short, <strong>a backtracking algorithm is very similar to a classical brute-force algorithm, except that it is slightly smarter and thus more efficient</strong>. Here is an example. Imagine you are given 9 numbers</p>
+<p><span class="math display">\[4015,1635,8744,1236,3241,123,6126,142,13421\]</span></p>
+<p>and your task is to find if there is a set of <span class="math inline">\(n\)</span> numbers adding up to a prime number <span class="math inline">\(x\)</span> where <span class="math inline">\(n &gt; 3\)</span> and <span class="math inline">\(x &lt; 14000\)</span>. One example of an algorithm that uses backtracking would firstly</p>
+<ol type="1">
+<li><p>form a set of 3 numbers (e.g. first 3 numbers <span class="math inline">\(4015,1635,8744\)</span>)</p></li>
+<li><p>get its sum (in this case <span class="math inline">\(4015+1635+8744=14394\)</span> )</p></li>
+<li><p>check if it makes sense to go on adding more numbers into this set of 3 numbers.</p></li>
+</ol>
+<p>In our case <span class="math inline">\(14394&gt;14000\)</span>, so it makes no sense to go on and we abandon the last number,, 8744, in our set, makes a new set of 3 numbers <span class="math inline">\(4015,1635,1236\)</span>, and do the same thing to check if it makes sense to go on (in this case <span class="math inline">\(4015+1635+1236=6886\)</span>). Since it did not exceed the limit of 14000, we continue to</p>
+<ol type="1">
+<li><p>add a new number into the the set</p></li>
+<li><p>get its sum (in this case it didn’t exceed 14000. We can continue)</p></li>
+<li><p>now that <span class="math inline">\(n&gt;3\)</span> (we have 4 numbers), we check if it is prime: if not we add more numbers to it (repeat step 1)</p></li>
+</ol>
+<p>once we exceed the limit we abandon the last number just like before (and hence <em>backtracking</em>)… Keep doing so until we have</p>
+<ol type="1">
+<li><p>either tried every sensible combination (sum &lt; 14000), but there is no prime</p></li>
+<li><p>or we arrive at a solution, a set of numbers that meets our criteria.</p></li>
+</ol>
+<p>Read up on <a href="https://en.wikipedia.org/wiki/Eight_queens_puzzle">the Eight queens puzzle</a> and its backtracking algorithm and you’d have a complete grasp of the concept (if you haven’t).</p>
+</blockquote>
+<p>The other 2 techniques classical DPLL uses are</p>
+<ol type="1">
+<li><p><strong>pure literal elimination</strong>: The idea is simple. If a literal appears only as positive or negative (but not both, and hence we call it <strong>pure</strong>) in the formula,</p>
+<ol type="1">
+<li><p>we assign a value to the literal for it to yield <code>True</code>.</p></li>
+<li><p>and delete all the clauses which contain it in the formula.</p></li>
+</ol>
+<blockquote>
+<p>This is because since it is pure, we can just make it yield <code>True</code> and it won’t have any other consequence to the overall satisfiable.</p>
+<p><span class="math display">\[ (a \lor b \lor \neg c) \land (a \lor \neg b) \land ( b \lor \neg c) \]</span></p>
+<p>In the formula above, <span class="math inline">\(a\)</span> and <span class="math inline">\(c\)</span> are both pure, so we can give <span class="math inline">\(a = True\)</span> and <span class="math inline">\(c = False\)</span>, and delete all the clauses that contain them. After that we’d end up with no clauses. And that means the formula is satisfiable with</p>
+<p><span class="math inline">\(a: True\)</span>    <span class="math inline">\(b: Any\)</span>    <span class="math inline">\(c: False\)</span></p>
+</blockquote></li>
+<li><p><strong>unit propagation</strong>: It is obvious that for clauses made up of 1 literal, that 1 literal has to evaluate <code>True</code> for the formula to yield <code>True</code>. Therefore</p>
+<ol type="1">
+<li><p>we assign a value for the literal to yield <code>True</code></p></li>
+<li><p>delete clauses that contains the literal, and instances of it in opposite polarity (the opposite of positive is negative, vice versa).</p></li>
+</ol>
+<blockquote>
+<p>Take this CNF for example:</p>
+<p><span class="math display">\[ a \land (a \lor x \lor y) \land ( \neg a \lor \neg b) \land (c \lor b ) \land (d \lor \neg b)\]</span></p>
+<p>After 1st round of unit propagation, we would have <span class="math inline">\(a = True\)</span> and, after reduce the original forumla to:</p>
+<p><span class="math display">\[ \neg b \land (c \lor b ) \land (d \lor \neg b)\]</span></p>
+<p>Great! We can do a 2nd round of unit propagation with <span class="math inline">\(\neg b\)</span>: make <span class="math inline">\(b = False\)</span> and reduce it into:</p>
+<p><span class="math display">\[ c \]</span></p>
+<p>And here we have it, the original formula is satisfiable with</p>
+<p><span class="math inline">\(a: True\)</span>    <span class="math inline">\(b: False\)</span>    <span class="math inline">\(c: False\)</span>    <span class="math inline">\(d: Any\)</span></p>
+<p class="text-center">
+● ● ●
+</p>
+<p>When we end up in a situation where there is an <strong>empty clause</strong> (a clause with 0 literals), it indicates that there is a set of variables no matter what value we assign them, we can’t satisfy the formula. And thus it is unsatisfiable.</p>
+<p>Here is an example where after one round of unit propagation, we’d have an empty clause, indicating that no matter what values we assign <span class="math inline">\(a\)</span> and <span class="math inline">\(b\)</span>, it won’t satisfy the formula.</p>
+<p><span class="math display">\[ a \land b \land (\neg b \lor \neg a) \land (c \lor b \lor d) \land (d \lor a) \]</span></p>
+</blockquote></li>
+</ol>
+<p>More technically, we would say that unit propagation and pure literal elimination are used at each <strong>decision level</strong>. We start off at decision level 0, and the decision level increases by 1 each time as we assign a boolean value to a variable.</p>
+<blockquote>
+<p>We often call such variable “assigned variable”. And that is different from “implied variables”, variables that get their values from pure literal elimination and unit propagation.</p>
+</blockquote>
+<p>Here is a simple implementation of classical DPLL in Haskell:</p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode haskell"><code class="sourceCode haskell"><a class="sourceLine" id="cb1-1" data-line-number="1"><span class="kw">import</span> <span class="dt">Data.List</span></a>
+<a class="sourceLine" id="cb1-2" data-line-number="2"></a>
+<a class="sourceLine" id="cb1-3" data-line-number="3"><span class="kw">data</span> <span class="dt">Satisfiability</span> <span class="fu">=</span> <span class="dt">SAT</span> <span class="fu">|</span> <span class="dt">UNSAT</span> <span class="kw">deriving</span> (<span class="dt">Eq</span>, <span class="dt">Show</span>)</a>
+<a class="sourceLine" id="cb1-4" data-line-number="4"></a>
+<a class="sourceLine" id="cb1-5" data-line-number="5"><span class="kw">type</span> <span class="dt">Literal</span> <span class="fu">=</span> <span class="dt">Int</span></a>
+<a class="sourceLine" id="cb1-6" data-line-number="6"><span class="kw">type</span> <span class="dt">Variable</span> <span class="fu">=</span> <span class="dt">Int</span></a>
+<a class="sourceLine" id="cb1-7" data-line-number="7"><span class="kw">type</span> <span class="dt">Clause</span> <span class="fu">=</span> [<span class="dt">Literal</span>]</a>
+<a class="sourceLine" id="cb1-8" data-line-number="8"></a>
+<a class="sourceLine" id="cb1-9" data-line-number="9"><span class="kw">type</span> <span class="dt">VariableAssignement</span> <span class="fu">=</span> (<span class="dt">Int</span>,<span class="dt">Bool</span>)</a>
+<a class="sourceLine" id="cb1-10" data-line-number="10"></a>
+<a class="sourceLine" id="cb1-11" data-line-number="11"><span class="co">--extract variable from literal</span></a>
+<a class="sourceLine" id="cb1-12" data-line-number="12"><span class="ot">exv ::</span> <span class="dt">Literal</span> <span class="ot">-&gt;</span> <span class="dt">Variable</span></a>
+<a class="sourceLine" id="cb1-13" data-line-number="13">exv l</a>
+<a class="sourceLine" id="cb1-14" data-line-number="14">    <span class="fu">|</span> l <span class="fu">&gt;</span> <span class="dv">0</span> <span class="fu">=</span> l</a>
+<a class="sourceLine" id="cb1-15" data-line-number="15">    <span class="fu">|</span> l <span class="fu">&lt;</span> <span class="dv">0</span> <span class="fu">=</span> <span class="fu">-</span>l</a>
+<a class="sourceLine" id="cb1-16" data-line-number="16"></a>
+<a class="sourceLine" id="cb1-17" data-line-number="17"><span class="ot">exvWithValue::</span> <span class="dt">Literal</span> <span class="ot">-&gt;</span> <span class="dt">VariableAssignement</span></a>
+<a class="sourceLine" id="cb1-18" data-line-number="18">exvWithValue l</a>
+<a class="sourceLine" id="cb1-19" data-line-number="19">    <span class="fu">|</span> l <span class="fu">&gt;</span> <span class="dv">0</span> <span class="fu">=</span> (l,<span class="dt">True</span>)</a>
+<a class="sourceLine" id="cb1-20" data-line-number="20">    <span class="fu">|</span> l <span class="fu">&lt;</span> <span class="dv">0</span> <span class="fu">=</span> (<span class="fu">-</span>l,<span class="dt">False</span>)</a>
+<a class="sourceLine" id="cb1-21" data-line-number="21"></a>
+<a class="sourceLine" id="cb1-22" data-line-number="22"><span class="ot">assignTrueFor ::</span>  [<span class="dt">Clause</span>] <span class="ot">-&gt;</span> <span class="dt">Variable</span> <span class="ot">-&gt;</span> [<span class="dt">Clause</span>]</a>
+<a class="sourceLine" id="cb1-23" data-line-number="23">(assignTrueFor) cnf literal <span class="fu">=</span> [ (<span class="fu">-</span> literal) <span class="ot">`delete`</span> clause  <span class="fu">|</span> clause <span class="ot">&lt;-</span> cnf, (not <span class="fu">$</span> literal <span class="ot">`elem`</span> clause)]</a>
+<a class="sourceLine" id="cb1-24" data-line-number="24"></a>
+<a class="sourceLine" id="cb1-25" data-line-number="25">hasConflict <span class="fu">=</span> (elem) []</a>
+<a class="sourceLine" id="cb1-26" data-line-number="26"></a>
+<a class="sourceLine" id="cb1-27" data-line-number="27"><span class="ot">dpll ::</span> ([<span class="dt">Variable</span>], [<span class="dt">Clause</span>]) <span class="ot">-&gt;</span> [<span class="dt">VariableAssignement</span>] <span class="ot">-&gt;</span>(<span class="dt">Satisfiability</span>,[<span class="dt">VariableAssignement</span>])</a>
+<a class="sourceLine" id="cb1-28" data-line-number="28">dpll (vss<span class="fu">@</span>(x<span class="fu">:</span>vs),cnf) as</a>
+<a class="sourceLine" id="cb1-29" data-line-number="29">    <span class="fu">|</span> hasConflict cnf <span class="fu">=</span> (<span class="dt">UNSAT</span>,[])</a>
+<a class="sourceLine" id="cb1-30" data-line-number="30">    <span class="fu">|</span> <span class="kw">let</span> (result,list) <span class="fu">=</span> enterDecisionLevelWAL x,</a>
+<a class="sourceLine" id="cb1-31" data-line-number="31">        result <span class="fu">==</span> <span class="dt">SAT</span> <span class="fu">=</span> (result,list)</a>
+<a class="sourceLine" id="cb1-32" data-line-number="32">    <span class="fu">|</span> otherwise <span class="fu">=</span> enterDecisionLevelWAL (<span class="fu">-</span>x)</a>
+<a class="sourceLine" id="cb1-33" data-line-number="33">        <span class="co">-- enterDecisionLevelWAL: enter Decision Level With Assigned Literal</span></a>
+<a class="sourceLine" id="cb1-34" data-line-number="34">        <span class="kw">where</span> enterDecisionLevelWAL theVariable <span class="fu">=</span> do_up_and_ple (vs, (cnf <span class="ot">`assignTrueFor`</span> theVariable)) (exvWithValue theVariable<span class="fu">:</span>as)</a>
+<a class="sourceLine" id="cb1-35" data-line-number="35">dpll ([],_) as <span class="fu">=</span> (<span class="dt">SAT</span>,as)</a>
+<a class="sourceLine" id="cb1-36" data-line-number="36"></a>
+<a class="sourceLine" id="cb1-37" data-line-number="37"><span class="co">-- do_up_and_ple: do unit propagation &amp;&amp; pure literal elimination</span></a>
+<a class="sourceLine" id="cb1-38" data-line-number="38"><span class="ot">do_up_and_ple ::</span> ([<span class="dt">Variable</span>], [<span class="dt">Clause</span>]) <span class="ot">-&gt;</span> [<span class="dt">VariableAssignement</span>] <span class="ot">-&gt;</span>(<span class="dt">Satisfiability</span>,[<span class="dt">VariableAssignement</span>])</a>
+<a class="sourceLine" id="cb1-39" data-line-number="39">do_up_and_ple (vs,cnf) as <span class="fu">=</span> dpll (vs',cnf') as'</a>
+<a class="sourceLine" id="cb1-40" data-line-number="40">    <span class="kw">where</span></a>
+<a class="sourceLine" id="cb1-41" data-line-number="41">        ((vs',cnf'),as') <span class="fu">=</span> up_and_ple ((vs,cnf),as)</a>
+<a class="sourceLine" id="cb1-42" data-line-number="42">        up_and_ple x <span class="fu">=</span> check_if_ple_gets_same_result (ple x') x'</a>
+<a class="sourceLine" id="cb1-43" data-line-number="43">            <span class="kw">where</span> x' <span class="fu">=</span> (up (ple x))</a>
+<a class="sourceLine" id="cb1-44" data-line-number="44">        check_if_ple_gets_same_result x previous</a>
+<a class="sourceLine" id="cb1-45" data-line-number="45">            <span class="fu">|</span> x <span class="fu">==</span> previous <span class="fu">=</span> x</a>
+<a class="sourceLine" id="cb1-46" data-line-number="46">            <span class="fu">|</span> otherwise <span class="fu">=</span> up_and_ple x</a>
+<a class="sourceLine" id="cb1-47" data-line-number="47"></a>
+<a class="sourceLine" id="cb1-48" data-line-number="48"><span class="co">-- pure literal elimination</span></a>
+<a class="sourceLine" id="cb1-49" data-line-number="49">ple ((vs,cnf),as)</a>
+<a class="sourceLine" id="cb1-50" data-line-number="50">    <span class="fu">|</span> length pls <span class="fu">==</span> <span class="dv">0</span> <span class="fu">=</span> ((vs,cnf),as)</a>
+<a class="sourceLine" id="cb1-51" data-line-number="51">    <span class="fu">|</span> otherwise <span class="fu">=</span> up ((vs',cnf'),as')</a>
+<a class="sourceLine" id="cb1-52" data-line-number="52">    <span class="kw">where</span></a>
+<a class="sourceLine" id="cb1-53" data-line-number="53">        cnf' <span class="fu">=</span> foldl (assignTrueFor) cnf pls</a>
+<a class="sourceLine" id="cb1-54" data-line-number="54">        vs' <span class="fu">=</span> vs \\ (fmap exv pls)</a>
+<a class="sourceLine" id="cb1-55" data-line-number="55">        as' <span class="fu">=</span> as <span class="fu">++</span> (fmap exvWithValue pls)</a>
+<a class="sourceLine" id="cb1-56" data-line-number="56">        pls <span class="fu">=</span> nubBy (<span class="fu">==</span>) <span class="fu">$</span> find_pure_literals literals []</a>
+<a class="sourceLine" id="cb1-57" data-line-number="57">        literals <span class="fu">=</span> concat cnf</a>
+<a class="sourceLine" id="cb1-58" data-line-number="58">        find_pure_literals (x<span class="fu">:</span>xs) o <span class="fu">=</span> find_pure_literals xs o'</a>
+<a class="sourceLine" id="cb1-59" data-line-number="59">            <span class="kw">where</span></a>
+<a class="sourceLine" id="cb1-60" data-line-number="60">                o'</a>
+<a class="sourceLine" id="cb1-61" data-line-number="61">                    <span class="fu">|</span> (x <span class="ot">`elem`</span> literals) <span class="fu">&amp;&amp;</span> ( <span class="fu">-</span>x <span class="ot">`elem`</span> literals) <span class="fu">=</span> o</a>
+<a class="sourceLine" id="cb1-62" data-line-number="62">                    <span class="fu">|</span> (<span class="fu">-</span>x <span class="ot">`elem`</span> literals) <span class="fu">=</span> <span class="fu">-</span>x<span class="fu">:</span>o</a>
+<a class="sourceLine" id="cb1-63" data-line-number="63">                    <span class="fu">|</span> otherwise <span class="fu">=</span> x<span class="fu">:</span>o</a>
+<a class="sourceLine" id="cb1-64" data-line-number="64">        find_pure_literals [] o <span class="fu">=</span> o</a>
+<a class="sourceLine" id="cb1-65" data-line-number="65"></a>
+<a class="sourceLine" id="cb1-66" data-line-number="66"><span class="co">-- unit propagation</span></a>
+<a class="sourceLine" id="cb1-67" data-line-number="67">up ((vs,cnf),as)</a>
+<a class="sourceLine" id="cb1-68" data-line-number="68">    <span class="fu">|</span> length ucs <span class="fu">==</span> <span class="dv">0</span> <span class="fu">=</span> ((vs,cnf),as)</a>
+<a class="sourceLine" id="cb1-69" data-line-number="69">    <span class="fu">|</span> otherwise <span class="fu">=</span> up ((vs',cnf'),as')</a>
+<a class="sourceLine" id="cb1-70" data-line-number="70">    <span class="kw">where</span></a>
+<a class="sourceLine" id="cb1-71" data-line-number="71">        cnf' <span class="fu">=</span> foldl (assignTrueFor) cnf ucs</a>
+<a class="sourceLine" id="cb1-72" data-line-number="72">        as' <span class="fu">=</span> as <span class="fu">++</span> (fmap exvWithValue ucs)</a>
+<a class="sourceLine" id="cb1-73" data-line-number="73">        vs' <span class="fu">=</span> vs \\ (fmap exv ucs)</a>
+<a class="sourceLine" id="cb1-74" data-line-number="74">        ucs <span class="fu">=</span> [ x <span class="fu">|</span> (x<span class="fu">:</span>xs) <span class="ot">&lt;-</span> cnf, xs <span class="fu">==</span> []]</a>
+<a class="sourceLine" id="cb1-75" data-line-number="75"></a>
+<a class="sourceLine" id="cb1-76" data-line-number="76"><span class="ot">dpllStart ::</span> ([<span class="dt">Variable</span>], [<span class="dt">Clause</span>]) <span class="ot">-&gt;</span>(<span class="dt">Satisfiability</span>,[<span class="dt">VariableAssignement</span>])</a>
+<a class="sourceLine" id="cb1-77" data-line-number="77">dpllStart (vs,cnf) <span class="fu">=</span> do_up_and_ple (vs, cnf) []</a></code></pre></div>
+<p>To run it, simply invoke <code>dpllStart</code> with a parameter in the form <code>([Int], [[Int]])</code></p>
+<p><span class="math display">\[ (a \lor b) \land (a \lor c ) \land (c \lor -d) \\ \text{would be ([1,2,3],[[1,2],[1,3],[3,-4]])}\]</span></p>
+<p>and it would return either <code>UNSAT</code> with an empty list or <code>SAT</code> with a list of boolean assignments.</p>
+<blockquote>
+<p>I’ve integrated a parser for parsing CNF formula in <a href="http://www.satcompetition.org/2009/format-benchmarks2009.html">DIMACS format</a> into the implementation above.</p>
+<p><a href="https://github.com/0a-/Haskell-DPLL-SAT-Solver">It’s available on GitHub.</a></p>
+</blockquote>
+<p>Below is DPLL in pseudo-code with JavaScript-like syntax. (I have omitted the array that stores variable assignments.)</p>
+<div class="sourceCode" id="cb2"><pre class="sourceCode javascript"><code class="sourceCode javascript"><a class="sourceLine" id="cb2-1" data-line-number="1"><span class="kw">function</span> <span class="at">dpll</span>(formula)<span class="op">{</span></a>
+<a class="sourceLine" id="cb2-2" data-line-number="2">    <span class="cf">if</span>(<span class="va">formula</span>.<span class="at">has</span>(empty_clause))<span class="op">{</span></a>
+<a class="sourceLine" id="cb2-3" data-line-number="3">        <span class="cf">return</span> <span class="st">&quot;UNSAT&quot;</span><span class="op">;</span></a>
+<a class="sourceLine" id="cb2-4" data-line-number="4">    <span class="op">}</span><span class="cf">else</span> <span class="cf">if</span>(<span class="va">formula</span>.<span class="va">variables</span>.<span class="at">length</span> <span class="op">===</span> <span class="dv">0</span>)<span class="op">{</span></a>
+<a class="sourceLine" id="cb2-5" data-line-number="5">        <span class="cf">return</span> <span class="st">&quot;SAT&quot;</span><span class="op">;</span></a>
+<a class="sourceLine" id="cb2-6" data-line-number="6">    <span class="op">}</span></a>
+<a class="sourceLine" id="cb2-7" data-line-number="7">    <span class="kw">var</span> v <span class="op">=</span> <span class="va">formula</span>.<span class="at">variables</span>[<span class="dv">0</span>]<span class="op">;</span></a>
+<a class="sourceLine" id="cb2-8" data-line-number="8">    <span class="va">formula</span>.<span class="va">variables</span>.<span class="at">shift</span>()<span class="op">;</span></a>
+<a class="sourceLine" id="cb2-9" data-line-number="9">    <span class="kw">var</span> new_formula <span class="op">=</span> formula<span class="op">;</span></a>
+<a class="sourceLine" id="cb2-10" data-line-number="10">    <span class="va">new_formula</span>.<span class="at">assignVariable</span>(v<span class="op">,</span> TRUE)<span class="op">;</span></a>
+<a class="sourceLine" id="cb2-11" data-line-number="11">    <span class="kw">var</span> result <span class="op">=</span> <span class="at">doUPandPLE</span>(new_formula)<span class="op">;</span></a>
+<a class="sourceLine" id="cb2-12" data-line-number="12">    <span class="cf">if</span>(result <span class="op">===</span> <span class="st">&quot;UNSAT&quot;</span>)<span class="op">{</span></a>
+<a class="sourceLine" id="cb2-13" data-line-number="13">        <span class="va">formula</span>.<span class="at">assignVariable</span>(v<span class="op">,</span> FALSE)<span class="op">;</span></a>
+<a class="sourceLine" id="cb2-14" data-line-number="14">        result <span class="op">=</span> <span class="at">do_up_and_ple</span>(formula)<span class="op">;</span></a>
+<a class="sourceLine" id="cb2-15" data-line-number="15">    <span class="op">}</span></a>
+<a class="sourceLine" id="cb2-16" data-line-number="16">    <span class="cf">return</span> result<span class="op">;</span></a>
+<a class="sourceLine" id="cb2-17" data-line-number="17"><span class="op">}</span></a>
+<a class="sourceLine" id="cb2-18" data-line-number="18"></a>
+<a class="sourceLine" id="cb2-19" data-line-number="19"><span class="kw">function</span> <span class="at">doUPandPLE</span>(f)<span class="op">{</span></a>
+<a class="sourceLine" id="cb2-20" data-line-number="20">    <span class="co">//LiteralElmination &amp; UnitPropagation would remove elements in f.variables</span></a>
+<a class="sourceLine" id="cb2-21" data-line-number="21">    <span class="co">//as they make changes to the formula</span></a>
+<a class="sourceLine" id="cb2-22" data-line-number="22">    <span class="cf">do</span><span class="op">{</span></a>
+<a class="sourceLine" id="cb2-23" data-line-number="23">      <span class="va">f</span>.<span class="at">repeatedlyDo</span>(<span class="st">&quot;PureLiteralElmination&quot;</span>)<span class="op">;</span></a>
+<a class="sourceLine" id="cb2-24" data-line-number="24">      <span class="va">f</span>.<span class="at">repeatedlyDo</span>(<span class="st">&quot;UnitPropagation&quot;</span>)<span class="op">;</span></a>
+<a class="sourceLine" id="cb2-25" data-line-number="25">    <span class="op">}</span><span class="cf">while</span>(<span class="va">f</span>.<span class="at">ifDoPureLiteralElminationCanMakeChanges</span>())<span class="op">;</span></a>
+<a class="sourceLine" id="cb2-26" data-line-number="26"></a>
+<a class="sourceLine" id="cb2-27" data-line-number="27">    <span class="cf">return</span> <span class="at">dpll</span>(f)<span class="op">;</span></a>
+<a class="sourceLine" id="cb2-28" data-line-number="28"><span class="op">}</span></a></code></pre></div>
+<p class="text-center">
+● ● ●
+</p>
+<p>To improve the performance of a S<small>AT</small> solver, we can use a <strong>heuristic function</strong> to determine which variable to assign a boolean value to in each decision (rather than following a fixed order). We often refer to it as a <strong>decision heuristic</strong>. One example is <strong>VSIDS</strong> introduced in <a href="http://www.princeton.edu/~chaff/software.html">CHAFF</a>, a S<small>AT</small> solver that won the 2006’s S<small>AT</small> competition.</p>
+<blockquote>
+<p>We call something <strong>heuristic</strong> often when there is not much rigorous maths behind it so it does not guaranteed to be optimal or perfect but it works well after some tests and that is the main reason why it is being implemented &amp; used. Usually, a heuristic function (or algorithm) is characterized by being simple, quick and effective.</p>
+</blockquote>
+<p>The idea of VSIDS is simple: a variable is chosen for each decision according a ranking of these variables that changes over time. Each variable is ranked by its “activity score”, a floating point variable that would plus some constant, <span class="math inline">\(C\)</span>, every time the variable shows up in a newly generated clause through a process called “conflict clause learning”. Every now and then, activity scores would be divided by another constant, <span class="math inline">\(N\)</span>, hence shrinking over time, and “decaying” in the sense. For that reason, it is called VSIDS: Variable State Independent Decaying Sum.</p>
+<blockquote>
+<p>To learn more about VSIDS you can check out <a href="http://arxiv.org/pdf/1506.08905v1.pdf">Understanding VSIDS Branching Heuristics in Conflict-Driven Clause-Learning S<small>AT</small> Solvers</a> and <a href="https://classes.soe.ucsc.edu/cmps217/Fall07/Project/jaeheon/final_paper/final_paper/input-dist-subm.pdf">The Effect of VSIDS on S<small>AT</small> Solver Performance</a>.</p>
+<p>Conflict clause learning is a technique that generates an “conflict clause” by using an <a href="https://en.wikipedia.org/wiki/Implication_graph">implication graph</a> that examines how conflict arises after unit propagation. Conflict happens when all literals in a clause are forced to yield <code>False</code> (which is the case when we have an empty clause, if our algorithm deletes False literal). Thus the process above is often referred to as conflict analysis. If you are interested in learning more about it, check out <a href="http://www.msoos.org/2011/05/understanding-implication-graphs/">this great article (with pictures)</a> by <a href="https://github.com/msoos">msoos</a> from <a href="http://www.msoos.org/">Wondering of a S<small>AT</small> geek</a>. Wanna dive deeper? You’d certainly find these papers useful:</p>
+<ol type="1">
+<li><p><a href="https://www.cs.rochester.edu/u/kautz/papers/learnIjcai.pdf">Understanding the Power of Clause Learning</a></p></li>
+<li><p><a href="http://www.cs.princeton.edu/courses/archive/fall13/cos402/readings/SAT_learning_clauses.pdf">Clause Learning in S<small>AT</small></a></p></li>
+<li><p><a href="https://www.jair.org/media/1410/live-1410-2304-jair.pdf">Towards Understanding and Harnessing the Potential of Clause Learning</a></p></li>
+<li><p><a href="http://www.princeton.edu/~chaff/publication/iccad2001_final.pdf">Efficient Conflict Driven Learning in a Boolean Satisfiability Solver</a>.</p></li>
+</ol>
+<p>S<small>AT</small> solvers that use such technique are also known as <a href="https://en.wikipedia.org/wiki/Conflict-Driven_Clause_Learning">Conflict-Driven Clause-Learning (CDCL) S<small>AT</small> Solvers</a>.</p>
+</blockquote>
+<p>Other ways of improving performance of DPLL-based algorithms include</p>
+<ol type="1">
+<li><p>adding conflict clauses (generated by conflict analysis as described above) into the formula to prevent from getting into the same conflict again.</p></li>
+<li><p>implementing unit propagation by using a technique that watches 2 literals at a time, instead of keeping track of all literals, in which case <a href="http://cs.stackexchange.com/q/44924/11573">you’d need to sacrifice pure literal elimination</a>. To learn more read <a href="http://www.princeton.edu/~chaff/publication/DAC2001v56.pdf">this 2001 paper</a>.</p></li>
+<li><p>Other than using heuristic for decision as described above, we can use heuristic for backtracking. And that is actually what’s done in many CDCL S<small>AT</small> Solvers.</p>
+<blockquote>
+<p>Backtracking like the one in classical DPLL is called chronological backtracking. Chronological in the sense that we we simply go back to the previous decision level. In heuristic backtracking, we go back to a decision level (or backtrack point) based on a <strong>heuristic function</strong>. The principal behind it is that we should learn from conflicts and avoid making the mistake of trying out all different variables assignments down a decision level only to find out that all the assignment at that decision level would only lead to unsatisfiability. That is to say that we would rely on the heuristic to help us in figuring out if the boolean assignment at some previous decision level may be a bad pick, and that we should backtrack all the way up.</p>
+</blockquote></li>
+<li><p>implementing some <em>restart</em> policies, which force the solver to backtrack to decision level 0 (or some other level) when some condition is met. This is to prevent the solver from getting “stuck” at some part of the <a href="http://wiki.lesswrong.com/wiki/Search_space">search space</a> for a long time. To learn more about it, check out <a href="http://users.cecs.anu.edu.au/~jinbo/07-ijcai-restarts.pdf">The Effect of Restarts on the Efficiency of Clause Learning</a> and <a href="ftp://ftp.research.microsoft.com/pub/ejh/drestart.pdf">Dynamic Restart Policies</a>.</p></li>
+</ol>
+<p>and many and many more.</p>
+<h4 id="end-note---further-reading">End Note - Further reading:</h4>
+<ol type="1">
+<li><p><a href="http://cacm.acm.org/magazines/2014/3/172516-boolean-satisfiability/fulltext">Boolean Satisfiability: Theory and Engineering (2014)</a> <small class="wordCount">755 words</small></p></li>
+<li><p><a href="http://cstheory.stackexchange.com/a/6891/30600">Why is 2S<small>AT</small> in P? (a CS.SE post)</a> <small class="wordCount">300+ words</small></p></li>
+<li><p><a href="http://www.princeton.edu/~chaff/publication/cade_cav_2002.pdf">The Quest for Efficient Boolean Satisfiability Solvers (2002)</a> <small class="wordCount">~9k words</small></p></li>
+<li><p><a href="http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.489.8416&amp;rep=rep1&amp;type=pdf">The S<small>AT</small> Phase Transition (1994)</a> <small class="wordCount">~5k words</small></p></li>
+<li><p><a href="http://www.cs.cornell.edu/gomes/papers/satsolvers-kr-handbook.pdf">Satisfiability Solvers</a> <small class="wordCount">a chapter from <a href="http://www.amazon.com/gp/product/0444522115/ref=as_li_tl?ie=UTF8&camp=1789&creative=390957&creativeASIN=0444522115&linkCode=as2&tag=0aarhe-20&linkId=UZ2R6YMF7HQ6MZSN">Handbook of Knowledge Representation</a></small></p></li>
+<li><p><a href="http://www.cs.toronto.edu/~fbacchus/csc2512/Lectures/2013Readings/Skallah_Empirical_Study_SAT_Solvers.pdf">Empirical Study of the Anatomy of Modern Sat Solvers</a> <small class="wordCount">~5k words</small></p></li>
+<li><p><a href="http://www.amazon.com/gp/product/1586039296/ref=as_li_tl?ie=UTF8&amp;camp=1789&amp;creative=390957&amp;creativeASIN=1586039296&amp;linkCode=as2&amp;tag=0aarhe-20&amp;linkId=4SB427BUQ5LKHOFJ">Handbook of Satisfiability</a> <small class="wordCount">a book</small></p></li>
+<li><p><a href="http://www.cs.toronto.edu/~chechik/courses03/csc2108/algorithms-for-satisfiability.pdf">Algorithms for the Satisfiability Problem: A Survey (1996)</a> <small class="wordCount">~60k words</small></p></li>
+<li><p><a href="http://www.amazon.com/gp/product/3319092839/ref=as_li_tl?ie=UTF8&amp;camp=1789&amp;creative=390957&amp;creativeASIN=3319092839&amp;linkCode=as2&amp;tag=0aarhe-20&amp;linkId=ZKNKEH4TF3DC6R7R">Theory and Applications of Satisfiability Testing - S<small>AT</small> 2014</a> <small class="wordCount">a book</small> <small>Also available on <a href="http://www.springer.com/us/book/9783319092836">springer</a>.</small></p></li>
+</ol>
+        </div>
+    </div>
+</article>
+
+<!-- <blockquote id="scale-up-center" >
+    <span class="helloo">Archy Will He: Hey there! Thanks for reading! Hit me up at a@0a.io if you enjoy this piece and/or would like to give me some suggesitons on stuff, etc! Thanks! :))</span>
+</blockquote>
+<script>
+    window.addEventListener('load', function() {
+    var toPopDOM = document.getElementById("scale-up-center")
+    toPopDOM.className = "scale-up-center"
+    var popItUp = function(e) {
+        var currentBTM = (window.scrollY+window.innerHeight)
+        var triggeringPoint =  (document.getElementsByTagName("body")[0].offsetHeight - 526)
+        if(currentBTM > triggeringPoint){
+            window.removeEventListener('scroll', popItUp)
+            toPopDOM.className = "scale-up-center scale-up-center-animates-desu"
+        }
+    }
+    window.addEventListener('scroll', popItUp)
+})
+</script> -->
+
+</div>
+<div>
+  <h2 class="thickRaleway menu-bottom">
+
+</h2>
+</div>
+
+
+    </div>
+  <div class="cover-image">
+  <img style="position:absolute;bottom:0" class="hide-if-smaller-than-mobile-device-regular" src="../img/backgrounds/irina-568205-unsplash.jpg" />
+  <img class="show-if-smaller-than-mobile-device-regular" src="../img/backgrounds/irina-568205-unsplash-mobile.jpg" />
+
+ <div class="cover-image-text-wrapper">
+  <div class="cover-image-text">
+    <h1 class="zeroDegreeLogo centerFlex hide-if-smaller-than-mobile-device-regular-but-flex" style="background:none">
+    </h1>
+    <div class="show-if-smaller-than-mobile-device-regular">
+    <div class="centerFlex footer-info-block">
+        <div>
+        <h5 class="hide-if-smaller-than-mobile-device-small">
+            <br />
+            <br><br>
+        </h5>
+        <h5 class="show-if-smaller-than-mobile-device-small">
+            <br><br>
+
+        </h5>
+        <h3>
+              <a target="_blank" href="https://castella.art"><i class="social-icon ion-erlenmeyer-flask"></i></a>
+            <a target="_blank" href="https://archy.sh/about.html"><i class="social-icon ion-erlenmeyer-flask"></i></a>
+
+
+        </h3>
+        </div>
+</div>
+</div>
+    <div class="zeroDegreeNameAndDescription hide-if-smaller-than-mobile-device-regular-but-flex" style="margin-left:20px">
+    <h3 class="zeroDegreeName" style="color:#fff">
+      0a.io: _ <br />
+          <small><a href="https://github.com/archywillhe/0a.io">vi3w_s0urce (Haskell on Hakyll) <i class="ion-beer"></i></a></small>
+  </h3>
+    <div class="zeroDegreeDescription">
+          <br>
+          <br>
+
+    </div>
+    </div>
+  </div>
+  <h3 class="stayCool thickRaleway" style="color:#fff;">
+        _
+  </h3>
+  </div>
+  </div>
+
+
+</div></div>
+
+<script>
+(function(){
+var bqt = document.getElementById("blockquoteToggle");
+var bqHidden = false;
+var x = document.getElementsByTagName("blockquote"),
+    xx =  document.getElementById("introduction");
+bqt.addEventListener("click",function(){
+    if(!bqHidden){
+        bqt.innerHTML = "Click here to show the introduction and all <i> Blocks of Grey Text</i>."
+        for(var i = 0; i < x.length; i++){
+            x[i].style.display = "none";
+        }
+        xx.style.display = "none";
+    }else{
+        bqt.innerHTML= "Click here to hide the introduction and all <i> Blocks of Grey Text</i>."
+        for(var i = 0; i < x.length; i++){
+            x[i].style.display = "block";
+        }
+        xx.style.display = "block";
+    }
+    bqHidden = !bqHidden;
+});
+})();
+</script>
+
+<script src="../js/underscore-min.js"></script>
+<script src="../js/main.js"></script>
+</body>
+
+</html>
