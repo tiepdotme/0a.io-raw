@@ -9,7 +9,7 @@
                    type="application/rss+xml" />
         <lastBuildDate>Sun, 26 Jul 2020 00:00:00 UT</lastBuildDate>
         <item>
-    <title>《微信号被误封》第五天：与「选择」的现实脱节 (I)</title>
+    <title>《微信号被误封》第六天：与「选择」的现实脱节 (I)</title>
     <link>https://0a.io/chapter3/WeChat-got-banned-1.html</link>
     <description><![CDATA[<blockquote>
 <p>《微信号被误封》第一章</p>
@@ -18,17 +18,17 @@
 <p>“相反，佩蒂 · 史密斯和其他许多人成为了一种新的个人激进分子，他们以一种冷静超然的态度看待这座衰败的城市。他们没有尝试去改变它。相反，那个年代美国的激进分子开始转向艺术和音乐，借助艺术和音乐来表达他们对社会的批评。他们认为，新的激进主义不应试图改变外部世界，而应试图改变人们头脑中的东西，改变的方式是通过自我表达，而不是集体行动。然而一些左翼人士看到了真正发生的事情 —- 通过脱离他们自己，退回到一种具有讽刺意味的冷静中，整整一代人开始与「权力」的现实脱节。”</p>
 <p>“Instead, Patti Smith and many others became a new kind of individual radical, who watched the decaying city with a cool detachment. They didn’t try and change it. They just experienced it… Instead, radicals across America turned to arts and music as a means of expressing their criticism of society. They believed that instead of trying to change the world outside, the new radicalism should try to change what was inside people’s heads and the way to do that was through self-expression, not collective action. But some of the left saw that something else was really going on–by detaching themselves and retreating into an ironic coolness, a whole generation was beginning to lose touch with the reality of power.”</p>
 <p><img src="/img/2.png"/></p>
-<p>如果说70年代美国开始目睹自由市场的机制下人们与「权力」的现实脱节，那么我觉得21世纪社交媒体平台全球性的崛起（脸书、推特、IG、微信、微博、快手、抖音、etc）开始目睹的是消费者与「选择」的现实脱节。</p>
+<p>如果说70年代末美国开始目睹自由市场的机制下人们与「权力」的现实脱节，那么我觉得21世纪社交媒体平台全球性的崛起（脸书、推特、IG、微信、微博、抖音、etc）开始目睹的是消费者与「选择」的现实脱节。</p>
 <p class="text-center" style="margin-bottom:30px">
 。。。
 </p>
 <p>我不是一个喜欢社交媒体的人。说实话，我不太喜欢脸书。从产品设计的角度，我觉得微信比脸书和Whatsapp要做得好。某种意义上，我看好腾讯。在整个中国的科创生态中，腾讯是目前创造了最多价值的企业之一，尤其在开放平台这一块。</p>
-<p>五天前，我的个人微信被永久封号了。我感觉这是腾讯在封杀WeTool之后，又部署了更严厉的封号AI，然后刚好这阵子我的账号符合几个if语句，就断定了我是外挂，对系统有恶意。</p>
+<p>六天前，我的个人微信被永久封号了。我感觉这是腾讯在封杀WeTool之后，又部署了更严厉的封号AI，然后刚好这阵子我的账号符合几个if语句，就断定了我是外挂，对系统有恶意。</p>
 <p><img src="/img/3.jpg" style="max-width:70%" /></p>
 <p>我致电客服、申请重审，但毫无用处。客服也是人，只能按照系统官僚地行事。</p>
-<p>腾讯终于开始适度管理微信生态，我觉得这是件好事。我们将会看到一个更少假流量和spammers的微信。我被误封相对之下是小事。​</p>
+<p>腾讯终于开始适度管理微信生态，我觉得是好事。我们将会看到一个更少假流量和spammers的微信。我被误封相对之下是小事。​</p>
 <p>​在一个上十亿用户的平台上，假设只有0.0001%的用户被AI断定是外挂，就算AI的精准度是99.9%，那还是会有1个人被误封。[1] 如果被误封的是某高校的教授，或许发一封电邮就能解封。要不然除非你做一些媒体的事情吸引注意力，解封的机率可以说是零，尤其当我目前处在的是一个边角案例。（这个我在第二章会详细说明。）</p>
-<div class="sourceCode" id="cb1"><pre class="sourceCode javascript"><code class="sourceCode javascript"><a class="sourceLine" id="cb1-1" data-line-number="1"><span class="dv">1000000000</span> X <span class="fl">0.000001</span> X <span class="fl">0.001</span> <span class="op">=</span> <span class="dv">1</span></a></code></pre></div>
+<div class="sourceCode" id="cb1"><pre class="sourceCode javascript"><code class="sourceCode javascript"><a class="sourceLine" id="cb1-1" data-line-number="1"><span class="dv">1000000000</span> × <span class="fl">0.000001</span> × <span class="fl">0.001</span> <span class="op">=</span> <span class="dv">1</span></a></code></pre></div>
 <p>我现在很矛盾。一方面我知道花费太大时间与精力在微信和这件事上并不值得。然而因为工作与生活我又不得不重新注册账号来用微信，并且展开一段漫长的好友重逢旅程[2]。另一方面我又觉得『微信号被误封』是一个很好的散文题材，让我沮丧和无奈，同时也让我意识到很多问题和有趣的现象。</p>
 <div class="sourceCode" id="cb2"><pre class="sourceCode javascript"><code class="sourceCode javascript"><a class="sourceLine" id="cb2-1" data-line-number="1">被误封 <span class="op">&gt;&gt;=</span> ( 沮丧 . 无奈 ) .<span class="op">||</span>. (观赏 问题 . 现象 )</a></code></pre></div>
 <p>很多人会认同，如果可以「选择」，他们或许不会用微信这个产品。但在一个被垄断的市场中，我们不得不选择和「选择」的现实脱节。当然，我这里谈及的是一种宏观层面的消费者行为，以及此行为在市场等约束（政策、etc）下对未来新产品出现的影响。</p>
@@ -39,10 +39,6 @@
 <p>​「科技」的本质是什么？这是一个我还没能找到答案的问题。如果我们谈论「科技」仅谈论「科技」的表征，那「科技」就是一个当下因为非常困难被复制而因此带有价值的东西。它的不稳定性在于「当下」可能是2～3年，也可能是5～10年。随着整体生态的发展，很多无可预料的事情会发生。</p>
 <p>近十五年来社交媒体平台的崛起和消费者与「选择」的现实脱节，或许反映的是今下大众消费者“持有”的「科技」和企业“持有”的「科技」这两者天渊之别、在不断指数性增长的差距。</p>
 <p>​社交媒体平台主要价值往往来源于消费者的「科技」群体性地互相碰撞所产生的相互作用。某种意义上，导致消费者与「选择」的现实脱节是一种讽刺地建立于消费者们自身的「科技」在一定数量的涌现的「元科技」。​</p>
-<br/> <br/> <img src="/img/covers/Untitled, 1974, Kuno Gonschior.jpg" style="width:40%">
-<p class="text-center" style="font-size:0.9em">
-<small>Untitled, 1974, Kuno Gonschior
-</p>
 <br/> <br/>
 <p class="text-center" style="font-size:0.9em">
 第一章：与「选择」的现实脱节，完。
