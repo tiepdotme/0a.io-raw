@@ -4,7 +4,7 @@ https://keybase.io/0a
 
 I hereby claim:
 
-  * I am an admin of https://0a.io
+  * I am an admin of https://vietgoodstories.com
   * I am 0a (https://keybase.io/0a) on keybase.
   * I have a public key ASD4ogeOjwn5MrCqegZrRhb07rWGNi3wDE7UjQD-Uw4rTAo
 
@@ -27,7 +27,7 @@ To do so, I am signing this object:
     },
     "service": {
       "entropy": "fM7AiRCfjRVBbimS4JmwPGWU",
-      "hostname": "0a.io",
+      "hostname": "vietgoodstories.com",
       "protocol": "https:"
     },
     "type": "web_service_binding",

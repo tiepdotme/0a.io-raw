@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-    <title>0a.io</title>
-    <link href="https://0a.io/atom.xml" rel="self" />
-    <link href="https://0a.io" />
-    <id>https://0a.io/atom.xml</id>
+    <title>vietgoodstories.com</title>
+    <link href="https://vietgoodstories.com/atom.xml" rel="self" />
+    <link href="https://vietgoodstories.com" />
+    <id>https://vietgoodstories.com/atom.xml</id>
     <author>
         <name>Archy Will He</name>
-        <email>a@0a.io</email>
+        <email>a@vietgoodstories.com</email>
     </author>
     <updated>2020-07-27T00:00:00Z</updated>
     <entry>
     <title>與「選擇」的現實脫節</title>
-    <link href="https://0a.io/chapter3/detachment.html" />
-    <id>https://0a.io/chapter3/detachment.html</id>
+    <link href="https://vietgoodstories.com/chapter3/detachment.html" />
+    <id>https://vietgoodstories.com/chapter3/detachment.html</id>
     <published>2020-07-27T00:00:00Z</published>
     <updated>2020-07-27T00:00:00Z</updated>
     <summary type="html"><![CDATA[<p>在 Adam Curtis 的紀錄片《超正常化》中，有一段話給我留下了深刻的印象。</p>
@@ -51,8 +51,8 @@
 </entry>
 <entry>
     <title>an epilog for chapter 1</title>
-    <link href="https://0a.io/chapter2/left.html" />
-    <id>https://0a.io/chapter2/left.html</id>
+    <link href="https://vietgoodstories.com/chapter2/left.html" />
+    <id>https://vietgoodstories.com/chapter2/left.html</id>
     <published>2020-07-04T00:00:00Z</published>
     <updated>2020-07-04T00:00:00Z</updated>
     <summary type="html"><![CDATA[<p>I’m scared.</p>
@@ -95,8 +95,8 @@
 </entry>
 <entry>
     <title>End of Chapter 1</title>
-    <link href="https://0a.io/chapter2/end-of-chapter-1.html" />
-    <id>https://0a.io/chapter2/end-of-chapter-1.html</id>
+    <link href="https://vietgoodstories.com/chapter2/end-of-chapter-1.html" />
+    <id>https://vietgoodstories.com/chapter2/end-of-chapter-1.html</id>
     <published>2019-10-01T00:00:00Z</published>
     <updated>2019-10-01T00:00:00Z</updated>
     <summary type="html"><![CDATA[<blockquote>
@@ -116,8 +116,8 @@
 </entry>
 <entry>
     <title>death and ontological amusement</title>
-    <link href="https://0a.io/chapter2/death4.html" />
-    <id>https://0a.io/chapter2/death4.html</id>
+    <link href="https://vietgoodstories.com/chapter2/death4.html" />
+    <id>https://vietgoodstories.com/chapter2/death4.html</id>
     <published>2019-07-28T00:00:00Z</published>
     <updated>2019-07-28T00:00:00Z</updated>
     <summary type="html"><![CDATA[<p>future corpses</p>
@@ -158,8 +158,8 @@
 </entry>
 <entry>
     <title>death unto fractals</title>
-    <link href="https://0a.io/chapter2/death3.html" />
-    <id>https://0a.io/chapter2/death3.html</id>
+    <link href="https://vietgoodstories.com/chapter2/death3.html" />
+    <id>https://vietgoodstories.com/chapter2/death3.html</id>
     <published>2019-07-21T00:00:00Z</published>
     <updated>2019-07-21T00:00:00Z</updated>
     <summary type="html"><![CDATA[<p>death unto fractals</p>
@@ -184,8 +184,8 @@
 </entry>
 <entry>
     <title>no reasons</title>
-    <link href="https://0a.io/chapter2/reasons.html" />
-    <id>https://0a.io/chapter2/reasons.html</id>
+    <link href="https://vietgoodstories.com/chapter2/reasons.html" />
+    <id>https://vietgoodstories.com/chapter2/reasons.html</id>
     <published>2019-07-20T00:00:00Z</published>
     <updated>2019-07-20T00:00:00Z</updated>
     <summary type="html"><![CDATA[<p>The set of reasons to see her</p>
@@ -211,8 +211,8 @@
 </entry>
 <entry>
     <title>one and a half tab</title>
-    <link href="https://0a.io/chapter2/tab.html" />
-    <id>https://0a.io/chapter2/tab.html</id>
+    <link href="https://vietgoodstories.com/chapter2/tab.html" />
+    <id>https://vietgoodstories.com/chapter2/tab.html</id>
     <published>2019-07-11T00:00:00Z</published>
     <updated>2019-07-11T00:00:00Z</updated>
     <summary type="html"><![CDATA[<p>one and a half tab</p>
@@ -256,8 +256,8 @@
 </entry>
 <entry>
     <title>lost</title>
-    <link href="https://0a.io/chapter2/lost2.html" />
-    <id>https://0a.io/chapter2/lost2.html</id>
+    <link href="https://vietgoodstories.com/chapter2/lost2.html" />
+    <id>https://vietgoodstories.com/chapter2/lost2.html</id>
     <published>2019-07-05T00:00:00Z</published>
     <updated>2019-07-05T00:00:00Z</updated>
     <summary type="html"><![CDATA[<p>What is lost remains hidden in plain sight</p>
@@ -290,8 +290,8 @@
 </entry>
 <entry>
     <title>on losing interest</title>
-    <link href="https://0a.io/chapter2/lost.html" />
-    <id>https://0a.io/chapter2/lost.html</id>
+    <link href="https://vietgoodstories.com/chapter2/lost.html" />
+    <id>https://vietgoodstories.com/chapter2/lost.html</id>
     <published>2019-07-02T00:00:00Z</published>
     <updated>2019-07-02T00:00:00Z</updated>
     <summary type="html"><![CDATA[<p>Interest is like a sprinkle of dust</p>
@@ -338,8 +338,8 @@
 </entry>
 <entry>
     <title>1st July 2019: Madama Butterfly (2019)</title>
-    <link href="https://0a.io/pretentious-reviews/film/madama-butterfly.html" />
-    <id>https://0a.io/pretentious-reviews/film/madama-butterfly.html</id>
+    <link href="https://vietgoodstories.com/pretentious-reviews/film/madama-butterfly.html" />
+    <id>https://vietgoodstories.com/pretentious-reviews/film/madama-butterfly.html</id>
     <published>2019-07-01T00:00:00Z</published>
     <updated>2019-07-01T00:00:00Z</updated>
     <summary type="html"><![CDATA[<p>A 2019 reproduction of 1904’s opera <a href="https://en.wikipedia.org/wiki/Madama_Butterfly">Madama Butterfly</a> (by <a href="https://en.wikipedia.org/wiki/Giacomo_Puccini">Giacomo Puccini</a>), <a href="https://opera.org.au/whatson/events/madama-butterfly-sydney">Madama Butterfly (choreographed by Graeme Murphy) presented by Opera Australia</a> retells the century-old story in a somewhat contemporary manner while retaining the traditional art form of Italian opera.</p>
